@@ -1,0 +1,338 @@
+
+  <!-- Yuqori panel: brend, betlar, sanoq va mavzu -->
+  <header class="neo-topbar">
+    <a class="brand" href="__HOME_URL__" title="hiworld.club">
+      <span class="neo-logo" role="img" aria-label="Hi Neo ikonkasi"></span>
+      <span>Hi Neo</span>
+    </a>
+    <nav class="nav-tabs" id="navTabs" aria-label="Betlar">
+      <button class="nav-tab is-active" data-idx="0" title="Ekotizim"><b>01</b><span>Ekotizim</span></button>
+      <button class="nav-tab" data-idx="1" title="31 ta WOW effekt"><b>02</b><span>Effektlar</span></button>
+      <button class="nav-tab" data-idx="2" title="64 ta CSS animatsiya"><b>03</b><span>Animatsiyalar</span></button>
+      <button class="nav-tab" data-idx="3" title="__IC_N__ ta SVG ikonka"><b>04</b><span>Ikonkalar</span></button>
+      <button class="nav-tab" data-idx="4" title="60 ta shrift va 24 ta juftlik"><b>05</b><span>Shriftlar</span></button>
+      <button class="nav-tab" data-idx="5" title="Sahifa standarti"><b>06</b><span>Maket</span></button>
+      <button class="nav-tab" data-idx="6" title="Plaginni o'rnatish"><b>07</b><span>O'rnatish</span></button>
+    </nav>
+    <div class="top-right">
+      <span class="top-count" id="stepCounter">01 / 07</span>
+      <button type="button" class="theme-btn" id="themeBtn" data-theme-toggle aria-label="Yorug' yoki qorong'i rejim" title="Yorug' / qorong'i rejim">
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- BETLAR: bitta bet — bitta bo'lim. Faqat joriy bo'lim ko'rinadi, har birining o'z manzili (#...) bor -->
+  <main class="neo-deck" id="neoDeck">
+
+    <!-- ==================== 01-BET: EKOTIZIM ==================== -->
+    <section class="neo-section" id="ekotizim" data-title="Ekotizim">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label">hiworld.club · Hi Neo</span>
+            <span></span>
+          </div>
+          <div class="neo-stage stage-fill" id="heroStage">
+            <canvas id="heroCanvas"></canvas>
+            <div class="hero-core">
+              <div class="hero-halo neo-anim-breathing-halo">
+                <span class="neo-logo neo-logo--big" role="img" aria-label="Hi Neo ikonkasi"></span>
+              </div>
+              <div class="hero-word neo-anim-gradient-shimmer">HI NEO</div>
+              <div class="hero-sub">sayt uchun keraklisini o'zi tanlaydi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <h1 class="sec-title">Zamonaviy saytlar uchun yagona dizayn va harakat arsenali</h1>
+            <p class="sec-desc">
+              <strong>Hi Neo</strong> — Antigravity, Claude Code va Claude Desktop uchun plagin. «Sayt yasa» deysiz, u kerakli effekt, animatsiya, ikonka va shriftni <strong>o'zi tanlaydi</strong>. Bu yerda har bir bo'lim alohida betda.
+            </p>
+          </div>
+
+          <div class="stats-grid" id="heroStats">
+            <div class="stat-tile"><b data-count="31">31</b><span>WOW effekt</span></div>
+            <div class="stat-tile"><b data-count="64">64</b><span>CSS animatsiya</span></div>
+            <div class="stat-tile"><b data-count="__IC_NUM__">__IC_N__</b><span>SVG ikonka</span></div>
+            <div class="stat-tile"><b data-count="60">60</b><span>shrift</span></div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" onclick="goSec(1)">Ko'rishni boshlash</button>
+            <button class="btn btn--ghost" onclick="goSec(6)">Plaginni o'rnatish</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 02-BET: 31 WOW EFFEKT ==================== -->
+    <section class="neo-section" id="effekt" data-title="31 ta WOW effekt">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label" id="efDomain">prism.club</span>
+            <span class="win-label">kursorni olib boring</span>
+          </div>
+          <div class="stage-split">
+            <div class="neo-stage stage-canvas-wrap" id="efStage">
+              <canvas id="efCanvas"></canvas>
+            </div>
+            <div class="stage-list" id="efList"></div>
+          </div>
+          <div class="stage-foot">
+            <span>31 ta WOW effekt</span>
+            <div class="pager">
+              <button class="mini-pill" id="efPrev">← Oldingi</button>
+              <span class="pager__info" id="efPage">1 / 1</span>
+              <button class="mini-pill" id="efNext">Keyingi →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <div class="sec-kicker" id="efMeta">#08 · O'rta</div>
+            <h2 class="sec-title" id="efTitle">Golografik karta</h2>
+            <p class="sec-desc" id="efWhere"></p>
+            <div class="mini-pills" id="efTags" style="margin-top:10px"></div>
+          </div>
+
+          <div class="code-box" id="efPrompt"></div>
+
+          <div class="rules" id="efRules"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="efCopyPrompt">Promptni nusxalash</button>
+            <button class="btn btn--ghost" id="efCopyCmd">/effekt buyrug'i</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 03-BET: 64 CSS ANIMATSIYA ==================== -->
+    <section class="neo-section" id="animatsiya" data-title="64 ta CSS animatsiya">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label" id="anClassLabel">.neo-anim-blur-rise</span>
+            <span class="win-label">64 ta toza CSS</span>
+          </div>
+          <div class="stage-split">
+            <div class="neo-stage stage-canvas-wrap stage-canvas-wrap--auto">
+              <div id="anPreviewBox" class="anim-preview neo-anim-blur-rise">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38e1ff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 14.8 8.7 21 9.6 16.5 14 17.6 20.2 12 17.3 6.4 20.2 7.5 14 3 9.6 9.2 8.7 12 3"/></svg>
+                <span>HI NEO CSS</span>
+              </div>
+              <div class="mini-pills" id="anStyleFilter"></div>
+            </div>
+            <div class="stage-list" id="anList"></div>
+          </div>
+          <div class="stage-foot">
+            <span id="anCount">64 ta animatsiya</span>
+            <div class="pager">
+              <button class="mini-pill" id="anPrev">← Oldingi</button>
+              <span class="pager__info" id="anPage">1 / 1</span>
+              <button class="mini-pill" id="anNext">Keyingi →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <div class="sec-kicker" id="anMeta">#01 · 0.85s</div>
+            <h2 class="sec-title" id="anTitle">Xiralikdan silliq chiqish</h2>
+            <p class="sec-desc">
+              8 xil uslubdagi <strong>64 ta tayyor CSS <code>@keyframes</code></strong> animatsiya. JavaScript kutubxonalarisiz ishlaydi va <code>prefers-reduced-motion</code> qoidasiga amal qiladi.
+            </p>
+          </div>
+
+          <div class="code-box" id="anCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="anCopyCss">@keyframes CSS nusxalash</button>
+            <button class="btn btn--ghost" id="anCopyCmd">/animatsiya buyrug'i</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 04-BET: ALOHIDA MINIMALIST SVG IKONKALAR ==================== -->
+    <section class="neo-section" id="ikonka" data-title="__IC_N__ ta SVG ikonka">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="icon-toolbar">
+            <input type="search" class="icon-search" id="icSearch" placeholder="Qidirish: uy, savat, qalqon, home, cart..." aria-label="Ikonka qidirish">
+            <select class="icon-select" id="icCat" aria-label="Bo'lim"></select>
+            <select class="icon-select" id="icStroke" aria-label="Chiziq qalinligi">
+              <option value="1.5">1.5px</option>
+              <option value="1.75" selected>1.75px (Standart)</option>
+              <option value="2">2.0px</option>
+            </select>
+          </div>
+          <div class="icon-grid" id="icGrid"></div>
+          <div class="stage-foot">
+            <span id="icCountInfo">__IC_N__ ta ikonka</span>
+            <div class="pager">
+              <button class="mini-pill" id="icPrev">← Oldingi</button>
+              <span class="pager__info" id="icPageInfo">1 / 1</span>
+              <button class="mini-pill" id="icNext">Keyingi →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <h2 class="sec-title">__IC_N__ ta alohida minimalist SVG ikonka</h2>
+            <p class="sec-desc">
+              __IC_CATS__ ta yo'nalish, yagona <code>24×24</code> to'r va bir xil qalinlik. Har biri mustaqil ikonka, nusxa-variantlar yo'q. Katakchani bosing va SVG yoki React JSX kodini oling.
+            </p>
+          </div>
+
+          <div class="icon-preview">
+            <div class="icon-preview__box" id="icBigPreview"></div>
+            <div style="min-width:0">
+              <div class="icon-preview__name" id="icTitle">Uy</div>
+              <div class="icon-preview__id" id="icIdLabel">id: uy</div>
+              <div class="icon-preview__spec">24×24 · currentColor · Vector</div>
+            </div>
+          </div>
+
+          <div class="code-box" id="icCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="icCopySvg">SVG nusxalash</button>
+            <button class="btn btn--ghost" id="icCopyJsx">React JSX nusxalash</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 05-BET: 60 SHRIFT VA 24 JUFTLIK ==================== -->
+    <section class="neo-section" id="shrift" data-title="60 ta shrift">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label" id="fnLabel">Inter</span>
+            <span class="win-label">Google Fonts</span>
+          </div>
+          <div class="stage-split">
+            <div class="neo-stage stage-canvas-wrap stage-canvas-wrap--auto">
+              <div class="font-preview" id="fnPreview">
+                <div class="font-preview__head" id="fnHead">Zamonaviy sayt, tiniq shrift</div>
+                <div class="font-preview__body" id="fnBody">G'oyadan jonli saytgacha: sarlavha, matn va raqamlar bir xil ravon o'qiladi. 0123456789</div>
+              </div>
+              <div class="mini-pills" id="fnFilter"></div>
+            </div>
+            <div class="stage-list" id="fnList"></div>
+          </div>
+          <div class="stage-foot">
+            <span id="fnCount">60 ta shrift</span>
+            <div class="pager">
+              <button class="mini-pill" id="fnPrev">← Oldingi</button>
+              <span class="pager__info" id="fnPage">1 / 1</span>
+              <button class="mini-pill" id="fnNext">Keyingi →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <div class="sec-kicker" id="fnMeta">#01 · grotesk</div>
+            <h2 class="sec-title" id="fnTitle">Inter</h2>
+            <p class="sec-desc" id="fnWhere"></p>
+            <div class="mini-pills" id="fnTags" style="margin-top:10px"></div>
+          </div>
+
+          <div class="code-box" id="fnCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="fnCopyCode">Ulash kodini nusxalash</button>
+            <button class="btn btn--ghost" id="fnCopyCmd">/shrift buyrug'i</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 06-BET: SAHIFA STANDARTI ==================== -->
+    <section class="neo-section" id="sahifa" data-title="Sahifa standarti">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label">sahifa maketi simulyatori</span>
+            <div class="pager">
+              <button class="mini-pill is-active" id="simPcBtn">PC</button>
+              <button class="mini-pill" id="simMobBtn">Telefon</button>
+            </div>
+          </div>
+          <div class="neo-stage stage-fill sim-stage">
+            <div class="sim-viewport" id="simViewport">
+              <div class="sim-card neo-anim-border-beam-spin">
+                <div class="sim-pic">Betning o'z rasmi</div>
+                <div class="sim-lines"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <h2 class="sec-title">Yagona standart: bitta bet — bitta bo'lim</h2>
+            <p class="sec-desc">
+              Har bir bo'lim o'z manziliga ega <strong>alohida bet</strong> va hammasi <strong>bir xil o'lchamda</strong>. Har betga o'ziga mos rasm yaratiladi, matn markazda turadi, harakatlar yumshoq, skroll yo'q.
+            </p>
+          </div>
+
+          <div class="code-box" id="maketCodeBox"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="copyMaketBtn">Sahifa karkasini nusxalash</button>
+            <button class="btn btn--ghost" id="copyMaketCmd">/sayt buyrug'i</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 07-BET: O'RNATISH ==================== -->
+    <section class="neo-section" id="ornatish" data-title="O'rnatish">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="win-label" id="inLabel">Terminal</span>
+            <span></span>
+          </div>
+          <div class="neo-stage stage-fill term-stage" id="inTerm"></div>
+          <div class="stage-foot">
+            <span>Qayerga o'rnatasiz?</span>
+            <div class="pager" id="inTabs"></div>
+          </div>
+        </div>
+
+        <div class="neo-copy">
+          <div>
+            <h2 class="sec-title" id="inTitle">Claude Code'ga o'rnatish</h2>
+            <p class="sec-desc" id="inDesc"></p>
+          </div>
+
+          <div class="code-box" id="inCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="inCopy">Buyruqni nusxalash</button>
+            <a class="btn btn--ghost" href="https://github.com/sodirovone/hi-neo" target="_blank" rel="noopener">GitHub'da ochish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast" role="status">Nusxalandi ✓</div>
