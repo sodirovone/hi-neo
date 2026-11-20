@@ -1636,16 +1636,16 @@
       switchTab(activeTab, false);
     })();
 
-    // --- 07-bet: 50 ta Hero maket (Supahero ilhomli) va sahifa karkasi ---
+    // --- 07-bet: 50 ta betakror Hero maket (16:9 PC / 9:16 Telefon) va sahifa karkasi ---
     (function initMaket() {
-      const SPLIT_SCHEMAS = new Set([
-        'split-dashboard', 'split-code', 'showreel-split', 'index-list', 'fintech-card',
-        'split-bars', 'split-calc', 'split-booking', 'lookbook-split', 'drop-countdown',
-        'phone-split', 'telegram-bot', 'qr-split', 'course-split', 'diagonal-cut', 'deck-stack'
+      const BLEED_SCHEMAS = new Set([
+        'full-bento', 'bottom-cinema', 'split-bleed', 'brutalist-poster', 'vertical-rail',
+        'broadsheet-news', 'triple-pillars', 'vision-dock', 'four-corners', 'os-desktop', 'luxury-dial', 'cyber-hud'
       ]);
       let maketTab = location.hash === '#karkas' ? 'karkas' : 'hero';
       let isMobile = false;
       let hmFilter = 'all';
+      let hmIdx = 0;
       let selHero = HERO_LAYOUTS[0];
 
       const hmFilterEl = $('hmFilter');
@@ -1654,18 +1654,6 @@
 
       const hmItems = () => hmFilter === 'all' ? HERO_LAYOUTS : HERO_LAYOUTS.filter(h => h.uslub === hmFilter);
 
-      const hmPager = makePager({
-        list: $('hmList'), prev: $('hmPrev'), next: $('hmNext'), info: $('hmPage'),
-        minW: 192, rowH: 40, gap: 8, pad: 10, noSpan: true,
-        render: (h, i) => {
-          const bCol = h.tema.btnInk || (h.tema.light ? '#ffffff' : '#04122e');
-          const bBg = `linear-gradient(135deg, ${h.tema.accent}, ${h.tema.accent2})`;
-          const cat = HERO_STYLES[h.uslub].split(' va ')[0];
-          return `<button class="hm-chip${selHero && selHero.id === h.id ? ' is-selected' : ''}" data-id="${h.id}" title="#${two(h.raqam)} ${esc(h.nom)}" style="--i:${Math.min(i, 18)}"><span class="hm-badge" style="background:${bBg};color:${bCol}">${two(h.raqam)}</span><span class="hm-chip__text"><b>${esc(h.nom)}</b><small>${esc(cat)}</small></span></button>`;
-        },
-        anchor: (arr) => selHero ? arr.indexOf(selHero) : -1
-      });
-
       function btn1Html(h) {
         const t = h.tema;
         const cls = t.btn === 'glass' ? 'hm-b1 is-glass' : t.btn === 'cham' ? 'hm-b1 is-cham' : 'hm-b1';
@@ -1673,7 +1661,7 @@
           ? `linear-gradient(125deg,${t.accent},${t.accent2},${t.accent})`
           : t.accent;
         const col = t.btnInk || (t.light ? '#ffffff' : '#04122e');
-        const brut = h.sxema === 'brutalist-grid' ? ' hm-brut-box' : '';
+        const brut = h.sxema === 'brutalist-poster' ? ' hm-brut-box' : '';
         return `<span class="${cls}${brut}" style="background:${bg};color:${col}">${esc(h.tugma1)}</span>`;
       }
       function btnsHtml(h) {
@@ -1685,236 +1673,368 @@
 
       function renderHeroVisual(h) {
         const t = h.tema, s = h.sxema;
-        const serif = ['moda-lookbook', 'hashamat-soat', 'jurnal-muqova', 'qahva-brend', 'kursor-kollaj'].includes(h.id) ? ' hm-h1--serif' : '';
-        const h1 = `<div class="hm-h1${s === 'giant-type' ? ' hm-h1--xl' : ''}${serif}">${esc(h.sarlavha)}</div>`;
+        const serif = ['moda-lookbook', 'hashamat-oltin', 'jurnal-broadsheet', 'qahva-arka', 'tort-burchak-kollaj'].includes(h.id) ? ' hm-h1--serif' : '';
+        const h1 = `<div class="hm-h1${serif}">${esc(h.sarlavha)}</div>`;
+        const h1xl = `<div class="hm-h1 hm-h1--xl${serif}">${esc(h.sarlavha)}</div>`;
         const sub = `<div class="hm-sub" style="color:${t.muted}">${esc(h.matn)}</div>`;
         const splitWrap = (rightHtml) =>
           `${navHtml(h)}<div class="hm-split"><div class="hm-split__copy">${h1}${sub}${btnsHtml(h)}</div><div>${rightHtml}</div></div>`;
 
+        // 01: To'liq ekranli 4 blokli Bento panjara
+        if (s === 'full-bento') {
+          return `<div class="hm-fbento">` +
+            `<div class="hm-fbento__main" style="background:${t.card}">` +
+              `<div style="font-size:8.5px;font-weight:800;color:${t.accent}">BENTO OS · 2026</div>` +
+              `<div>${h1}${sub}</div><div>${btn1Html(h)}</div>` +
+            `</div>` +
+            `<div class="hm-fbento__cell" style="background:linear-gradient(135deg,#132248,${t.card})">` +
+              `<div style="display:flex;justify-content:space-between;align-items:center"><small style="opacity:.75;font-size:8.5px">Tezlik indeksi</small><div class="hm-ring" style="background:conic-gradient(${t.accent} 0 88%, rgba(255,255,255,.12) 0)">98%</div></div>` +
+              `<div style="font-size:10px;font-weight:800">Real vaqtda tahlil</div>` +
+            `</div>` +
+            `<div class="hm-fbento__subgrid">` +
+              `<div class="hm-fbento__cell" style="background:${t.card}"><small style="opacity:.7;font-size:8px">Jamoa</small><b style="font-size:14px;color:${t.accent}">120K+</b></div>` +
+              `<div class="hm-fbento__cell" style="background:${t.card}"><small style="opacity:.7;font-size:8px">AI agent</small><b style="font-size:14px;color:${t.accent2}">Faol ✦</b></div>` +
+            `</div></div>`;
+        }
+        // 02: Pastga bog'langan kino sarlavha
+        if (s === 'bottom-cinema') {
+          return `<div class="hm-bottom">` +
+            `<div style="display:flex;justify-content:space-between;font-size:8.5px;font-weight:800;opacity:.75"><span>STUDIO · TOSHKENT</span><span>2026</span></div>` +
+            `<div class="hm-bottom__art"><div class="hm-orbit" style="background:radial-gradient(circle at 30% 30%,#38e1ff,#1d4ed8 55%,#040508)"></div></div>` +
+            `<div class="hm-bottom__foot"><div>${h1xl}</div><div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start">${sub}${btn1Html(h)}</div></div>` +
+          `</div>`;
+        }
+        // 03: Chegarasiz 50/50 ikki rangli Lookbook split
+        if (s === 'split-bleed') {
+          return `<div class="hm-bleed">` +
+            `<div class="hm-bleed__left" style="background:${t.bg};color:${t.ink}">` +
+              `<div style="font-size:8.5px;letter-spacing:.18em;font-weight:800">ATELIER · 26</div>` +
+              `<div>${h1}${sub}</div><div>${btnsHtml(h)}</div>` +
+            `</div>` +
+            `<div class="hm-bleed__right" style="background:linear-gradient(155deg,#c9a583,#7a4b2a);color:#fff">` +
+              `<div style="display:flex;justify-content:space-between;font-size:8.5px;font-weight:800"><span>LOOK 01</span><span>★ 4.9</span></div>` +
+              `<div style="padding:8px 10px;border-radius:10px;background:rgba(0,0,0,.3);backdrop-filter:blur(10px);display:flex;justify-content:space-between;font-size:9.5px;font-weight:800"><span>Jun Palto</span><span>$290</span></div>` +
+            `</div></div>`;
+        }
+        // 04: Neo-Brutalist 4-kvadrant plakat
+        if (s === 'brutalist-poster') {
+          return `<div class="hm-poster">` +
+            `<div style="background:#fef08a"><span style="font-size:8.5px;font-weight:900">BRUTAL · 04</span>${h1xl}<div>${btn1Html(h)}</div></div>` +
+            `<div style="background:#ff4d00;color:#fff"><span style="font-size:8px;font-weight:900">YANGI</span><b style="font-size:20px;line-height:1">100%</b><span style="font-size:8px">Original dizayn</span></div>` +
+            `<div style="background:#ffffff"><span style="font-size:9px;font-weight:800">${esc(h.matn)}</span></div>` +
+            `<div style="background:#09090b;color:#fef08a"><span style="font-size:8px">ALOQA</span><b style="font-size:11px">↗ HI NEO</b></div>` +
+          `</div>`;
+        }
+        // 05: Chap vertikal panel + 3D Bank Kartasi
+        if (s === 'vertical-rail') {
+          return `<div class="hm-vrail">` +
+            `<div class="hm-vrail__bar"><span>NEO</span><span style="writing-mode:vertical-rl;opacity:.65">01 · 02 · 03</span><span style="color:${t.accent}">●</span></div>` +
+            `<div class="hm-vrail__body">` +
+              `<div class="hm-split__copy">${h1}${sub}${btnsHtml(h)}</div>` +
+              `<div class="hm-card3d" style="background:linear-gradient(135deg,#064e3b,#10b981 55%,#042f2e)"><div style="display:flex;justify-content:space-between;font-size:8px;font-weight:800"><span>NEO BANK</span><span>PLATINUM</span></div><div class="hm-card3d__num">4820 •••• •••• 9026</div><div style="font-size:11px;font-weight:900">$48,920.00</div></div>` +
+            `</div></div>`;
+        }
+        // 06: Raqamli Gazeta / Jurnal muqovasi
+        if (s === 'broadsheet-news') {
+          return `<div class="hm-news">` +
+            `<div class="hm-news__head"><span>HIWORLD JOURNAL</span><span>SON №14 · 2026</span></div>` +
+            `<div class="hm-news__cols">` +
+              `<div style="display:flex;flex-direction:column;justify-content:space-between"><div><div style="font-size:8px;color:${t.accent};font-weight:900;margin-bottom:3px">ASOSIY MAQOLA</div>${h1}${sub}</div><div>${btn1Html(h)}</div></div>` +
+              `<div class="hm-news__rail">` +
+                `<div><b>01 · AI Dizayn</b><div style="opacity:.65">5 daqiqa o'qish</div></div>` +
+                `<div><b>02 · Startaplar</b><div style="opacity:.65">Tahlil va raqamlar</div></div>` +
+                `<div><b>03 · Intervyu</b><div style="opacity:.65">Asoschilar bilan</div></div>` +
+              `</div></div></div>`;
+        }
+        // 07: Kinetik orqa lenta + Xameleon shisha karta
+        if (s === 'marquee-glass') {
+          return `<div class="hm-mq-bg"><div class="hm-mq-row">HI NEO ✦ XAMELEON ✦ PRIZMA ✦ HI NEO ✦ XAMELEON ✦ </div><div class="hm-mq-row">SHAFFOF SHISHA ✦ JONLI RANG ✦ SHAFFOF SHISHA ✦ </div></div>` +
+            `<div class="hm-in"><div class="hm-box" style="background:${t.card};padding:14px 16px;border-radius:16px">${h1}${sub}${btnsHtml(h)}</div></div>`;
+        }
+        // 08: 3 ustunli to'liq bo'ylama vitrina
+        if (s === 'triple-pillars') {
+          return `<div class="hm-pillars">` +
+            `<div class="hm-pillar" style="background:linear-gradient(180deg,#27272a,#111113)"><span style="font-size:8px;opacity:.6">01</span><div><b style="font-size:11px">Interyer</b><div style="font-size:8px;opacity:.7">Minimal mebel</div></div></div>` +
+            `<div class="hm-pillar" style="background:linear-gradient(160deg,#b45309,#451a03);border-color:${t.accent}"><span style="font-size:8px;color:${t.accent};font-weight:900">02 · TOP</span><div><b style="font-size:12px">${esc(h.sarlavha)}</b><div style="margin-top:6px">${btn1Html(h)}</div></div></div>` +
+            `<div class="hm-pillar" style="background:linear-gradient(180deg,#1f2937,#0f172a)"><span style="font-size:8px;opacity:.6">03</span><div><b style="font-size:11px">Yoritish</b><div style="font-size:8px;opacity:.7">Skandinaviya</div></div></div>` +
+          `</div>`;
+        }
+        // 09: Oldin / Keyin solishtiruv slayderi
+        if (s === 'split-compare') {
+          return splitWrap(`<div class="hm-compare">` +
+            `<div class="hm-compare__side" style="background:linear-gradient(135deg,#3b0764,#831843);color:#f5d0fe"><span>OLDIN</span><small style="opacity:.7">Shovqinli fon</small></div>` +
+            `<div class="hm-compare__side" style="background:linear-gradient(135deg,#071324,#0f2942);color:#38e1ff;text-align:right"><span>KEYIN ✓</span><small style="color:#fff">Toza dizayn</small></div>` +
+            `<div class="hm-compare__line"><span class="hm-compare__knob">⇄</span></div></div>`);
+        }
+        // 10: Shveytsariya geometrik plakat
+        if (s === 'swiss-poster') {
+          return `<div class="hm-swiss-bg"></div>` +
+            `<div style="position:absolute;right:16px;top:14px;width:96px;height:96px;border-radius:50%;background:${t.accent};opacity:.9"></div>` +
+            `<div style="position:absolute;right:10px;bottom:10px;writing-mode:vertical-rl;font-size:8px;font-weight:900;letter-spacing:.14em;opacity:.55">41.29°N · 69.24°E</div>` +
+            `<div class="hm-in" style="align-items:flex-start;text-align:left;max-width:74%;margin-right:auto">${h1xl}${sub}${btnsHtml(h)}</div>`;
+        }
+        // 11: Fazoviy VisionOS suzuvchi dok + shisha
+        if (s === 'vision-dock') {
+          return `<div class="hm-vision"><div class="hm-vdock"><i></i><i></i><i></i><i></i></div>` +
+            `<div class="hm-box" style="flex:1;min-width:0;width:auto;display:flex;flex-direction:column;align-items:center;gap:6px;background:${t.card};padding:16px 18px;border-radius:18px">${h1}${sub}${btnsHtml(h)}</div></div>`;
+        }
+        // 12: Dasturchi IDE Terminali
+        if (s === 'split-code') {
+          return splitWrap(`<div class="hm-code"><div style="opacity:.6;margin-bottom:4px">api.ts · Terminal</div><div>$ npx create-neo-api</div><div><b>✓</b> PostgreSQL ulandi</div><div><b>✓</b> Auth + JWT tayyor</div><div><b>200 OK</b> → api.loyiha.uz</div></div>`);
+        }
+        // 13: Markaziy 3D Portal + Ikki yon so'z
+        if (s === 'portal-split-word') {
+          const w = h.sarlavha.split(' ');
+          return `${navHtml(h)}<div class="hm-in" style="max-width:100%"><div class="hm-portal">` +
+            `<div class="hm-h1 hm-h1--xl">${esc(w[0] || 'GLOBAL')}</div>` +
+            `<div class="hm-orbit" style="background:radial-gradient(circle at 30% 30%,${t.accent},${t.accent2} 55%,#030712)"></div>` +
+            `<div class="hm-h1 hm-h1--xl">${esc(w.slice(1).join(' ') || 'TARMOQ')}</div>` +
+          `</div>${sub}${btnsHtml(h)}</div>`;
+        }
+        // 14: Diagonal energiya kesimi
+        if (s === 'diagonal-slash') {
+          return splitWrap(`<div class="hm-box" style="background:rgba(5,10,23,.48);text-align:center;transform:skewX(-6deg)"><div style="font-size:24px;font-weight:900;color:${t.accent}">0 → 100</div><div style="font-size:9px;opacity:.9">2.8 soniyada natija</div></div>`);
+        }
+        // 15: 4 burchakli kollaj sahna
+        if (s === 'four-corners') {
+          return `<div class="hm-corners">` +
+            `<div class="hm-corner-pic" style="top:10px;left:12px;background:linear-gradient(135deg,#fb7185,#be123c)">01 · Art</div>` +
+            `<div class="hm-corner-pic" style="top:10px;right:12px;background:linear-gradient(135deg,#38bdf8,#1d4ed8)">02 · Film</div>` +
+            `<div class="hm-corner-pic" style="bottom:10px;left:12px;background:linear-gradient(135deg,#f59e0b,#b45309)">03 · Foto</div>` +
+            `<div class="hm-corner-pic" style="bottom:10px;right:12px;background:linear-gradient(135deg,#8b5cf6,#4c1d95)">04 · 3D</div>` +
+            `<div class="hm-in" style="max-width:66%">${h1}${btnsHtml(h)}</div></div>`;
+        }
+        // 16: AI Prompt markazi
+        if (s === 'ai-prompt') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${sub}` +
+            `<div class="hm-bar" style="background:${t.card}"><span>"Qahvaxona uchun zamonaviy sayt yasa..."</span>${btn1Html(h)}</div>` +
+            `<div class="hm-chips"><i>SaaS</i><i>Do'kon</i><i>Portfolio</i><i>Telegram bot</i></div></div>`;
+        }
+        // 17: Telegram Bot & Mini-App
+        if (s === 'telegram-play') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:left;font-size:8.5px;display:flex;flex-direction:column;gap:6px">` +
+            `<div style="background:rgba(56,189,248,.18);padding:6px 8px;border-radius:9px">Assalomu alaykum! Buyurtmani tanlang:</div>` +
+            `<div style="display:grid;grid-template-columns:1fr 1fr;gap:5px"><span style="text-align:center;padding:5px;border-radius:7px;background:${t.accent};color:#04182b;font-weight:800">Katalog</span><span style="text-align:center;padding:5px;border-radius:7px;background:rgba(255,255,255,.12)">Savat (2)</span></div></div>`);
+        }
+        // 18: Gadjet + 4 texnik nuqta
+        if (s === 'hardware-callouts') {
+          return `${navHtml(h)}<div class="hm-in">${h1xl}` +
+            `<div style="width:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:4px 0">` +
+              `<div style="display:flex;flex-direction:column;gap:5px;text-align:right;font-size:8.5px"><span style="color:${t.accent};font-weight:800">48 SOAT</span><span>TITANIUM</span></div>` +
+              `<div style="width:74px;height:74px;border-radius:20px;background:linear-gradient(145deg,#3f3f46,#18181b);border:1.5px solid rgba(255,255,255,.28);box-shadow:0 0 28px rgba(239,68,68,.35);display:grid;place-items:center"><i style="width:12px;height:12px;border-radius:50%;background:${t.accent}"></i></div>` +
+              `<div style="display:flex;flex-direction:column;gap:5px;text-align:left;font-size:8.5px"><span style="font-weight:800">ANC PRO</span><span>USB-C 5G</span></div>` +
+            `</div>${btnsHtml(h)}</div>`;
+        }
+        // 19: Jonli Valyuta Kalkulyatori
+        if (s === 'split-calc') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};color:#0f172a;text-align:left;font-size:8.5px"><div style="opacity:.6">Yuborasiz</div><div style="font-size:15px;font-weight:900;margin-bottom:6px">1,000 USD</div>` +
+            `<div style="opacity:.6">Qabul qiladi (0% komissiya)</div><div style="font-size:15px;font-weight:900;color:#059669">12,850,000 UZS</div></div>`);
+        }
+        // 20: Asimmetrik burchakli Showreel
+        if (s === 'showreel-corner') {
+          return splitWrap(`<div class="hm-vid" style="height:122px;background:linear-gradient(135deg,${t.card},${t.accent})"><div class="hm-play">▶</div></div>`);
+        }
+        // 21: OS Ish Stoli va pastki Dok
+        if (s === 'os-desktop') {
+          return `<div class="hm-os">` +
+            `<div style="width:100%;display:flex;justify-content:space-between;font-size:8px;opacity:.75"><span>NEO OS</span><span>19:20 · 100%</span></div>` +
+            `<div class="hm-box" style="max-width:340px;background:${t.card};padding:12px 14px">${h1}${sub}${btnsHtml(h)}</div>` +
+            `<div class="hm-os__dock"><i style="background:#38e1ff"></i><i style="background:#818cf8"></i><i style="background:#f43f5e"></i><i style="background:#10b981"></i><i style="background:#f59e0b"></i></div>` +
+          `</div>`;
+        }
+        // 22: Avtomatlashtirish Zanjiri
+        if (s === 'workflow-map') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
+            `<div class="hm-flow"><span class="hm-node" style="background:${t.card};border-color:${t.accent}">Webhook</span><span class="hm-line" style="background:${t.accent}"></span>` +
+            `<span class="hm-node" style="background:${t.card};border-color:${t.accent2}">AI Agent</span><span class="hm-line" style="background:${t.accent2}"></span>` +
+            `<span class="hm-node" style="background:${t.card}">Natija ✓</span></div></div>`;
+        }
+        // 23: Web3 Kripto Sparkline
+        if (s === 'crypto-spark') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+            `<div class="hm-box" style="background:${t.card};max-width:290px;display:flex;justify-content:space-between;align-items:center"><div style="text-align:left"><div style="font-size:8px;opacity:.7">Jami balans</div><div style="font-size:15px;font-weight:900">$24,610.50</div></div><span style="color:${t.accent2};font-size:11px;font-weight:900">+14.2% ↑</span></div></div>`;
+        }
+        // 24: B2B Kalendar Bron
+        if (s === 'split-booking') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink};font-size:8.5px;text-align:left"><div style="font-weight:800;margin-bottom:7px">15 daqiqa · Qulay vaqt</div>` +
+            `<div class="hm-chips" style="justify-content:flex-start"><i style="background:${t.accent};color:#fff">10:00</i><i>11:30</i><i>14:00</i><i>16:30</i></div></div>`);
+        }
+        // 25: Buyruqlar Palitrasi Cmd+K
+        if (s === 'cmd-spotlight') {
+          return `${navHtml(h)}<div class="hm-in">${h1}` +
+            `<div class="hm-cmd" style="background:${t.card}"><div class="hm-cmd__row" style="border:1px solid ${t.accent}"><span>Buyruq yozing...</span><kbd>⌘K</kbd></div>` +
+            `<div class="hm-cmd__row"><span>Yangi loyiha ochish</span><kbd>↵</kbd></div><div class="hm-cmd__row"><span>Jamoaga ulash</span><kbd>⌘S</kbd></div></div></div>`;
+        }
+        // 26: Waitlist Ufq Nuri
+        if (s === 'waitlist-beam') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${sub}` +
+            `<div class="hm-bar" style="background:${t.card}"><span>email@manzilingiz.uz</span>${btn1Html(h)}</div>` +
+            `<div style="font-size:8.5px;opacity:.75">2,480 kishi navbatda · Yopiq Beta</div></div>`;
+        }
+        // 27: Shaxsiy Dizayner Polaroid
+        if (s === 'creator-polaroid') {
+          return splitWrap(`<div class="hm-polaroid"><div class="hm-polaroid__img" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"></div><div>● Ishga tayyor · 2026</div></div>`);
+        }
+        // 28: Yorug' SaaS + Jonli Grafik
+        if (s === 'light-analytics') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink}"><div style="display:flex;justify-content:space-between;font-size:8.5px;font-weight:800"><span>Konversiya</span><span style="color:${t.accent}">+42.8%</span></div>` +
+            `<div class="hm-bars"><i style="height:35%;background:${t.accent};opacity:.35"></i><i style="height:54%;background:${t.accent};opacity:.55"></i><i style="height:72%;background:${t.accent};opacity:.78"></i><i style="height:98%;background:linear-gradient(180deg,${t.accent},${t.accent2})"></i></div></div>`);
+        }
+        // 29: Hashamatli Oltin Siferblat
+        if (s === 'luxury-dial') {
+          return `<div class="hm-lux-border"></div><div class="hm-bottom" style="padding:18px"><div style="font-size:8px;letter-spacing:.2em;color:${t.accent};text-align:center">LIMITED EDITION · 250</div>` +
+            `<div class="hm-bottom__art"><div style="width:74px;height:74px;border-radius:50%;border:2px solid ${t.accent};box-shadow:0 0 28px rgba(212,175,55,.28);display:grid;place-items:center;font-size:9px;color:${t.accent};font-weight:800">XII</div></div>` +
+            `<div style="text-align:center">${h1}${btnsHtml(h)}</div></div>`;
+        }
+        // 30: Artizan Arka kadr
+        if (s === 'artisan-arch') {
+          return splitWrap(`<div class="hm-arch" style="background:linear-gradient(160deg,#c2703a,#4a2511)"><span>★★★★★ 4.9</span><span>1,240 sharh</span></div>`);
+        }
+        // 31: Drop Taymeri
+        if (s === 'drop-timer') {
+          return `${navHtml(h)}<div class="hm-in">${h1xl}<div class="hm-count"><span>02 KUN</span><span>14 SOAT</span><span>38 DAQ</span></div>${btnsHtml(h)}</div>`;
+        }
+        // 32: Markaziy Smartfon
+        if (s === 'phone-rise') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+            `<div class="hm-phone" style="background:${t.card};height:88px"><div class="hm-phone__notch"></div><div class="hm-phone__row"><b style="color:${t.accent}">87%</b><span>Kunlik maqsad</span></div></div></div>`;
+        }
+        // 33: Uch Ekranli Ilova
+        if (s === 'phone-trio') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+            `<div class="hm-fan"><div style="height:62px;background:${t.card};color:${t.ink}">Dars 1</div><div style="height:74px;background:linear-gradient(135deg,${t.accent},${t.accent2});color:#fff">Jonli mashq</div><div style="height:62px;background:${t.card};color:${t.ink}">Reyting</div></div></div>`;
+        }
+        // 34: Smartfon + Suzuvchi Xabarlar
+        if (s === 'phone-orbit') {
+          return splitWrap(`<div class="hm-phone" style="background:${t.card}"><div class="hm-phone__notch"></div><div class="hm-phone__row"><b style="color:${t.accent}">15 daq</b><span>Kuryer yo'lda</span></div><div class="hm-phone__row"><span>Buyurtma #408</span></div></div>`);
+        }
+        // 35: Yorqin QR Skaner
+        if (s === 'qr-bleed') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:center"><div class="hm-qr"><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i></div><div style="font-size:8px;margin-top:5px;font-weight:800">Kamera bilan skanerlang</div></div>`);
+        }
+        // 36: Kaskad Bildirishnomalar
+        if (s === 'notif-stack') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+            `<div class="hm-feed" style="max-width:300px"><div class="hm-feed__item" style="background:${t.card}"><span>✦ Yangi to'lov qabul qilindi</span><small>Hozir</small></div>` +
+            `<div class="hm-feed__item" style="background:${t.card};opacity:.78"><span>Jamoa uchrashuvi 15:00 da</span><small>5 daq</small></div></div></div>`;
+        }
+        // 37: Arxiv Indeks
+        if (s === 'index-rail') {
+          return splitWrap(`<div class="hm-feed"><div class="hm-feed__item" style="background:${t.card}"><span>01 · UzPay Rebrand</span><b>↗</b></div>` +
+            `<div class="hm-feed__item" style="background:${t.card}"><span>02 · Qadam AI</span><b>↗</b></div><div class="hm-feed__item" style="background:${t.card}"><span>03 · Nur Arxitektura</span><b>↗</b></div></div>`);
+        }
+        // 38: Korporativ Raqamlar
+        if (s === 'metrics-monolith') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
+            `<div class="hm-bento"><div style="background:${t.card};text-align:center"><b style="color:${t.accent}">99.99%</b><small>Uptime</small></div>` +
+            `<div style="background:${t.card};text-align:center"><b style="color:${t.accent2}">140+</b><small>Davlat</small></div>` +
+            `<div style="background:${t.card};text-align:center"><b>$4.2B</b><small>Aylanma</small></div></div></div>`;
+        }
+        // 39: Tranzaksiya Oqimi
+        if (s === 'tx-stream') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+            `<div class="hm-feed" style="max-width:300px"><div class="hm-feed__item" style="background:${t.card}"><span>Stripe tushumi</span><b style="color:${t.accent2}">+$3,450</b></div>` +
+            `<div class="hm-feed__item" style="background:${t.card}"><span>Cloud server</span><span>-$120</span></div></div></div>`;
+        }
+        // 40: Monoxrom Manifest
+        if (s === 'mono-pure') {
+          return `${navHtml(h)}<div class="hm-in" style="gap:10px">${h1xl}${sub}${btnsHtml(h)}</div>`;
+        }
+        // 41: Kurs va Mentor Video
+        if (s === 'course-ring') {
+          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink}"><div class="hm-vid" style="height:80px;background:linear-gradient(135deg,${t.accent},${t.accent2})"><div class="hm-play">▶</div></div><div style="font-size:8.5px;font-weight:700;margin-top:6px">1,800+ bitiruvchi · 8 hafta</div></div>`);
+        }
+        // 42: Konferensiya va Sammit
+        if (s === 'summit-poster') {
+          return `${navHtml(h)}<div class="hm-in"><div style="font-size:9px;font-weight:900;color:${t.accent};letter-spacing:.12em">15-OKTABR · TOSHKENT</div>${h1xl}${sub}${btnsHtml(h)}</div>`;
+        }
+        // 43: Bilim Bazasi va Qidiruv
+        if (s === 'docs-hub') {
+          return `${navHtml(h)}<div class="hm-in">${h1}<div class="hm-bar" style="background:${t.card}"><span>Hujjatlardan qidirish (⌘K)...</span>${btn1Html(h)}</div>` +
+            `<div class="hm-bento"><div style="background:${t.card};min-height:44px"><small>Tezkor start</small></div><div style="background:${t.card};min-height:44px"><small>API</small></div><div style="background:${t.card};min-height:44px"><small>Misollar</small></div></div></div>`;
+        }
+        // 44: Mahsulot Brauzer Sahnasi
         if (s === 'center-browser') {
           return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
             `<div class="hm-win" style="background:${t.card}"><div class="hm-win__side"><i style="background:${t.accent}"></i><i></i><i></i><i></i></div>` +
             `<div class="hm-win__main"><div class="hm-win__tile"><small>Faol mijozlar</small><b style="color:${t.accent}">+148%</b></div>` +
             `<div class="hm-win__tile"><small>Oylik daromad</small><b style="color:${t.accent2}">$84.2K</b></div></div></div></div>`;
         }
-        if (s === 'ai-prompt') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}` +
-            `<div class="hm-bar" style="background:${t.card}"><span>"Qahvaxona uchun zamonaviy sayt yasa..."</span>${btn1Html(h)}</div>` +
-            `<div class="hm-chips"><i>SaaS</i><i>Do'kon</i><i>Portfolio</i><i>Telegram bot</i></div></div>`;
+        // 45: Kiber Neon HUD
+        if (s === 'cyber-hud') {
+          return `<div class="hm-cyber-grid"></div><div class="hm-bottom"><div style="display:flex;justify-content:space-between;font-size:8px;color:${t.accent};font-family:monospace"><span>[SYS::ONLINE]</span><span>FPS 60</span></div>` +
+            `<div class="hm-bottom__art"><div style="width:68px;height:68px;border-radius:50%;background:linear-gradient(180deg,#ff2a85,#f59e0b);box-shadow:0 0 36px rgba(255,42,133,.65)"></div></div>` +
+            `<div style="text-align:center">${h1xl}${btnsHtml(h)}</div></div>`;
         }
-        if (s === 'split-dashboard') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink}"><div style="display:flex;justify-content:space-between;font-size:8px;font-weight:800"><span>Konversiya</span><span style="color:${t.accent}">+42.8%</span></div>` +
-            `<div class="hm-bars"><i style="height:35%;background:${t.accent};opacity:.35"></i><i style="height:52%;background:${t.accent};opacity:.55"></i><i style="height:68%;background:${t.accent};opacity:.75"></i><i style="height:95%;background:linear-gradient(180deg,${t.accent},${t.accent2})"></i></div></div>`);
-        }
-        if (s === 'bento-grid') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-bento"><div style="background:${t.card}"><small>Tezlik</small><b style="color:${t.accent}">0.4s</b></div>` +
-            `<div style="background:${t.card}"><small>AI tahlil</small><b style="color:${t.accent2}">99.8%</b></div>` +
-            `<div style="background:${t.card}"><small>Foydalanuvchi</small><b>120K+</b></div></div></div>`;
-        }
-        if (s === 'cmd-palette') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}` +
-            `<div class="hm-cmd" style="background:${t.card}"><div class="hm-cmd__row" style="border:1px solid ${t.accent}"><span>Qidirish yoki buyruq...</span><kbd>⌘K</kbd></div>` +
-            `<div class="hm-cmd__row"><span>Yangi loyiha ochish</span><kbd>↵</kbd></div><div class="hm-cmd__row"><span>Jamoaga ulash</span><kbd>⌘S</kbd></div></div></div>`;
-        }
-        if (s === 'split-code') {
-          return splitWrap(`<div class="hm-code"><div>$ npx create-neo-api</div><div><b>✓</b> PostgreSQL ulandi</div><div><b>✓</b> Auth + JWT tayyor</div><div><b>→</b> https://api.loyiha.uz</div></div>`);
-        }
-        if (s === 'aurora-glass' || s === 'chameleon-prism') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
-            `<div class="hm-box" style="background:${t.card};margin-top:4px;font-size:8.5px;display:flex;justify-content:space-between"><span>✦ Prazrachniy shisha panel</span><span style="opacity:.8">60 FPS</span></div></div>`;
-        }
-        if (s === 'video-card') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-vid" style="background:linear-gradient(135deg,${t.accent},${t.accent2})"><div class="hm-play">▶</div></div></div>`;
-        }
-        if (s === 'workflow-nodes') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
-            `<div class="hm-flow"><span class="hm-node" style="background:${t.card};border-color:${t.accent}">Kirish</span><span class="hm-line" style="background:${t.accent}"></span>` +
-            `<span class="hm-node" style="background:${t.card};border-color:${t.accent2}">AI Agent</span><span class="hm-line" style="background:${t.accent2}"></span>` +
-            `<span class="hm-node" style="background:${t.card}">Natija ✓</span></div></div>`;
-        }
-        if (s === 'waitlist-glow') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}` +
-            `<div class="hm-bar" style="background:${t.card}"><span>email@manzilingiz.uz</span>${btn1Html(h)}</div>` +
-            `<div style="font-size:8px;opacity:.75">2,480 kishi navbatda · Yopiq Beta</div></div>`;
-        }
-        if (s === 'giant-type') {
-          return `${navHtml(h)}<div class="hm-in" style="max-width:100%">${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'showreel-split') {
-          return splitWrap(`<div class="hm-vid" style="height:108px;background:linear-gradient(135deg,${t.card},${t.accent})"><div class="hm-play">▶</div></div>`);
-        }
-        if (s === 'fan-cards') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-fan"><div style="background:linear-gradient(135deg,#0ea5e9,#2563eb);color:#fff">01 · Fintech</div>` +
-            `<div style="background:linear-gradient(135deg,#111827,#334155);color:#fff">02 · AI App</div>` +
-            `<div style="background:linear-gradient(135deg,#f43f5e,#fb923c);color:#fff">03 · Do'kon</div></div></div>`;
-        }
-        if (s === 'creator-bio') {
-          return `${navHtml(h)}<div class="hm-in">` +
-            `<div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#ef4444);border:2px solid #fff;position:relative"><i style="position:absolute;right:0;bottom:0;width:9px;height:9px;border-radius:50%;background:#16a34a;border:2px solid #fff"></i></div>` +
-            `${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'brutalist-grid') {
-          return `${navHtml(h)}<div class="hm-in"><div class="hm-box hm-brut-box" style="background:#fff;padding:12px">${h1}${sub}${btnsHtml(h)}</div></div>`;
-        }
-        if (s === 'corner-collage') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
-            `<div class="hm-chips"><i style="background:${t.accent};color:#fff">Art 01</i><i style="background:${t.accent2};color:#051022">Film 02</i><i>Foto 03</i><i>3D 04</i></div></div>`;
-        }
-        if (s === 'index-list') {
-          return splitWrap(`<div class="hm-feed"><div class="hm-feed__item" style="background:${t.card}"><span>01 · UzPay Rebrand</span><b>↗</b></div>` +
-            `<div class="hm-feed__item" style="background:${t.card}"><span>02 · Qadam AI</span><b>↗</b></div><div class="hm-feed__item" style="background:${t.card}"><span>03 · Nur Arxitektura</span><b>↗</b></div></div>`);
-        }
-        if (s === 'fintech-card') {
-          return splitWrap(`<div class="hm-card3d" style="background:linear-gradient(135deg,#064e3b,#10b981 55%,#042f2e)"><div style="display:flex;justify-content:space-between;font-size:8px;font-weight:800"><span>NEO BANK</span><span>PLATINUM</span></div><div class="hm-card3d__num">4820 •••• •••• 9026</div><div style="font-size:10px;font-weight:900">$48,920.00</div></div>`);
-        }
-        if (s === 'split-bars') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink}"><div style="display:flex;justify-content:space-between;font-size:8.5px;font-weight:800"><span>Sof foyda</span><span style="color:${t.accent}">+38.4%</span></div>` +
-            `<div class="hm-bars"><i style="height:28%;background:${t.accent};opacity:.35"></i><i style="height:46%;background:${t.accent};opacity:.55"></i><i style="height:64%;background:${t.accent};opacity:.75"></i><i style="height:82%;background:${t.accent}"></i><i style="height:100%;background:${t.accent2}"></i></div></div>`);
-        }
-        if (s === 'split-calc') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};color:#0f172a;text-align:left;font-size:8.5px"><div style="opacity:.6">Yuborasiz</div><div style="font-size:13px;font-weight:900;margin-bottom:5px">1,000 USD</div>` +
-            `<div style="opacity:.6">Qabul qiladi (0% komissiya)</div><div style="font-size:13px;font-weight:900;color:#059669">12,850,000 UZS</div></div>`);
-        }
-        if (s === 'metrics-band') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
-            `<div class="hm-bento"><div style="background:${t.card};text-align:center"><b style="color:${t.accent}">99.99%</b><small>Uptime</small></div>` +
-            `<div style="background:${t.card};text-align:center"><b style="color:${t.accent2}">140+</b><small>Davlat</small></div>` +
-            `<div style="background:${t.card};text-align:center"><b>$4.2B</b><small>Aylanma</small></div></div></div>`;
-        }
-        if (s === 'crypto-wallet') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-box" style="background:${t.card};max-width:260px;display:flex;justify-content:space-between;align-items:center"><div style="text-align:left"><div style="font-size:7.5px;opacity:.7">Jami balans</div><div style="font-size:13px;font-weight:900">$24,610.50</div></div><span style="color:${t.accent2};font-size:10px;font-weight:800">+14.2% ↑</span></div></div>`;
-        }
-        if (s === 'split-booking') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink};font-size:8px;text-align:left"><div style="font-weight:800;margin-bottom:6px">15 daqiqa · Qulay vaqt</div>` +
-            `<div class="hm-chips" style="justify-content:flex-start"><i style="background:${t.accent2};color:#fff">10:00</i><i>11:30</i><i>14:00</i><i>16:30</i></div></div>`);
-        }
-        if (s === 'feed-stack') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-feed" style="max-width:290px"><div class="hm-feed__item" style="background:${t.card}"><span>Stripe tushumi</span><b style="color:${t.accent2}">+$3,450</b></div>` +
-            `<div class="hm-feed__item" style="background:${t.card}"><span>Cloud server</span><span>-$120</span></div></div></div>`;
-        }
-        if (s === 'product-stage') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
-            `<div style="width:140px;height:44px;border-radius:999px;background:linear-gradient(135deg,${t.accent},${t.accent2});box-shadow:0 14px 30px rgba(56,225,255,.35);margin-top:4px"></div></div>`;
-        }
-        if (s === 'lookbook-split') {
-          return splitWrap(`<div style="height:126px;border-radius:11px;background:linear-gradient(160deg,#d6c5b3,#8c6d53);display:flex;align-items:flex-end;justify-content:space-between;padding:8px;color:#fff;font-size:8.5px;font-weight:800"><span>PALTO 01</span><span>$290</span></div>`);
-        }
-        if (s === 'gadget-callouts') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-chips"><i style="border:1px solid ${t.accent}">48 soat</i><i>Titanium</i><i>120Hz</i><i>5G</i></div></div>`;
-        }
-        if (s === 'shop-trio') {
+        // 46: 3 Mahsulotli Do'kon
+        if (s === 'shop-shelf') {
           return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
             `<div class="hm-bento"><div style="background:${t.card}"><small>Kreslo</small><b>$189</b></div>` +
             `<div style="background:${t.card}"><small>Chiroq</small><b>$74</b></div>` +
             `<div style="background:${t.card}"><small>Stol</small><b>$320</b></div></div></div>`;
         }
-        if (s === 'artisan-review') {
-          return `${navHtml(h)}<div class="hm-in"><div style="font-size:8.5px;font-weight:800;color:${t.accent2}">★★★★★ 4.9 · 1,240 sharh</div>${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'drop-countdown') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:center"><div style="font-size:8px;opacity:.8;margin-bottom:6px">TUGASHIGA QOLDI</div><div class="hm-count"><span>02K</span><span>14S</span><span>38D</span></div></div>`);
-        }
-        if (s === 'luxury-frame') {
-          return `<div class="hm-lux-border"></div>${navHtml(h)}<div class="hm-in"><div style="font-size:8px;letter-spacing:.18em;color:${t.accent}">LIMITED · 250</div>${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'phone-center') {
+        // 47: 60 Soniyalik Video Demo
+        if (s === 'video-spotlight') {
           return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-phone" style="background:${t.card};height:78px"><div class="hm-phone__notch"></div><div class="hm-phone__row"><b style="color:${t.accent}">87%</b><span>Kunlik maqsad</span></div></div></div>`;
+            `<div class="hm-vid" style="background:linear-gradient(135deg,${t.accent},${t.accent2})"><div class="hm-play">▶</div></div></div>`;
         }
-        if (s === 'phone-trio') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-fan"><div style="height:56px;background:${t.card};color:${t.ink}">Dars 1</div><div style="height:68px;background:linear-gradient(135deg,${t.accent},${t.accent2});color:#fff">Jonli mashq</div><div style="height:56px;background:${t.card};color:${t.ink}">Reyting</div></div></div>`;
+        // 48: Flagman Mahsulot Podiumi
+        if (s === 'product-podium') {
+          return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}` +
+            `<div style="width:150px;height:46px;border-radius:999px;background:linear-gradient(135deg,${t.accent},${t.accent2});box-shadow:0 14px 32px rgba(56,225,255,.38);margin-top:6px"></div></div>`;
         }
-        if (s === 'phone-split') {
-          return splitWrap(`<div class="hm-phone" style="background:${t.card}"><div class="hm-phone__notch"></div><div class="hm-phone__row"><b style="color:${t.accent}">15 daq</b><span>Kuryer yo'lda</span></div><div class="hm-phone__row"><span>Buyurtma #408</span></div></div>`);
-        }
-        if (s === 'telegram-bot') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:left;font-size:8px;display:flex;flex-direction:column;gap:5px">` +
-            `<div style="background:rgba(56,189,248,.16);padding:5px 7px;border-radius:8px">Assalomu alaykum! Buyurtmani tanlang:</div>` +
-            `<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px"><span style="text-align:center;padding:4px;border-radius:6px;background:${t.accent};color:#04182b;font-weight:800">Katalog</span><span style="text-align:center;padding:4px;border-radius:6px;background:rgba(255,255,255,.12)">Savat (2)</span></div></div>`);
-        }
-        if (s === 'qr-split') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:center"><div class="hm-qr"><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i><i></i><i class="w"></i><i></i></div><div style="font-size:7.5px;margin-top:4px;font-weight:700">Kamera bilan skanerlang</div></div>`);
-        }
-        if (s === 'notif-cascade') {
-          return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
-            `<div class="hm-feed" style="max-width:290px"><div class="hm-feed__item" style="background:${t.card}"><span>✦ Yangi to'lov qabul qilindi</span><small>Hozir</small></div>` +
-            `<div class="hm-feed__item" style="background:${t.card};opacity:.78"><span>Jamoa uchrashuvi 15:00 da</span><small>5 daq</small></div></div></div>`;
-        }
-        if (s === 'swiss-grid') {
-          return `<div class="hm-swiss-bg"></div>${navHtml(h)}<div class="hm-in" style="align-items:flex-start;text-align:left"><span style="width:18px;height:18px;background:${t.accent};display:block"></span>${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'magazine-cover') {
-          return `${navHtml(h)}<div class="hm-in"><div style="width:100%;border-top:2px solid ${t.ink};border-bottom:1px solid ${t.ink};padding:2px 0;font-size:8px;letter-spacing:.2em;font-weight:800">HIWORLD JOURNAL · SON 14</div>${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'mono-manifesto') {
-          return `${navHtml(h)}<div class="hm-in" style="gap:10px">${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'course-split') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};color:${t.ink}"><div class="hm-vid" style="height:72px;background:linear-gradient(135deg,${t.accent},${t.accent2})"><div class="hm-play">▶</div></div><div style="font-size:8px;font-weight:700;margin-top:5px">1,800+ bitiruvchi · 8 hafta</div></div>`);
-        }
-        if (s === 'event-summit') {
-          return `${navHtml(h)}<div class="hm-in"><div style="font-size:8.5px;font-weight:800;color:${t.accent}">15-OKTABR · TOSHKENT</div>${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'docs-search') {
-          return `${navHtml(h)}<div class="hm-in">${h1}<div class="hm-bar" style="background:${t.card}"><span>Hujjatlardan qidirish (⌘K)...</span>${btn1Html(h)}</div>` +
-            `<div class="hm-bento"><div style="background:${t.card};min-height:42px"><small>Tezkor start</small></div><div style="background:${t.card};min-height:42px"><small>API</small></div><div style="background:${t.card};min-height:42px"><small>Misollar</small></div></div></div>`;
-        }
-        if (s === 'vision-glass') {
-          return `${navHtml(h)}<div class="hm-in"><div class="hm-box" style="background:${t.card};padding:14px 16px;border-radius:16px">${h1}${sub}${btnsHtml(h)}</div></div>`;
-        }
-        if (s === 'cyber-horizon') {
-          return `<div class="hm-cyber-grid"></div>${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'orbit-3d') {
-          return `${navHtml(h)}<div class="hm-in"><div class="hm-orbit" style="background:radial-gradient(circle at 30% 30%,${t.accent},${t.accent2} 55%,#030712)"></div>${h1}${btnsHtml(h)}</div>`;
-        }
-        if (s === 'diagonal-cut') {
-          return splitWrap(`<div class="hm-box" style="background:${t.card};text-align:center"><div style="font-size:18px;font-weight:900">0 → 100</div><div style="font-size:8px;opacity:.85">Maksimal tezlik va natija</div></div>`);
-        }
+        // 49: Ustma-ust Kartalar Dastasi
         if (s === 'deck-stack') {
           return splitWrap(`<div class="hm-fan"><div style="background:linear-gradient(135deg,#ec4899,#8b5cf6);color:#fff">01</div><div style="background:linear-gradient(135deg,#06b6d4,#3b82f6);color:#fff">02</div><div style="background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff">03</div></div>`);
         }
-        return `${navHtml(h)}<div class="hm-in">${h1}${sub}${btnsHtml(h)}</div>`;
+        // 50: 3 Keyslik Yelpig'ich Portfolio
+        return `${navHtml(h)}<div class="hm-in">${h1}${btnsHtml(h)}` +
+          `<div class="hm-fan"><div style="background:linear-gradient(135deg,#0ea5e9,#2563eb);color:#fff">01 · Fintech</div>` +
+          `<div style="background:linear-gradient(135deg,#111827,#334155);color:#fff">02 · AI App</div>` +
+          `<div style="background:linear-gradient(135deg,#f43f5e,#fb923c);color:#fff">03 · Do'kon</div></div></div>`;
+      }
+
+      function applyCanvas(el, h) {
+        el.style.background = h.tema.bg;
+        el.style.color = h.tema.ink;
+        el.classList.toggle('is-shimmer', !!h.tema.shimmer);
+        el.classList.toggle('hm-canvas--bleed', BLEED_SCHEMAS.has(h.sxema));
+        el.innerHTML = renderHeroVisual(h);
       }
 
       function syncModal(h) {
         if ($('hmModal').hidden) return;
-        const mcv = $('hmModalCanvas');
-        mcv.style.background = h.tema.bg;
-        mcv.style.color = h.tema.ink;
-        mcv.classList.toggle('is-shimmer', !!h.tema.shimmer);
-        mcv.innerHTML = renderHeroVisual(h);
+        applyCanvas($('hmModalCanvas'), h);
         $('hmModalUrl').textContent = h.id + '.uz';
-        $('hmModalTitle').textContent = '#' + two(h.raqam) + ' · ' + h.nom + ' (' + HERO_STYLES[h.uslub] + ')';
+        $('hmModalTitle').textContent = '#' + two(h.raqam) + ' · ' + h.nom + ' — ' + h.qayerda;
       }
 
       function renderHero(h, soft) {
         selHero = h;
-        const cv = $('hmCanvas');
-        cv.style.background = h.tema.bg;
-        cv.style.color = h.tema.ink;
-        cv.classList.toggle('is-shimmer', !!h.tema.shimmer);
-        cv.innerHTML = renderHeroVisual(h);
+        const arr = hmItems();
+        hmIdx = Math.max(0, arr.indexOf(h));
+        applyCanvas($('hmCanvas'), h);
         $('hmUrl').textContent = h.id + '.uz';
-        hmPager.mark(h.id);
+        $('hmNavTitle').textContent = two(hmIdx + 1) + ' / ' + two(arr.length) + ' · ' + h.nom;
+        $('hmNavFor').textContent = 'Loyiha: ' + h.qayerda;
         syncModal(h);
         if (maketTab === 'hero') {
-          $('hmMeta').textContent = '#' + two(h.raqam) + ' · ' + HERO_STYLES[h.uslub] + ' · Birinchi bet';
+          $('hmMeta').textContent = '#' + two(h.raqam) + ' / ' + HERO_LAYOUTS.length + ' · ' + HERO_STYLES[h.uslub];
           $('hmTitle').textContent = h.nom;
-          $('hmDesc').textContent = 'Qayerda ishlatiladi: ' + h.qayerda + '.';
+          $('hmForBox').hidden = false;
+          $('hmDesc').textContent = h.qayerda + '.';
           $('hmTags').innerHTML = h.tarkib.map(t => `<span class="mini-pill">${esc(t)}</span>`).join('');
           setCode('maketCodeBox', h.html);
           $('copyMaketBtn').textContent = 'Hero kodini nusxalash';
           $('copyMaketCmd').textContent = "/sahifa buyrug'i";
-          if (soft) soften('hmMeta', 'hmTitle', 'hmDesc', 'hmTags', 'maketCodeBox');
+          if (soft) soften('hmMeta', 'hmTitle', 'hmForBox', 'hmTags', 'maketCodeBox');
         }
+      }
+
+      function stepHero(dir) {
+        const arr = hmItems();
+        hmIdx = (hmIdx + dir + arr.length) % arr.length;
+        renderHero(arr[hmIdx], true);
       }
 
       function switchMaketTab(tab, soft) {
@@ -1930,15 +2050,14 @@
         if (isKarkas) {
           $('hmMeta').textContent = 'Yagona standart · 7 ta oltin qoida';
           $('hmTitle').textContent = "Bitta bet — bitta bo'lim";
-          $('hmDesc').innerHTML = "Har bir bo'lim o'z manziliga ega <strong>alohida bet</strong> va hammasi <strong>bir xil o'lchamda</strong>. Matn markazda, harakatlar yumshoq, skroll yo'q.";
-          $('hmTags').innerHTML = '<span class="mini-pill">100vw × 100vh PC</span><span class="mini-pill">100svh Telefon</span><span class="mini-pill">Skrollsiz</span>';
+          $('hmForBox').hidden = false;
+          $('hmDesc').textContent = "Ko'p bo'limli lending, taqdimot va zamonaviy skrollsiz saytlar uchun yagona standart karkas.";
+          $('hmTags').innerHTML = '<span class="mini-pill">16:9 PC</span><span class="mini-pill">9:16 Telefon</span><span class="mini-pill">Skrollsiz</span>';
           setCode('maketCodeBox', MAKET_CODE);
           $('copyMaketBtn').textContent = 'Sahifa karkasini nusxalash';
           $('copyMaketCmd').textContent = "/sayt buyrug'i";
-          if (soft) soften('hmMeta', 'hmTitle', 'hmDesc', 'hmTags', 'maketCodeBox');
+          if (soft) soften('hmMeta', 'hmTitle', 'hmForBox', 'hmTags', 'maketCodeBox');
         } else {
-          hmPager.refit();
-          hmPager.redraw();
           renderHero(selHero, soft);
         }
       }
@@ -1955,10 +2074,7 @@
         $('hmModPc').classList.toggle('is-active', !mobile);
       }
 
-      function openHeroModal() {
-        $('hmModal').hidden = false;
-        syncModal(selHero);
-      }
+      function openHeroModal() { $('hmModal').hidden = false; syncModal(selHero); }
       function closeHeroModal() { $('hmModal').hidden = true; }
       $('hmExpandBtn').onclick = openHeroModal;
       $('hmModClose').onclick = closeHeroModal;
@@ -1966,17 +2082,12 @@
       window.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('hmModal').hidden) closeHeroModal(); });
       $('hmModPc').onclick = () => setDevice(false);
       $('hmModMob').onclick = () => setDevice(true);
-      $('hmModPrev').onclick = () => {
-        const arr = hmItems();
-        const idx = arr.indexOf(selHero);
-        renderHero(arr[(idx - 1 + arr.length) % arr.length], true);
-      };
-      $('hmModNext').onclick = () => {
-        const arr = hmItems();
-        const idx = arr.indexOf(selHero);
-        renderHero(arr[(idx + 1) % arr.length], true);
-      };
+      $('hmModPrev').onclick = () => stepHero(-1);
+      $('hmModNext').onclick = () => stepHero(1);
       $('hmModCopy').onclick = () => copyText(selHero.html, `#${two(selHero.raqam)} ${selHero.nom} Hero kodi nusxalandi ✓`);
+
+      $('hmPrev').onclick = () => stepHero(-1);
+      $('hmNext').onclick = () => stepHero(1);
 
       $('maketSwitch').addEventListener('click', (e) => {
         const b = e.target.closest('[data-tab]');
@@ -1988,14 +2099,8 @@
         hmFilter = b.dataset.st;
         hmFilterEl.querySelectorAll('.mini-pill').forEach(p => p.classList.toggle('is-active', p === b));
         const arr = hmItems();
-        $('hmCount').textContent = arr.length + ' ta Hero maket';
-        hmPager.set(arr);
-      });
-      $('hmList').addEventListener('click', (e) => {
-        const b = e.target.closest('.hm-chip');
-        if (!b) return;
-        const found = HERO_LAYOUTS.find(x => x.id === b.dataset.id);
-        if (found) renderHero(found, true);
+        hmIdx = 0;
+        if (arr.length) renderHero(arr[0], true);
       });
       $('simPcBtn').onclick = () => setDevice(false);
       $('simMobBtn').onclick = () => setDevice(true);
@@ -2010,11 +2115,9 @@
         maketTab === 'karkas' ? "/sayt buyrug'i nusxalandi ✓" : "/sahifa buyrug'i nusxalandi ✓"
       );
 
-      hmPager.set(HERO_LAYOUTS);
       renderHero(HERO_LAYOUTS[0], false);
       switchMaketTab(maketTab, false);
     })();
-
     // --- 08-bet: Har bir betda avtomatik Audit -> Uslub tanlash -> Kodda tuzatish ---
     (function initAudit() {
       const CASES = [
