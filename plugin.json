@@ -1,0 +1,18 @@
+{
+  "name": "hi-neo",
+  "displayName": "Hi Neo",
+  "version": "1.0.0",
+  "description": "Zamonaviy saytlar uchun yagona dizayn va harakat arsenali: 31 ta WOW veb-effekt, 64 ta CSS animatsiya, 3,054 ta minimalist SVG ikonka, 60 ta shrift va «bitta bet — bitta bo'lim» sahifa maketi. Sayt qurayotganda keraklisini o'zi tanlaydi. hiworld.club.",
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "/sayt — biznesim uchun sayt qurib ber, shrift, ikonka, animatsiya va effektni o'zing tanla",
+    "/vitrina — Hi Neo vitrinasini (effekt, animatsiya, 3054 ikonka, 60 shrift) ochib ber",
+    "/sahifa — loyihamni «bitta bet — bitta bo'lim» maketida betlarga bo'lib ber"
+  ],
+  "author": {
+    "name": "hiworld.club",
+    "url": "https://t.me/Sodirov_U"
+  },
+  "homepage": "https://hiworld.club",
+  "repository": "https://github.com/sodirovone/hi-neo"
+}

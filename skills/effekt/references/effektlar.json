@@ -1,0 +1,543 @@
+{
+  "meta": {
+    "versiya": "1.0.0",
+    "jami": 31,
+    "muallif": "hiworld.club",
+    "kategoriyalar": {
+      "hero": "Hero va interaktiv fon",
+      "rasm": "Rasm va galereya",
+      "karta": "Kartochka va UI elementlar",
+      "matn": "Matn va tipografiya",
+      "3d": "3D sahna va fizika"
+    }
+  },
+  "effektlar": [
+    {
+      "id": "01",
+      "raqam": 1,
+      "slug": "pixelated-reveal",
+      "nom": "Pikselli namoyon bo'lish",
+      "en": "Pixelated reveal",
+      "kategoriya": "rasm",
+      "stek": ["Canvas", "GSAP"],
+      "qiyinlik": "Oson",
+      "ilhom": "okane.studio",
+      "qayerda": "Asosiy rasm (Hero), mahsulot kartochkalari",
+      "prompt": "Asosiy rasm katta piksellardan tiniq holatga o'tib ochiladigan effekt yasa.\n\nRasmni <canvas> ichida chiz: avval kichik buferga (kengligi asl o'lchamning 1/48 qismi), so'ng imageSmoothingEnabled = false bilan butun canvas yuzasiga cho'zib ko'rsat. Piksel o'lchami 1 soniya davomida pog'onama-pog'ona 48 -> 32 -> 16 -> 8 -> 4 -> 1 px bo'lib kichraysin, har bir pog'ona bir necha kadr ushlab turilsin va yakunda asl <img> ko'rsatilsin.\n\nRasm ko'rish maydoniga kirganda (IntersectionObserver) ishga tushsin. Burchakda piksel o'lchami bilan birga yangilanadigan kichik «Loading 16 px» tegi tursin.",
+      "qoidalar": [
+        "Silliq o'zgarishdan ko'ra pog'onali (stepped) almashish ancha uslubiy ko'rinadi",
+        "Rasm bir xil domendan yoki crossOrigin='anonymous' bilan yuklanishi shart, aks holda canvas piksellarni o'qiy olmaydi"
+      ]
+    },
+    {
+      "id": "02",
+      "raqam": 2,
+      "slug": "halftone-effect",
+      "nom": "Nuqtali rastr",
+      "en": "Halftone effect",
+      "kategoriya": "rasm",
+      "stek": ["Canvas", "GLSL Shader"],
+      "qiyinlik": "O'rta",
+      "ilhom": "bluesmoke.club",
+      "qayerda": "Musiqa saytlari, afishalar, retro-brendlar",
+      "prompt": "Fotosuratni gazeta bosmasidek nuqtali rastr (halftone) ko'rinishiga o'tkaz.\n\nKatakchalar to'ri bo'ylab (8-14 px qadamda) yorug'lik darajasini o'lcha, har bir katakchaga doira chiz — uning radiusi piksel qorong'iligiga bog'liq bo'lsin; to'r 45 daraja burchakka burilgan. Nuqtalar rangi brend rangida bo'lsin (masalan, krem fonda to'q ko'k).\n\nBo'lim ekranda paydo bo'lganda foto avval oddiy holatda turadi, so'ng 0.6 soniya ichida nuqtalar noldan o'sib chiqadi va asl foto so'nadi. Keyin nuqtalar sekin «nafas oladi». Yonida «Screen 45° 12 lpi» yozuvi tursin.",
+      "qoidalar": [
+        "Kontrastli oq-qora fotosuratlarda eng kuchli natija beradi",
+        "Katta o'lchamli bloklar uchun buni WebGL shader orqali yoz, oddiy 2D canvas sekinlashishi mumkin"
+      ]
+    },
+    {
+      "id": "03",
+      "raqam": 3,
+      "slug": "rotating-circular-text",
+      "nom": "Aylana bo'ylab matn",
+      "en": "Rotating circular text",
+      "kategoriya": "matn",
+      "stek": ["SVG textPath", "CSS"],
+      "qiyinlik": "Oson",
+      "ilhom": "kumo.tea",
+      "qayerda": "Beyjiklar, tugmalar, maxsus aksiyalar",
+      "prompt": "Aylana bo'ylab sekin aylanadigan yozuvli dumaloq beyjik-tugma yasa.\n\nSVG ishlat: aylana <path> va unga ulangan <textPath> ichida «FRESH MATCHA DAILY ✦ WHISKED TO ORDER ✦» ko'rinishidagi matn bo'lsin. Guruhni CSS animation: rotate 360deg orqali 12 soniya, linear, infinite qilib aylantir. Markazda dumaloq harakat tugmasi («Order») joylashsin.\n\nKursor olib borilganda aylanish 3 barobar tezlashsin, markaziy tugma esa biroz kattalashsin.",
+      "qoidalar": [
+        "Ulanish joyida uzilish yoki ustma-ust tushish qolmasligi uchun matn uzunligini aylana uzunligiga (textLength) mosla",
+        "Monoshirinli (monospace) yoki harflar orasi ochilgan (letter-spacing) shrift tanla"
+      ]
+    },
+    {
+      "id": "04",
+      "raqam": 4,
+      "slug": "flip-tiles-grid",
+      "nom": "Plitkalar aylanishi",
+      "en": "Flip tiles grid",
+      "kategoriya": "rasm",
+      "stek": ["CSS 3D", "GSAP"],
+      "qiyinlik": "O'rta",
+      "ilhom": "isola.travel",
+      "qayerda": "Foto almashinuvi, «kun / tun» rejimi, galereyalar",
+      "prompt": "Rasm ustida 8x5 o'lchamli plitkalar to'rini yasa: har bir plitka — 3D-kartochka bo'lib, old yuzasi birinchi fotoning bo'lagi, orqa yuzasi ikkinchi fotoning bo'lagi (background-position plitka koordinatasiga qarab hisoblanadi).\n\n«Day / Night» ulagichi bosilganda plitkalar diagonal bo'ylab to'lqin bo'lib aylansin: rotateY 0 -> 180deg, kechikish = (x + y) * 0.03 s, davomiyligi 0.5 s. transform-style: preserve-3d va backface-visibility: hidden ishlat.\n\nRasm ostidagi sarlavha ham foto bilan birga o'zgarsin.",
+      "qoidalar": [
+        "Plitkalar orasida tirqish ko'rinmasligi shart: o'lchamlarni butun piksellarda hisobla yoki 0.5px overlap ber",
+        "Qatorma-qator emas, diagonal bo'ylab to'lqin ancha jonli chiqadi"
+      ]
+    },
+    {
+      "id": "05",
+      "raqam": 5,
+      "slug": "magnifier-lens",
+      "nom": "Kattalashtiruvchi lupa",
+      "en": "Magnifier lens",
+      "kategoriya": "rasm",
+      "stek": ["CSS", "JS"],
+      "qiyinlik": "Oson",
+      "ilhom": "ferrand.ch",
+      "qayerda": "Soatlar, zargarlik buyumlari, xaritalar, mahsulot detallari",
+      "prompt": "Mahsulot fotosurati ustida lupa effektini yasa: kursor olib borilganda kursor ostida rasmning 3 barobar kattalashtirilgan qismini ko'rsatuvchi 160 px diametrli doira paydo bo'lsin.\n\nDoira — xuddi shu foto background-image qilingan div bo'lib, background-size = rasm o'lchami * 3, background-position esa kursor koordinatasidan hisoblanadi. Ingichka metall hoshiya va shisha shu'lasini (glare) qo'sh.\n\nLupa kursorni silliq inersiya (lerp) bilan quvib yursin, fotodan chiqqanda mayin yo'qolsin. Sensorli qurilmalarda uzoq bosib turilganda paydo bo'lsin.",
+      "qoidalar": [
+        "Lupa uchun kamida 3 barobar yuqori aniqlikdagi (HiDPI) rasm ishlat",
+        "Kattalashtirishni x2.5-3.5 oralig'ida saqla, undan kattasida tasvir xiralashib ketadi"
+      ]
+    },
+    {
+      "id": "06",
+      "raqam": 6,
+      "slug": "water-ripple-shader",
+      "nom": "Kursordan suv to'lqini",
+      "en": "Water ripple shader",
+      "kategoriya": "hero",
+      "stek": ["WebGL", "GLSL"],
+      "qiyinlik": "Murakkab",
+      "ilhom": "shizuka.garden",
+      "qayerda": "Tabiat, suv, SPA va wellness loyihalari",
+      "prompt": "Fotosurat ustida suv mavjlanishi effektini yasa: kursordan doiraviy to'lqinlar tarqalib, tasvirni tabiiy buzib o'tsin.\n\nWebGL: fotoni to'liq ekranli kvadrat ustiga tekstura qilib yukla. Kursor yo'lining oxirgi 20 ta nuqtasini paydo bo'lgan vaqti bilan birga saqla; fragment shaderda har bir nuqta uchun masofa va vaqt bo'yicha sinusoid to'lqinni hisoblab, UV koordinatalarini markazga normal bo'ylab siljit, amplituda vaqt o'tishi bilan so'nsin.\n\nTo'lqin cho'qqilariga yengil yorug'lik shu'lasi qo'sh. WebGL ishlamasa oddiy fotoni ko'rsat.",
+      "qoidalar": [
+        "Faol to'lqinlar sonini chekla (ko'pi bilan 20 ta), aks holda shader og'irlashadi",
+        "Suvli va to'q rangli fotosuratlarda ayniqsa ta'sirli ishlaydi"
+      ]
+    },
+    {
+      "id": "07",
+      "raqam": 7,
+      "slug": "3d-tilt-on-hover",
+      "nom": "Kartochkalar og'ishi",
+      "en": "3D tilt on hover",
+      "kategoriya": "karta",
+      "stek": ["CSS 3D", "JS"],
+      "qiyinlik": "Oson",
+      "ilhom": "objekt.store",
+      "qayerda": "Mahsulot kartochkalari, keyslar, tarif rejalari",
+      "prompt": "Kursor harakatiga ergashib perspektiva bilan og'adigan mahsulot kartochkalarini yasa.\n\nKartochkada mousemove hodisasini tingla: rotateY = (x - 0.5) * 20deg, rotateX = (0.5 - y) * 20deg, perspective: 900px, scale: 1.05. Kursor bilan birga kartochka yuzida siljiydigan radial gradientli nur dog'i (glare) qo'sh. Chuqurlik ko'rinishi uchun kartochka ichidagi rasmni translateZ(40px) oldinga chiqar.\n\nKursor chiqqanda kartochka silliq o'z joyiga qaytsin. Sensorli ekranlarda effektni o'chir.",
+      "qoidalar": [
+        "Og'ish burchagini 20 darajadan oshirma — undan ko'pi ko'zni toliqtiradi",
+        "Kartochka ostidagi soyani ham og'ish burchagiga moslab siljit"
+      ]
+    },
+    {
+      "id": "08",
+      "raqam": 8,
+      "slug": "holographic-foil-card",
+      "nom": "Golografik karta",
+      "en": "Holographic foil card",
+      "kategoriya": "karta",
+      "stek": ["CSS", "Blend Modes"],
+      "qiyinlik": "O'rta",
+      "ilhom": "prism.club",
+      "qayerda": "Klub kartalari, kolleksion kartochkalar, fintech, NFT",
+      "prompt": "Og'ish burchagiga qarab kamalak ranglarida tovlanadigan golografik a'zolik kartasini yasa.\n\nKarta kursor ketidan og'adi (rotateX/Y 25 darajagacha). Karta ustida ikki qatlam bo'lsin: og'ish burchagiga qarab background-position siljiydigan takrorlanuvchi rangli kamalak linear-gradient (mix-blend-mode: color-dodge) hamda mix-blend-mode: overlay berilgan mayin uchqun/donador tekstura. Yorqin shu'la kursor bo'ylab yugursin.\n\nKarta yuzida: logotip, karta raqami, egasining ismi va metall chip tursin.",
+      "qoidalar": [
+        "Gologramma yorqinligini me'yorda ushla, aks holda karta ustidagi matn o'qilmay qoladi",
+        "Sahifaning to'q foni golografik tovlanishni keskin kuchaytiradi"
+      ]
+    },
+    {
+      "id": "09",
+      "raqam": 9,
+      "slug": "infinite-loop-scroll",
+      "nom": "Cheksiz skroll",
+      "en": "Infinite loop scroll",
+      "kategoriya": "hero",
+      "stek": ["Lenis", "JS"],
+      "qiyinlik": "O'rta",
+      "ilhom": "perpetua.archi",
+      "qayerda": "Portfolio, arxivlar, vizual galereyalar",
+      "prompt": "Cheksiz skrollanadigan sahifa yasa: kontent halqa shaklida ulangan, sahifaning oxiri yo'q.\n\nSahifaning butun kontentini bir marta nusxalab pastga qo'sh; skroll nusxaning boshlanish nuqtasiga yetganda pozitsiyani sezdirmasdan asl balandlikka orqaga qaytar (Lenis da infinite: true yoki scrollTop mantiqi orqali). Foydalanuvchi oxirgi bo'limdan keyin yana birinchi ekran silliq chiqib kelganini ko'radi.\n\nUlanish chizig'idan oldin «The end? Not quite» blokini, yuqori shapkada esa aylanish hisoblagichini («Lap 01 -> 02») qo'y.",
+      "qoidalar": [
+        "Ulanish joyi sakrab ketmasligi shart: asl qism va nusxaning balandligi pikseligacha bir xil bo'lsin",
+        "Yakor havolalar (#works kabi) nusxaga emas, asl bloklarga olib borishini tekshir"
+      ]
+    },
+    {
+      "id": "10",
+      "raqam": 10,
+      "slug": "before-after-slider",
+      "nom": "Oldin / keyin slayderi",
+      "en": "Before/after comparison slider",
+      "kategoriya": "rasm",
+      "stek": ["CSS clip-path", "JS"],
+      "qiyinlik": "Oson",
+      "ilhom": "tonal.app",
+      "qayerda": "Foto-retush, ta'mirlash va interyer, kosmetika, filtrlar",
+      "prompt": "«Oldin / keyin» solishtirish slayderini yasa: ikkita rasm ustma-ust joylashgan, vertikal polzunok ularni ikkiga ajratadi.\n\nUstki rasmni clip-path: inset(0 0 0 X%) orqali kes (X — polzunok pozitsiyasi). Polzunok sichqoncha va barmoq bilan tortilsin (Pointer Events), chap/o'ng strelka tugmalari bosilganda 5% ga siljisin. Burchaklarda «Before» va «After» yorliqlari tursin.\n\nBo'lim ekranda ko'ringanda tortish mumkinligini bildirish uchun polzunokning o'zi bir marta chapga-o'ngga silliq borib kelsin.",
+      "qoidalar": [
+        "Ikkala fotosurat rakursi va o'lchami pikseligacha bir-biriga mos tushishi kerak",
+        "Polzunok tutqichi barmoq bilan ushlashga qulay bo'lsin: kamida 44 px"
+      ]
+    },
+    {
+      "id": "11",
+      "raqam": 11,
+      "slug": "sliced-image-reveal",
+      "nom": "Tasmalarga kesib ochish",
+      "en": "Sliced image reveal",
+      "kategoriya": "rasm",
+      "stek": ["GSAP", "CSS"],
+      "qiyinlik": "Oson",
+      "ilhom": "pebble.studio",
+      "qayerda": "Hero ekranlar, posterlar, moda brendlari",
+      "prompt": "Fotosurat siljigan tasmalardan yig'ilib paydo bo'ladigan effekt yasa: rasm 12-16 ta vertikal tasmaga kesilgan, har bir tasma o'z tomonidan (juftlari yuqoridan, toqlari pastdan) kirib kelib o'z joyiga o'tiradi.\n\nHar bir tasma — xuddi o'sha foto background-image qilingan va o'z background-position qiymatiga ega div. GSAP animatsiyasi: yPercent +-100 -> 0, stagger: 0.04 s, ease: power4.out, umumiy davomiyligi taxminan 1 s.\n\nRasm yig'ilib bo'lgach pastdan sarlavha chiqib kelsin.",
+      "qoidalar": [
+        "Tasmalar soni 12-16 ta bo'lsin: kami qo'pol ko'rinadi, ko'pi brauzerni sekinlashtiradi",
+        "Orasida tirqish ko'rinmasligi uchun tasmalarni 0.5-1 px kengroq qilib ustma-ust yopishtir"
+      ]
+    },
+    {
+      "id": "12",
+      "raqam": 12,
+      "slug": "physics-gravity",
+      "nom": "Gravitatsiya",
+      "en": "Physics gravity",
+      "kategoriya": "3d",
+      "stek": ["Matter.js", "DOM"],
+      "qiyinlik": "O'rta",
+      "ilhom": "pebble.studio",
+      "qayerda": "Kreativ agentliklar, teglar va ko'nikmalar bloki, promo sahifalar",
+      "prompt": "Teg-tugmalar (so'zli kapsulalar va rangli shakllar) yuqoridan to'kilib, bir-biri bilan urilib pastda uyilib qoladigan blok yasa. Ularni sichqoncha bilan ushlab otish mumkin bo'lsin.\n\nMatter.js ishlat: har bir teg — burchaklari yumaloqlangan to'rtburchak jism (chamfer), blok chetlarida ko'rinmas devorlar, sudrash uchun MouseConstraint. Har kadrda DOM-elementlar pozitsiyasini fizik jismlar bilan sinxronla (transform: translate + rotate).\n\nBlok ko'rish maydoniga kirganda tushish boshlansin.",
+      "qoidalar": [
+        "Teglarni canvas ichida emas, DOMda chiz: shunda matn tiniq va bosiladigan bo'lib qoladi",
+        "Fizik jismlar sonini 20-30 ta bilan chekla"
+      ]
+    },
+    {
+      "id": "13",
+      "raqam": 13,
+      "slug": "elastic-drag",
+      "nom": "Jele elementlar",
+      "en": "Elastic drag",
+      "kategoriya": "karta",
+      "stek": ["GSAP", "SVG / CSS"],
+      "qiyinlik": "O'rta",
+      "ilhom": "gummo.shop",
+      "qayerda": "CTA tugmalar, o'yin va bolalar brendlari, interaktiv vidjetlar",
+      "prompt": "Sudralganda harakat yo'nalishi bo'ylab cho'zilib, qo'yib yuborilganda prujinadek joyiga qaytadigan «jele» element yasa.\n\nElement (dumaloq tugma) sichqoncha bilan tortiladi; deformatsiya tezlikka qarab hisoblanadi: harakat burchagi bo'yicha burilib, scaleX oshadi (1.6 gacha) va scaleY kamayadi (0.7 gacha). Qo'yib yuborilganda element elastik tebranish bilan joyiga qaytadi (elastic.out(1, 0.3)).\n\nYanada jonli shakl uchun kursorni kechikish bilan quvadigan nuqtali SVG-path ishlat.",
+      "qoidalar": [
+        "Yuzani saqla: scaleX oshganda scaleY mutanosib ravishda kichraysin",
+        "Element ostidagi kichik yumshoq soya hajm hissini kuchaytiradi"
+      ]
+    },
+    {
+      "id": "14",
+      "raqam": 14,
+      "slug": "flashlight-reveal",
+      "nom": "Fonarik",
+      "en": "Flashlight reveal",
+      "kategoriya": "hero",
+      "stek": ["CSS mask", "JS"],
+      "qiyinlik": "Oson",
+      "ilhom": "grotte.museum",
+      "qayerda": "Muzeylar, sirli tizerlar, o'yinlar, tungi hikoyalar",
+      "prompt": "Kursor fonarik kabi ishlaydigan qorong'i sahifa yasa: kursor atrofidagi yorug'lik doirasida yashirin kontent ko'rinsin.\n\nKontent ustiga mask-image: radial-gradient(circle 220px at var(--x) var(--y), transparent 0%, black 70%) berilgan qora qatlam yop. Kursor koordinatalarini CSS o'zgaruvchilariga yoz, yorug'lik kursorni silliq quvsin.\n\nNur ostida foto va matn yuzaga chiqsin. Doira chetiga iliq nur gardishini qo'sh. Mobil qurilmalarda fonarik nuri sekin o'zi sayr qilib yursin.",
+      "qoidalar": [
+        "Keskin chegaradan ko'ra yumshoq tarqalgan nur cheti tabiiyroq ko'rinadi",
+        "Asosiy sarlavhani zulmatda ham xira (5-12%) ko'rinadigan qilib qoldir"
+      ]
+    },
+    {
+      "id": "15",
+      "raqam": 15,
+      "slug": "scratch-to-reveal",
+      "nom": "Qatlamni o'chirish (Skretch)",
+      "en": "Scratch to reveal",
+      "kategoriya": "karta",
+      "stek": ["Canvas", "Pointer Events"],
+      "qiyinlik": "Oson",
+      "ilhom": "pistache.paris",
+      "qayerda": "Promokodlar, yutuqli o'yinlar, syurpriz aksiyalar",
+      "prompt": "Lotereya uslubidagi «skretch»-kartochka yasa: kursor ustki kumushrang qatlamni o'chiradi, uning ostida rasm va promokod chiqadi.\n\nUstki qatlam — «SCRATCH HERE» yozuvli kumushrang gradient quyilgan canvas. Sichqoncha harakatida globalCompositeOperation = 'destination-out' va qalin yumaloq chiziq (40 px, round) bilan chiz. Har 300 ms da o'chirilgan piksellar foizini hisobla; 50% dan oshganda qolgan qatlam silliq yo'qolib, «Copy code» tugmasi paydo bo'lsin.\n\nBarmoq bilan ham bexato ishlasin (Pointer Events).",
+      "qoidalar": [
+        "Eng muhim ma'lumotni (kodni) markazda ushla — foydalanuvchi birinchi bo'lib o'sha joyni o'chiradi",
+        "Ochilgan lahzada telefonda yengil tebranish (vibrate) yoki ovoz qo'shish taassurotni oshiradi"
+      ]
+    },
+    {
+      "id": "16",
+      "raqam": 16,
+      "slug": "grid-shuffle-flip",
+      "nom": "Setkani qayta taxlash",
+      "en": "Grid shuffle (FLIP)",
+      "kategoriya": "rasm",
+      "stek": ["GSAP Flip", "CSS Grid"],
+      "qiyinlik": "O'rta",
+      "ilhom": "vanta.style",
+      "qayerda": "Modalar lukbuki, mahsulot kataloglari, filtrlar",
+      "prompt": "Saralash o'zgarganda yoki skroll paytida rasmlar bir setkadan boshqasiga silliq uchib joylashadigan lukbuk-setka yasa.\n\nO'zgarishdan oldin holatni saqla: Flip.getState(items), so'ng joylashuvni (elementlar tartibi va grid-template) o'zgartir va Flip.from(state, { duration: 0.6, ease: 'power3.inOut', stagger: 0.03, absolute: true }) ni ishga tushir. Ulagichlar: «All looks», «By colour», «By fit».\n\nBo'lim skroll qilinganda ham setka 2-3 marta avtomatik qayta taxlansin.",
+      "qoidalar": [
+        "absolute: true parametri animatsiya vaqtida sakrashlarni butunlay yo'qotadi",
+        "Bir xil formatdagi (proporsiyadagi) rasmlar qayta taxlanganda chiroyliroq ko'rinadi"
+      ]
+    },
+    {
+      "id": "17",
+      "raqam": 17,
+      "slug": "glitch-effect",
+      "nom": "Glitch effekti",
+      "en": "Glitch effect",
+      "kategoriya": "matn",
+      "stek": ["CSS", "Canvas"],
+      "qiyinlik": "O'rta",
+      "ilhom": "kyravale.com",
+      "qayerda": "Musiqa relizlari, o'yinlar, tech-loyihalar, festivallar",
+      "prompt": "Sarlavha va fotosuratda glitch-effekt yasa: RGB-kanallar siljishi va yirtilgan gorizontal tasmalar.\n\nMatn uchun: xuddi shu matnli qizil va havorang ikkita psevdoelement (mix-blend-mode: screen), +-3 px ga siljigan va tasodifiy tasmalarni kesuvchi clip-path: inset() qisqa chaqnashlar bilan o'zgarib tursin.\n\nFoto uchun: bir nechta gorizontal tasma X bo'yicha siljiydigan va R/B kanallari ajraladigan canvas. Glitch har 2-3 soniyada qisqa seriyalar bilan hamda kursor olib borilganda ishlasin.",
+      "qoidalar": [
+        "Glitch tinimsiz emas, qisqa chaqnashlar ko'rinishida bo'lsin — doimiysi ko'zni charchatadi",
+        "prefers-reduced-motion sozlamasini albatta inobatga ol"
+      ]
+    },
+    {
+      "id": "18",
+      "raqam": 18,
+      "slug": "svg-shape-morph",
+      "nom": "Shakllar morfingi",
+      "en": "SVG shape morph",
+      "kategoriya": "hero",
+      "stek": ["GSAP MorphSVG", "flubber"],
+      "qiyinlik": "O'rta",
+      "ilhom": "formwell.studio",
+      "qayerda": "Logotiplar, birinchi ekran (Hero), brend aydentikasi",
+      "prompt": "Birinchi ekranda bir shakldan ikkinchisiga ravon oqib o'tadigan figura yasa: tomchi -> yulduz -> brend belgisi.\n\nGradient bo'yoqli uchta SVG-path chiz. d atributini GSAP MorphSVGPlugin (yoki flubber.interpolate / teng nuqtali SVG path interpolyatsiyasi) orqali aylana tarzda har o'tishga 1.2 s, ease: power2.inOut bilan jonlantir. Figura ostida joriy shaklni ko'rsatuvchi nuqta-indikatorlar bo'lsin.\n\nMorf vaqtida shaklga yengil burilish qo'sh.",
+      "qoidalar": [
+        "Shakllardagi tayanch nuqtalar soni qancha yaqin bo'lsa, o'tish shuncha silliq chiqadi",
+        "Ichki gradient bo'yoq burchagini ham sekin aylantirish jonlilik beradi"
+      ]
+    },
+    {
+      "id": "19",
+      "raqam": 19,
+      "slug": "warp-speed-starfield",
+      "nom": "Yorug'lik tezligiga sakrash",
+      "en": "Warp speed starfield",
+      "kategoriya": "hero",
+      "stek": ["Canvas"],
+      "qiyinlik": "Oson",
+      "ilhom": "parsec.travel",
+      "qayerda": "Kosmos mavzusi, sayohat, AI va tech-mahsulot relizlari",
+      "prompt": "Skroll paytida yulduzlar yorug'lik tezligiga chiqqandek nurlarga cho'ziladigan yulduzli osmon fonini yasa.\n\nCanvas: x, y, z koordinatali 600-1000 ta yulduz; har kadrda z tezlik miqdoriga kamayadi, proyeksiya = (x / z, y / z). Katta tezlikda yorug'lik nurlari hosil bo'lishi uchun har yulduzni oldingi proyeksiya nuqtasidan joriy nuqtaga chiziq qilib chiz.\n\nTezlik = bazaviy tezlik + skroll tezligi (silliq so'nish bilan). Burchakda tezlik indikatori, markazda sarlavha tursin.",
+      "qoidalar": [
+        "Ekran chetiga yaqinlashgan yulduzlarni yorqinroq va qalinroq chiz",
+        "Kuchsiz va mobil qurilmalarda yulduzlar sonini 250-300 tagacha kamaytir"
+      ]
+    },
+    {
+      "id": "20",
+      "raqam": 20,
+      "slug": "3d-sphere-gallery",
+      "nom": "Rasmlardan 3D-sfera",
+      "en": "3D sphere gallery",
+      "kategoriya": "3d",
+      "stek": ["CSS 3D", "Three.js"],
+      "qiyinlik": "Murakkab",
+      "ilhom": "atlasroom.org",
+      "qayerda": "Sayohat loyihalari, media arxivlar, portfolio",
+      "prompt": "Sichqoncha bilan aylantirish mumkin bo'lgan rasmlardan iborat 3D-sfera yasa.\n\nFibonachchi spirali bo'yicha sferik koordinatalarda 40-60 ta kartochkani sfera yuzasiga joylashtir, har biri tashqariga qaragan bo'lsin. Sfera o'zi sekin aylanib tursin; sichqoncha yoki barmoq bilan tortilganda kursor ketidan aylanadi, qo'yib yuborilganda inersiya bilan davom etib sekinlashadi.\n\nSferaning orqa tomonidagi kartochkalar xiralashtirilsin. Pastdagi yozuv tomoshabinga eng yaqin turgan fotoning joyini ko'rsatsin.",
+      "qoidalar": [
+        "Bitta umumiy perspective va transform-style: preserve-3d ishlat",
+        "60 tadan ortiq kartochka bo'lsa DOM o'rniga Three.js da chizgan ma'qul"
+      ]
+    },
+    {
+      "id": "21",
+      "raqam": 21,
+      "slug": "helix-carousel",
+      "nom": "Spiral galereya",
+      "en": "Helix carousel",
+      "kategoriya": "3d",
+      "stek": ["CSS 3D", "ScrollTrigger"],
+      "qiyinlik": "O'rta",
+      "ilhom": "lowfield.records",
+      "qayerda": "Musiqa leybllari, kolleksiyalar, arxivlar",
+      "prompt": "Skroll qilinganda kartochkalar (albom muqovalari) 3D-spiral bo'ylab harakatlanadigan galereya yasa.\n\nHar bir kartochka: rotateY(i * 30deg) translateZ(radius) translateY(i * qadam), ya'ni spiral o'ramida yuzi tashqariga qarab turadi. Butun spiral ScrollTrigger (scrub) progressi bo'yicha o'z o'qi atrofida aylanadi va siljiydi. Kartochkalar orqali spiral o'ramining ingichka uzuq-uzuq chizig'i o'tsin.\n\nUzoqdagi kartochkalar xiraroq, eng yaqin turgani esa pastda imzolangan bo'lsin.",
+      "qoidalar": [
+        "Spiral o'rami aniq o'qilishi uchun unga biroz yuqoridan yoki yondan qarat",
+        "Mobil ekranlarda spiral radiusini kichraytir"
+      ]
+    },
+    {
+      "id": "22",
+      "raqam": 22,
+      "slug": "3d-tunnel-effect",
+      "nom": "3D-tunnel",
+      "en": "3D tunnel effect",
+      "kategoriya": "3d",
+      "stek": ["CSS 3D", "Three.js"],
+      "qiyinlik": "O'rta",
+      "ilhom": "signal27.berlin",
+      "qayerda": "Festivallar, konferensiyalar, musiqa va shou sahifalar",
+      "prompt": "Tunnel ichidan uchib o'tish effektini yasa: kamera matn yoki rasmlardan tuzilgan halqalar orasidan oldinga uchsin.\n\nZ o'qi bo'ylab (translateZ 0 dan -4000 gacha) 10-12 ta kvadrat yoki dumaloq halqa joylashtir, har bir halqa perimetri bo'ylab so'zlar joylashsin. Skroll paytida (yoki uzluksiz) barcha halqalar kameraga yaqinlashadi, uning ichidan o'tib ketgach yana oxiriga qaytadi. Halqalar Z bo'yicha yengil buriladi, uzoqdagilari qorong'iroq (tuman).\n\nMarkazda sarlavha, burchakda bosib o'tilgan «chuqurlik» hisoblagichi tursin.",
+      "qoidalar": [
+        "Tuman qo'sh: chuqurlikka qarab shaffoflik kamaysin, shunda orqada paydo bo'lish sezilmaydi",
+        "Parvoz ritmi yaxshiroq o'qilishi uchun halqalardagi so'zlarni navbatma-navbat almashtir"
+      ]
+    },
+    {
+      "id": "23",
+      "raqam": 23,
+      "slug": "swipe-card-stack",
+      "nom": "Kartochkalar dastasi",
+      "en": "Swipe card stack",
+      "kategoriya": "karta",
+      "stek": ["JS", "GSAP"],
+      "qiyinlik": "O'rta",
+      "ilhom": "pawmate.app",
+      "qayerda": "Tanlov servislari, viktorina va so'rovnomalar, tovar saralash",
+      "prompt": "Tinder uslubida ikki tomonga surib tashlanadigan kartochkalar dastasini yasa.\n\nUstki kartochka sichqoncha/barmoq bilan tortiladi: x kursorga ergashadi, burilish = x / 20deg. Agar 120 px dan uzoqqa qo'yib yuborilsa — kartochka o'sha tomonga uchib ketadi, aks holda joyiga qaytadi. Kartochka ustida siljishga mutanosib shaffoflikda «ADOPT» (o'ngga) yoki «PASS» (chapga) muhr-shtampi ko'rinsin.\n\nOstidagi keyingi kartochka biroz kichikroq turadi va oldingisi ketgach joyiga ko'tariladi. Pastdagi X va yurakcha tugmalari ham xuddi shu amalni bajarsin.",
+      "qoidalar": [
+        "Qulaylik (accessibility) uchun chap va o'ng strelka tugmalarini ham qo'sh",
+        "Dastada bir vaqtda faqat 2-3 ta kartochkani ko'rsat, undan ko'pini emas"
+      ]
+    },
+    {
+      "id": "24",
+      "raqam": 24,
+      "slug": "webgl-fluid-simulation",
+      "nom": "Kursor ortidan suyuqlik",
+      "en": "WebGL fluid simulation",
+      "kategoriya": "hero",
+      "stek": ["WebGL", "GLSL"],
+      "qiyinlik": "Murakkab",
+      "ilhom": "viscous.studio",
+      "qayerda": "Kreativ studiyalar, birinchi ekran (Hero), interaktiv fon",
+      "prompt": "Kursor harakati bilan aralashib ketadigan rangli suyuqlik fonini yasa.\n\nWebGL suyuqlik simulyatsiyasini (teksturalarda Navier-Stokes: advection, divergence, pressure) yoki kursor izi bo'ylab shovqin va siljish ishlaydigan yengillashtirilgan shader variantini qo'lla. Kursor nuqtaga tezlik va bo'yoq qo'shadi, suyuqlik silliq tarqalib sekin so'nadi.\n\nBrendning 2-3 xil rangidan iborat palitra ol. WebGL ishlamasa statik gradient ko'rsat.",
+      "qoidalar": [
+        "Simulyatsiyani pastroq aniqlikda (1/4 o'lchamda) hisobla — ko'rinishi bir xil, lekin ancha yengil ishlaydi",
+        "Mobil ekranlarda suyuqlik o'z-o'zidan sekin aralashib turadigan avto-harakat qo'sh"
+      ]
+    },
+    {
+      "id": "25",
+      "raqam": 25,
+      "slug": "shatter-explode-effect",
+      "nom": "Parchalarga sochilish",
+      "en": "Shatter / explode effect",
+      "kategoriya": "3d",
+      "stek": ["Three.js", "CSS 3D"],
+      "qiyinlik": "Murakkab",
+      "ilhom": "halde.paris",
+      "qayerda": "Mahsulot tizerlari, atir va premium buyumlar, relizlar",
+      "prompt": "Rasm bo'laklarga sochilib ketib, keyin qayta butun holatga yig'iladigan effekt yasa.\n\nTasvirni 80-120 ta uchburchak parchalarga ajrat (tasodifiy nuqtalar bo'yicha Delone triangulyatsiyasi — Delaunay), har bir parcha — teksturaning o'z bo'lagi. Skroll qilinganda parchalar markazdan atrofga (har biri o'z yo'nalishi, aylanish burchagi va chuqurligi bilan) uchib chiqadi, muallaq turadi va keyin yana butun rasmga yig'iladi.\n\nThree.js (3D tekisliklar) yoki clip-path: polygon() bilan CSS 3D ishlat.",
+      "qoidalar": [
+        "Markazga yaqin parchalar uzoqroqqa uchsin, chetdagilari yaqinroqda qolsin",
+        "Shishaga o'xshashi uchun parcha qirralariga yorug'lik shu'lasi qo'sh"
+      ]
+    },
+    {
+      "id": "26",
+      "raqam": 26,
+      "slug": "metaballs-gooey-effect",
+      "nom": "Yopishqoq tomchilar",
+      "en": "Metaballs / gooey effect",
+      "kategoriya": "hero",
+      "stek": ["SVG filter", "CSS"],
+      "qiyinlik": "Oson",
+      "ilhom": "mellow.co",
+      "qayerda": "Wellness, shirinliklar, yumshoq do'stona brendlar",
+      "prompt": "Suyuqlik kabi bir-biriga qo'shilib va cho'zilib ajraladigan «yopishqoq» dumaloq elementlar yasa.\n\nBir nechta doira SVG-filtr (goo: feGaussianBlur stdDeviation='12' + alfa-kanalni kuchaytiruvchi feColorMatrix 0 0 0 20 -9) berilgan konteyner ichida o'z orbitalari bo'ylab harakatlanadi. Doiralar yaqinlashganda bitta tomchiga qo'shiladi, uzoqlashganda cho'zilib uziladi.\n\nBitta doira kursorga ergashib yursin. Brendning ikki xil rangini ishlat.",
+      "qoidalar": [
+        "Filtrni har bir doiraga emas, ularning umumiy konteyneriga qo'lla",
+        "Matn xiralashib ketmasligi uchun yozuvlarni filtrli konteynerdan tashqarida tut"
+      ]
+    },
+    {
+      "id": "27",
+      "raqam": 27,
+      "slug": "dot-matrix-led-text",
+      "nom": "Svetodiodli tablo matni",
+      "en": "Dot matrix / LED text",
+      "kategoriya": "matn",
+      "stek": ["Canvas"],
+      "qiyinlik": "O'rta",
+      "ilhom": "nachtzug.eu",
+      "qayerda": "Transport va chiptalar, jadval-tablo, retro, tadbirlar",
+      "prompt": "Vokzal tablosidek yonib turuvchi nuqtalardan iborat yozuv yasa.\n\nCanvas: avval matnni kichik buferga (7-9 px balandlikda, pikselli shriftda) chiz, so'ng har bir piksel o'rnida svetodiod-doiracha chiz: yoniq bo'lsa — nur taratuvchi (shadowBlur) qahrabo rang, o'chiq bo'lsa — xira to'q nuqta. Yuguruvchi satr har qadamda 1 ta diodga siljiydi.\n\nPastda jo'nash jadvali: yangilanganda tasodifiy belgilarni terib o'z joyiga tushadigan vaqt va shaharlar qatorlari tursin.",
+      "qoidalar": [
+        "Katak qadami 6-10 px, nuqta o'lchami esa qadamdan biroz kichik bo'lsin",
+        "Satrni silliq emas, har qadamda aniq bitta diodga diskret siljit"
+      ]
+    },
+    {
+      "id": "28",
+      "raqam": 28,
+      "slug": "text-behind-subject",
+      "nom": "Obyekt ortidagi matn",
+      "en": "Text behind subject",
+      "kategoriya": "matn",
+      "stek": ["CSS", "PNG-mask"],
+      "qiyinlik": "Oson",
+      "ilhom": "hoehe-festival.ch",
+      "qayerda": "Fotosuratli Hero ekranlar, festivallar, moda",
+      "prompt": "Yirik sarlavha orqa fon va fotodagi obyekt orasida («tog' ortida») turadigan Hero bo'lim yasa.\n\nIkkita qatlam kerak: to'liq fon rasmi hamda shaffof fonda kesib olingan obyekt PNG fayli. Qatlamlar tartibi: to'liq foto -> sarlavha -> kesilgan obyekt. Sahifa yuklanganda sarlavha pastdan ko'tarilib chiqadi va obyektning yuqori qismi harflarning bir bo'lagini to'sib turadigan nuqtada to'xtaydi.\n\nSkroll paytida qatlamlar yengil parallaks bilan siljisin.",
+      "qoidalar": [
+        "Obyekt harflarning faqat bir qismini to'ssin — so'z baribir aniq o'qilishi shart",
+        "Butun ekran kengligidagi yirik qalin (bold display) shrift ishlat"
+      ]
+    },
+    {
+      "id": "29",
+      "raqam": 29,
+      "slug": "page-flip",
+      "nom": "Sahifalarni varaqlash",
+      "en": "Page flip",
+      "kategoriya": "karta",
+      "stek": ["CSS 3D", "StPageFlip"],
+      "qiyinlik": "O'rta",
+      "ilhom": "rivieraquarterly.com",
+      "qayerda": "Jurnallar, lukbuk va kataloglar, portfolio",
+      "prompt": "Haqiqiy jurnaldagidek sahifalari varaqlanadigan kitob-yoyilma yasa.\n\nHar bir sahifa — old va orqa tomonga ega 3D-element bo'lib, transform-origin muqova o'rtasida (umurtqada) turadi, rotateY 0 -> -180deg. Qog'ozga o'xshashi uchun aylanish vaqtida uning ostidagi sahifaga tushadigan soya va bukilish joyida gradient qorayish qo'sh.\n\nStrelkalar, chetiga bosish va svayp orqali varaqlansin. Qog'oz egilishi uchun StPageFlip kutubxonasini ham olish mumkin.",
+      "qoidalar": [
+        "Aylanayotgan varaqdan tushadigan dinamik soya effektni haqiqiy qog'ozga o'xshatadi",
+        "Mobil ekranlarda yoyilma o'rniga bitta sahifani ko'rsat"
+      ]
+    },
+    {
+      "id": "30",
+      "raqam": 30,
+      "slug": "circular-theme-reveal",
+      "nom": "Doira bo'ylab tema almashinuvi",
+      "en": "Circular theme reveal",
+      "kategoriya": "karta",
+      "stek": ["View Transitions API", "CSS"],
+      "qiyinlik": "Oson",
+      "ilhom": "marlo.app",
+      "qayerda": "Tungi va kunduzgi rejimga ega har qanday sayt",
+      "prompt": "Bosilganda tungi (yoki yorug') tema aynan tugma markazidan doira bo'lib butun ekranga yoyiladigan tema ulagichini yasa.\n\ndocument.startViewTransition(() => toggleTheme()) ni ishlat, so'ng ::view-transition-new(root) ni clip-path: circle(0 at X Y) -> circle(R at X Y) orqali jonlantir (X, Y — tugma markazi, R — ekranning eng uzoq burchagigacha masofa). Davomiyligi 0.6 s, ease-in-out.\n\nTanlovni localStorage da saqla va prefers-color-scheme ni inobatga ol. Qo'llab-quvvatlanmaydigan brauzerlarda oddiy tema almashinuvi ishlasin.",
+      "qoidalar": [
+        "::view-transition-old(root) va new(root) dagi standart krossfeydni (animation: none) o'chirib qo'y",
+        "Teskari yo'nalishda ham ishlasin: yorug' tema ham xuddi shunday doira bo'lib yoyilsin"
+      ]
+    },
+    {
+      "id": "31",
+      "raqam": 31,
+      "slug": "3d-ribbon-text",
+      "nom": "Matnli 3D-lenta",
+      "en": "3D ribbon text",
+      "kategoriya": "3d",
+      "stek": ["Three.js"],
+      "qiyinlik": "Murakkab",
+      "ilhom": "sonar-weekend.de",
+      "qayerda": "Festivallar, musiqa tadbirlari, yorqin promo sahifalar",
+      "prompt": "Fazoda egilib va buralib turadigan, ustidan uzluksiz matn yuguradigan 3D-lenta yasa.\n\nThree.js da 6-8 ta nuqta orqali CatmullRomCurve3 egri chizig'ini qur, uning bo'ylab lenta yasa (uzunligi bo'yicha 400 segmentli PlaneGeometry, uchlari egri chiziq bo'ylab burilish-buralish bilan joylashtiriladi). Lenta teksturasi — «SONAR WEEKEND ✦ BERLIN ✦ 12-14 JUNE ✦» kabi takrorlanuvchi matn chizilgan canvas bo'lib, har kadrda texture.offset.x ni siljit.\n\nLenta sekin aylanib tursin, skroll qilinganda tezlashsin.",
+      "qoidalar": [
+        "Matn orqa tomonda ham ko'rinib turishi uchun materialda side: DoubleSide ni yoq",
+        "Teksturani shrift to'liq yuklangandan keyin (document.fonts.ready) canvas ustiga chiz"
+      ]
+    }
+  ]
+}

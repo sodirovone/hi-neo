@@ -1,0 +1,32 @@
+name: tekshiruv
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tekshir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Repo tekshiruvi (kirill + manifest + 31 effekt + 64 CSS + 3054 SVG + 60 shrift + maket)
+        run: node scripts/tekshir.js
+
+      - name: Katalog CLI barcha rejimlar sinovi
+        run: |
+          node --check skills/effekt/scripts/katalog.js
+          node skills/effekt/scripts/katalog.js ol 08
+          node skills/effekt/scripts/katalog.js anim-ol 01
+          node skills/effekt/scripts/katalog.js ikonka-qidir hamyon --limit 5
+          node skills/effekt/scripts/katalog.js ikonka-ol shopping-cart --format jsx
+          node skills/effekt/scripts/katalog.js shrift-royxat --uslub serif
+          node skills/effekt/scripts/katalog.js shrift-ol inter
+          node skills/effekt/scripts/katalog.js juftlik-ol premium-brend
+          node skills/effekt/scripts/katalog.js tanla restoran premium

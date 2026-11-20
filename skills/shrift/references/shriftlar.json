@@ -1,0 +1,1240 @@
+{
+  "meta": {
+    "versiya": "1.0.0",
+    "jami": 60,
+    "juftliklar_soni": 24,
+    "muallif": "hiworld.club",
+    "manba": "Google Fonts (ochiq litsenziyali shriftlar, fonts.google.com)",
+    "uslublar": {
+      "grotesk": "Zamonaviy grotesk (Sans)",
+      "serif": "Serif va tahririy",
+      "sarlavha": "Yirik sarlavha (Display)",
+      "mono": "Kod va texnik (Mono)",
+      "qolyozma": "Qo'lyozma va bezak",
+      "yumaloq": "Yumaloq va do'stona"
+    }
+  },
+  "shriftlar": [
+    {
+      "id": "inter",
+      "raqam": 1,
+      "nom": "Inter",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Interfeys va uzun matn uchun eng xavfsiz tanlov: kichik o'lchamda ham tiniq o'qiladi.",
+      "oila": "Inter:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "manrope",
+      "raqam": 2,
+      "nom": "Manrope",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Yumshoq geometrik grotesk. Fintech, SaaS va boshqaruv panellariga mos.",
+      "oila": "Manrope:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "plus-jakarta-sans",
+      "raqam": 3,
+      "nom": "Plus Jakarta Sans",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Do'stona va zamonaviy. Lending sarlavhasi hamda tugmalarda yaxshi turadi.",
+      "oila": "Plus+Jakarta+Sans:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "dm-sans",
+      "raqam": 4,
+      "nom": "DM Sans",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Ixcham past kontrastli grotesk. Kartochka, narx jadvali va mobil ilovalar uchun.",
+      "oila": "DM+Sans:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "outfit",
+      "raqam": 5,
+      "nom": "Outfit",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Toza geometrik shakllar. Brend sarlavhasi va raqamli ko'rsatkichlarga mos.",
+      "oila": "Outfit:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "sora",
+      "raqam": 6,
+      "nom": "Sora",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Texnologik kayfiyatli keng harflar. Kripto, AI va startap saytlari uchun.",
+      "oila": "Sora:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "space-grotesk",
+      "raqam": 7,
+      "nom": "Space Grotesk",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Xarakterli texno-grotesk. Dasturchi mahsulotlari va hakaton sahifalariga mos.",
+      "oila": "Space+Grotesk:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap",
+      "css": "font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "onest",
+      "raqam": 8,
+      "nom": "Onest",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Kirill va lotinni birdek chiroyli beradi. Ikki tilli (uz/ru) saytlar uchun qulay.",
+      "oila": "Onest:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "figtree",
+      "raqam": 9,
+      "nom": "Figtree",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Sodda va iliq. Xizmat ko'rsatish, ta'lim va sog'liq sohasi saytlariga mos.",
+      "oila": "Figtree:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "montserrat",
+      "raqam": 10,
+      "nom": "Montserrat",
+      "uslub": "grotesk",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Tanish shahar groteski. Korporativ sayt, afisha va ijtimoiy tarmoq bannerlari uchun.",
+      "oila": "Montserrat:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "playfair-display",
+      "raqam": 11,
+      "nom": "Playfair Display",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Yuqori kontrastli nafis serif. Moda, restoran va premium brend sarlavhalari uchun.",
+      "oila": "Playfair+Display:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "fraunces",
+      "raqam": 12,
+      "nom": "Fraunces",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Iliq, biroz o'ynoqi serif. Qahvaxona, hunarmandchilik va muallif bloglari uchun.",
+      "oila": "Fraunces:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Fraunces', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "lora",
+      "raqam": 13,
+      "nom": "Lora",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Uzun matnni charchatmay o'qitadi. Maqola, blog va hikoya sahifalariga mos.",
+      "oila": "Lora:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap",
+      "css": "font-family: 'Lora', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "cormorant-garamond",
+      "raqam": 14,
+      "nom": "Cormorant Garamond",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Nozik va hashamatli. Zargarlik, to'y va go'zallik saloni saytlari uchun.",
+      "oila": "Cormorant+Garamond:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap",
+      "css": "font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "dm-serif-display",
+      "raqam": 15,
+      "nom": "DM Serif Display",
+      "uslub": "serif",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Qalin tahririy sarlavha shrifti. Jurnal uslubidagi katta sarlavhalar uchun.",
+      "oila": "DM+Serif+Display",
+      "link": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap",
+      "css": "font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "instrument-serif",
+      "raqam": 16,
+      "nom": "Instrument Serif",
+      "uslub": "serif",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Tor va zamonaviy serif. Agentlik, portfolio va minimal lendinglarda urg'u beradi.",
+      "oila": "Instrument+Serif",
+      "link": "https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap",
+      "css": "font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "source-serif-4",
+      "raqam": 17,
+      "nom": "Source Serif 4",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Ishonchli matn serifi. Hujjat, yangilik va ilmiy matnlarga mos.",
+      "oila": "Source+Serif+4:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "eb-garamond",
+      "raqam": 18,
+      "nom": "EB Garamond",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Klassik kitob shrifti. Nashriyot, huquq va akademik saytlar uchun.",
+      "oila": "EB+Garamond:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "bodoni-moda",
+      "raqam": 19,
+      "nom": "Bodoni Moda",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Keskin kontrastli moda serifi. Parfyum, kiyim va glyans sahifalari uchun.",
+      "oila": "Bodoni+Moda:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Bodoni Moda', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "merriweather",
+      "raqam": 20,
+      "nom": "Merriweather",
+      "uslub": "serif",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Ekranda mustahkam o'qiladigan serif. Ta'lim va korporativ blog matnlari uchun.",
+      "oila": "Merriweather:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Merriweather', Georgia, 'Times New Roman', serif;"
+    },
+    {
+      "id": "unbounded",
+      "raqam": 21,
+      "nom": "Unbounded",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Keng va dadil. Web3, festival va e'tibor tortuvchi hero sarlavhalari uchun.",
+      "oila": "Unbounded:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Unbounded', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "syne",
+      "raqam": 22,
+      "nom": "Syne",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "G'ayrioddiy shaklli ijodiy shrift. Studiya va san'at loyihalariga mos.",
+      "oila": "Syne:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Syne', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "bebas-neue",
+      "raqam": 23,
+      "nom": "Bebas Neue",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Tor bosh harfli afisha shrifti. Sport, fitnes va aksiya bannerlari uchun.",
+      "oila": "Bebas+Neue",
+      "link": "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "css": "font-family: 'Bebas Neue', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "anton",
+      "raqam": 24,
+      "nom": "Anton",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Juda qalin va tor. Yangilik sarlavhasi hamda katta raqamlar uchun.",
+      "oila": "Anton",
+      "link": "https://fonts.googleapis.com/css2?family=Anton&display=swap",
+      "css": "font-family: 'Anton', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "archivo-black",
+      "raqam": 25,
+      "nom": "Archivo Black",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Og'ir grotesk. Ko'cha uslubidagi brend va plakat sarlavhalari uchun.",
+      "oila": "Archivo+Black",
+      "link": "https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap",
+      "css": "font-family: 'Archivo Black', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "russo-one",
+      "raqam": 26,
+      "nom": "Russo One",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Texnik va kuchli. Avto, qurilish va o'yin saytlarida yaxshi ishlaydi.",
+      "oila": "Russo+One",
+      "link": "https://fonts.googleapis.com/css2?family=Russo+One&display=swap",
+      "css": "font-family: 'Russo One', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "dela-gothic-one",
+      "raqam": 27,
+      "nom": "Dela Gothic One",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Zich va baland ovozli. Afisha, festival va chegirma e'lonlari uchun.",
+      "oila": "Dela+Gothic+One",
+      "link": "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap",
+      "css": "font-family: 'Dela Gothic One', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "orbitron",
+      "raqam": 28,
+      "nom": "Orbitron",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Kelajak va kosmos kayfiyati. O'yin, kiber va texno-brendlar uchun.",
+      "oila": "Orbitron:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Orbitron', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "oswald",
+      "raqam": 29,
+      "nom": "Oswald",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Tor gazeta groteski. Media, reportaj va ixcham sarlavhalar uchun.",
+      "oila": "Oswald:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap",
+      "css": "font-family: 'Oswald', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "tektur",
+      "raqam": 30,
+      "nom": "Tektur",
+      "uslub": "sarlavha",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Burchakli kiber-shrift. Kibersport, o'yin interfeysi va texno-tadbirlar uchun.",
+      "oila": "Tektur:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Tektur', Impact, 'Arial Black', sans-serif;"
+    },
+    {
+      "id": "jetbrains-mono",
+      "raqam": 31,
+      "nom": "JetBrains Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Kod uchun yaratilgan aniq mono. Terminal bloklari va dasturchi saytlari uchun.",
+      "oila": "JetBrains+Mono:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'JetBrains Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "fira-code",
+      "raqam": 32,
+      "nom": "Fira Code",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Ligaturali kod shrifti. Kod namunalari va texnik hujjatlarga mos.",
+      "oila": "Fira+Code:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap",
+      "css": "font-family: 'Fira Code', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "ibm-plex-mono",
+      "raqam": 33,
+      "nom": "IBM Plex Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Muhandislik uslubidagi mono. Texnik brend va ma'lumot jadvallari uchun.",
+      "oila": "IBM+Plex+Mono:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap",
+      "css": "font-family: 'IBM Plex Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "space-mono",
+      "raqam": 34,
+      "nom": "Space Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Retro-texno xarakter. Sarlavha urg'usi va yorliqlar (label) uchun.",
+      "oila": "Space+Mono:wght@400;700",
+      "link": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap",
+      "css": "font-family: 'Space Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "roboto-mono",
+      "raqam": 35,
+      "nom": "Roboto Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Neytral va tanish. Raqamlar, vaqt va holat ko'rsatkichlari uchun.",
+      "oila": "Roboto+Mono:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap",
+      "css": "font-family: 'Roboto Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "source-code-pro",
+      "raqam": 36,
+      "nom": "Source Code Pro",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Yengil va tiniq mono. Uzun kod bloklari va konfiguratsiya namunalariga mos.",
+      "oila": "Source+Code+Pro:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Source Code Pro', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "dm-mono",
+      "raqam": 37,
+      "nom": "DM Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500
+      ],
+      "kirill": false,
+      "qayerda": "Yumshoq mono. Minimal portfolio va kichik izohli yozuvlar uchun.",
+      "oila": "DM+Mono:wght@400;500",
+      "link": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap",
+      "css": "font-family: 'DM Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "geist-mono",
+      "raqam": 38,
+      "nom": "Geist Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Zamonaviy ixcham mono. Dev-asboblar va boshqaruv panellari uchun.",
+      "oila": "Geist+Mono:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Geist Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "martian-mono",
+      "raqam": 39,
+      "nom": "Martian Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Keng, grotesk ruhidagi mono. Texno-lending yorliqlari va raqamlar uchun.",
+      "oila": "Martian+Mono:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Martian Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "red-hat-mono",
+      "raqam": 40,
+      "nom": "Red Hat Mono",
+      "uslub": "mono",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Do'stona yumaloq mono. Kod bilan aralash interfeys matnlariga mos.",
+      "oila": "Red+Hat+Mono:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;700&display=swap",
+      "css": "font-family: 'Red Hat Mono', ui-monospace, Consolas, 'Courier New', monospace;"
+    },
+    {
+      "id": "caveat",
+      "raqam": 41,
+      "nom": "Caveat",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Tabiiy qo'lyozma. Izoh, urg'u so'zlari va shaxsiy blog uchun.",
+      "oila": "Caveat:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap",
+      "css": "font-family: 'Caveat', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "pacifico",
+      "raqam": 42,
+      "nom": "Pacifico",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Qalin retro-yozuv. Kafe, qandolatxona va yozgi aksiyalar uchun.",
+      "oila": "Pacifico",
+      "link": "https://fonts.googleapis.com/css2?family=Pacifico&display=swap",
+      "css": "font-family: 'Pacifico', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "dancing-script",
+      "raqam": 43,
+      "nom": "Dancing Script",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Ravon kalligrafik yozuv. Taklifnoma va tabrik sarlavhalari uchun.",
+      "oila": "Dancing+Script:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap",
+      "css": "font-family: 'Dancing Script', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "kalam",
+      "raqam": 44,
+      "nom": "Kalam",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Ruchka bilan yozilgandek. Eslatma, stiker va ta'limiy sahifalarga mos.",
+      "oila": "Kalam:wght@400;700",
+      "link": "https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap",
+      "css": "font-family: 'Kalam', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "permanent-marker",
+      "raqam": 45,
+      "nom": "Permanent Marker",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Marker izi. Dadil urg'u, chegirma belgisi va ko'cha uslubi uchun.",
+      "oila": "Permanent+Marker",
+      "link": "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap",
+      "css": "font-family: 'Permanent Marker', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "shadows-into-light",
+      "raqam": 46,
+      "nom": "Shadows Into Light",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Yengil va samimiy qo'lyozma. Qisqa iqtibos va imzolar uchun.",
+      "oila": "Shadows+Into+Light",
+      "link": "https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap",
+      "css": "font-family: 'Shadows Into Light', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "great-vibes",
+      "raqam": 47,
+      "nom": "Great Vibes",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Nafis kalligrafiya. To'y taklifnomasi va sertifikat sarlavhalari uchun.",
+      "oila": "Great+Vibes",
+      "link": "https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap",
+      "css": "font-family: 'Great Vibes', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "lobster",
+      "raqam": 48,
+      "nom": "Lobster",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Qalin bog'langan yozuv. Logotip va taom menyusi sarlavhalari uchun.",
+      "oila": "Lobster",
+      "link": "https://fonts.googleapis.com/css2?family=Lobster&display=swap",
+      "css": "font-family: 'Lobster', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "marck-script",
+      "raqam": 49,
+      "nom": "Marck Script",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400
+      ],
+      "kirill": true,
+      "qayerda": "Tez yozilgan pero izi. Shaxsiy imzo va iqtiboslarga mos (kirill ham bor).",
+      "oila": "Marck+Script",
+      "link": "https://fonts.googleapis.com/css2?family=Marck+Script&display=swap",
+      "css": "font-family: 'Marck Script', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "amatic-sc",
+      "raqam": 50,
+      "nom": "Amatic SC",
+      "uslub": "qolyozma",
+      "vaznlar": [
+        400,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Tor qo'lda chizilgan bosh harflar. Hunarmandchilik va menyu sarlavhalari uchun.",
+      "oila": "Amatic+SC:wght@400;700",
+      "link": "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",
+      "css": "font-family: 'Amatic SC', 'Segoe Script', cursive;"
+    },
+    {
+      "id": "nunito",
+      "raqam": 51,
+      "nom": "Nunito",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Yumaloq uchli iliq grotesk. Ta'lim, bolalar va servis saytlari matni uchun.",
+      "oila": "Nunito:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Nunito', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "quicksand",
+      "raqam": 52,
+      "nom": "Quicksand",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Yengil geometrik va do'stona. Mobil ilova va sog'lom turmush saytlari uchun.",
+      "oila": "Quicksand:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap",
+      "css": "font-family: 'Quicksand', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "comfortaa",
+      "raqam": 53,
+      "nom": "Comfortaa",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "To'liq yumaloq shakllar. Logotip va qisqa sarlavhalar uchun.",
+      "oila": "Comfortaa:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap",
+      "css": "font-family: 'Comfortaa', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "baloo-2",
+      "raqam": 54,
+      "nom": "Baloo 2",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": false,
+      "qayerda": "Semiz va quvnoq. Taom yetkazish, o'yin va bolalar loyihalari uchun.",
+      "oila": "Baloo+2:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Baloo 2', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "fredoka",
+      "raqam": 55,
+      "nom": "Fredoka",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700
+      ],
+      "kirill": false,
+      "qayerda": "Yumshoq qalin sarlavha shrifti. O'quv markazi va bolalar mahsulotlari uchun.",
+      "oila": "Fredoka:wght@400;500;700",
+      "link": "https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap",
+      "css": "font-family: 'Fredoka', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "varela-round",
+      "raqam": 56,
+      "nom": "Varela Round",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400
+      ],
+      "kirill": false,
+      "qayerda": "Sodda yumaloq grotesk. Tugma, menyu va qisqa interfeys matnlari uchun.",
+      "oila": "Varela+Round",
+      "link": "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap",
+      "css": "font-family: 'Varela Round', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "m-plus-rounded-1c",
+      "raqam": 57,
+      "nom": "M PLUS Rounded 1c",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Yumaloq uchli keng oila. Do'stona interfeys va ko'p vaznli matn uchun.",
+      "oila": "M+PLUS+Rounded+1c:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'M PLUS Rounded 1c', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "balsamiq-sans",
+      "raqam": 58,
+      "nom": "Balsamiq Sans",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        700
+      ],
+      "kirill": true,
+      "qayerda": "Qo'lda chizilgan maket ruhi. Prototip, sxema va norasmiy sahifalar uchun.",
+      "oila": "Balsamiq+Sans:wght@400;700",
+      "link": "https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap",
+      "css": "font-family: 'Balsamiq Sans', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "mulish",
+      "raqam": 59,
+      "nom": "Mulish",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Minimal va ochiq. Xizmat saytlari matni hamda uzun tavsiflar uchun.",
+      "oila": "Mulish:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Mulish', system-ui, 'Segoe UI', sans-serif;"
+    },
+    {
+      "id": "rubik",
+      "raqam": 60,
+      "nom": "Rubik",
+      "uslub": "yumaloq",
+      "vaznlar": [
+        400,
+        500,
+        700,
+        800
+      ],
+      "kirill": true,
+      "qayerda": "Burchaklari yumshatilgan grotesk. Mobil ilova va ikki tilli (uz/ru) interfeys uchun.",
+      "oila": "Rubik:wght@400;500;700;800",
+      "link": "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap",
+      "css": "font-family: 'Rubik', system-ui, 'Segoe UI', sans-serif;"
+    }
+  ],
+  "juftliklar": [
+    {
+      "id": "texno-startap",
+      "raqam": 1,
+      "nom": "Texno startap",
+      "sarlavha": "space-grotesk",
+      "matn": "inter",
+      "kayfiyat": "Aniq va texnologik",
+      "qayerda": "SaaS, AI mahsulot va startap lendinglari",
+      "link": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; }\nbody { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "dadil-web3",
+      "raqam": 2,
+      "nom": "Dadil Web3",
+      "sarlavha": "unbounded",
+      "matn": "manrope",
+      "kayfiyat": "Keng, baland ovozli",
+      "qayerda": "Kripto, Web3 va festival sahifalari",
+      "link": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;800&family=Manrope:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Unbounded', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "premium-brend",
+      "raqam": 3,
+      "nom": "Premium brend",
+      "sarlavha": "playfair-display",
+      "matn": "dm-sans",
+      "kayfiyat": "Nafis va hashamatli",
+      "qayerda": "Moda, restoran va premium xizmatlar",
+      "link": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&family=DM+Sans:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "iliq-hunar",
+      "raqam": 4,
+      "nom": "Iliq hunarmand",
+      "sarlavha": "fraunces",
+      "matn": "figtree",
+      "kayfiyat": "Samimiy va iliq",
+      "qayerda": "Qahvaxona, hunarmandchilik, muallif brendi",
+      "link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700;800&family=Figtree:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Fraunces', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "zamonaviy-agentlik",
+      "raqam": 5,
+      "nom": "Zamonaviy agentlik",
+      "sarlavha": "instrument-serif",
+      "matn": "inter",
+      "kayfiyat": "Minimal va didli",
+      "qayerda": "Agentlik, portfolio va studiya saytlari",
+      "link": "https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "tahririy-jurnal",
+      "raqam": 6,
+      "nom": "Tahririy jurnal",
+      "sarlavha": "dm-serif-display",
+      "matn": "dm-sans",
+      "kayfiyat": "Jurnal uslubi",
+      "qayerda": "Blog, media va uzun maqolalar",
+      "link": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "nozik-marosim",
+      "raqam": 7,
+      "nom": "Nozik marosim",
+      "sarlavha": "cormorant-garamond",
+      "matn": "montserrat",
+      "kayfiyat": "Nozik va tantanali",
+      "qayerda": "To'y, zargarlik va go'zallik saloni",
+      "link": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "moda-glyans",
+      "raqam": 8,
+      "nom": "Moda glyans",
+      "sarlavha": "bodoni-moda",
+      "matn": "manrope",
+      "kayfiyat": "Keskin kontrast",
+      "qayerda": "Kiyim, parfyum va lukbuk sahifalari",
+      "link": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;700;800&family=Manrope:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Bodoni Moda', Georgia, 'Times New Roman', serif; }\nbody { font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "sport-afisha",
+      "raqam": 9,
+      "nom": "Sport afisha",
+      "sarlavha": "bebas-neue",
+      "matn": "montserrat",
+      "kayfiyat": "Kuchli va tezkor",
+      "qayerda": "Sport, fitnes va tadbir afishalari",
+      "link": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Bebas Neue', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "media-reportaj",
+      "raqam": 10,
+      "nom": "Media reportaj",
+      "sarlavha": "oswald",
+      "matn": "source-serif-4",
+      "kayfiyat": "Jiddiy va ixcham",
+      "qayerda": "Yangiliklar, reportaj va tahliliy matnlar",
+      "link": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Source+Serif+4:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Oswald', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }"
+    },
+    {
+      "id": "kocha-uslubi",
+      "raqam": 11,
+      "nom": "Ko'cha uslubi",
+      "sarlavha": "archivo-black",
+      "matn": "dm-sans",
+      "kayfiyat": "Og'ir va dadil",
+      "qayerda": "Kiyim do'koni, strit-brend va plakatlar",
+      "link": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Archivo Black', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "ijodiy-studiya",
+      "raqam": 12,
+      "nom": "Ijodiy studiya",
+      "sarlavha": "syne",
+      "matn": "inter",
+      "kayfiyat": "G'ayrioddiy va ijodiy",
+      "qayerda": "Dizayn studiyasi va san'at loyihalari",
+      "link": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Inter:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Syne', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "fintech-ilova",
+      "raqam": 13,
+      "nom": "Fintech ilova",
+      "sarlavha": "sora",
+      "matn": "manrope",
+      "kayfiyat": "Ishonchli va zamonaviy",
+      "qayerda": "Bank, to'lov va moliya ilovalari",
+      "link": "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&family=Manrope:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif; }\nbody { font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "dasturchi-mahsuloti",
+      "raqam": 14,
+      "nom": "Dasturchi mahsuloti",
+      "sarlavha": "plus-jakarta-sans",
+      "matn": "jetbrains-mono",
+      "kayfiyat": "Do'stona va texnik",
+      "qayerda": "Dev-asbob, hujjat va kodli darsliklar",
+      "link": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; }\nbody { font-family: 'JetBrains Mono', ui-monospace, Consolas, 'Courier New', monospace; }"
+    },
+    {
+      "id": "retro-texno",
+      "raqam": 15,
+      "nom": "Retro texno",
+      "sarlavha": "space-mono",
+      "matn": "space-grotesk",
+      "kayfiyat": "Retro kompyuter ruhi",
+      "qayerda": "Hakaton, texno-tadbir va eksperimental saytlar",
+      "link": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Space Mono', ui-monospace, Consolas, 'Courier New', monospace; }\nbody { font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "kiber-kelajak",
+      "raqam": 16,
+      "nom": "Kiber kelajak",
+      "sarlavha": "orbitron",
+      "matn": "roboto-mono",
+      "kayfiyat": "Kosmos va kiber",
+      "qayerda": "O'yin, kiberxavfsizlik va texno-brendlar",
+      "link": "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Roboto+Mono:wght@400;500;700&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Orbitron', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Roboto Mono', ui-monospace, Consolas, 'Courier New', monospace; }"
+    },
+    {
+      "id": "kuchli-texnika",
+      "raqam": 17,
+      "nom": "Kuchli texnika",
+      "sarlavha": "russo-one",
+      "matn": "onest",
+      "kayfiyat": "Mustahkam va texnik",
+      "qayerda": "Avto, qurilish va uskunalar (uz/ru)",
+      "link": "https://fonts.googleapis.com/css2?family=Russo+One&family=Onest:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Russo One', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "baland-afisha",
+      "raqam": 18,
+      "nom": "Baland afisha",
+      "sarlavha": "dela-gothic-one",
+      "matn": "onest",
+      "kayfiyat": "Zich va e'tibor tortuvchi",
+      "qayerda": "Festival, chegirma va e'lon sahifalari (uz/ru)",
+      "link": "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Dela Gothic One', Impact, 'Arial Black', sans-serif; }\nbody { font-family: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "korporativ-talim",
+      "raqam": 19,
+      "nom": "Korporativ va ta'lim",
+      "sarlavha": "montserrat",
+      "matn": "merriweather",
+      "kayfiyat": "Rasmiy, ishonchli",
+      "qayerda": "Kompaniya sayti, universitet va kurslar",
+      "link": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Merriweather:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }\nbody { font-family: 'Merriweather', Georgia, 'Times New Roman', serif; }"
+    },
+    {
+      "id": "bolalar-olami",
+      "raqam": 20,
+      "nom": "Bolalar olami",
+      "sarlavha": "fredoka",
+      "matn": "nunito",
+      "kayfiyat": "Quvnoq va yumshoq",
+      "qayerda": "O'quv markazi, bog'cha va bolalar mahsulotlari",
+      "link": "https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Nunito:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Fredoka', system-ui, 'Segoe UI', sans-serif; }\nbody { font-family: 'Nunito', system-ui, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "mazali-servis",
+      "raqam": 21,
+      "nom": "Mazali servis",
+      "sarlavha": "baloo-2",
+      "matn": "mulish",
+      "kayfiyat": "Do'stona va ishtahali",
+      "qayerda": "Taom yetkazish, kafe va maishiy servislar",
+      "link": "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&family=Mulish:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Baloo 2', system-ui, 'Segoe UI', sans-serif; }\nbody { font-family: 'Mulish', system-ui, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "yumshoq-ilova",
+      "raqam": 22,
+      "nom": "Yumshoq ilova",
+      "sarlavha": "comfortaa",
+      "matn": "rubik",
+      "kayfiyat": "Yumaloq va xotirjam",
+      "qayerda": "Mobil ilova, salomatlik va odatlar trekeri",
+      "link": "https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Rubik:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Comfortaa', system-ui, 'Segoe UI', sans-serif; }\nbody { font-family: 'Rubik', system-ui, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "shaxsiy-blog",
+      "raqam": 23,
+      "nom": "Shaxsiy blog",
+      "sarlavha": "caveat",
+      "matn": "nunito",
+      "kayfiyat": "Qo'lyozma urg'usi",
+      "qayerda": "Shaxsiy blog, kundalik va muallif sahifasi",
+      "link": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Nunito:wght@400;500;700;800&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Caveat', 'Segoe Script', cursive; }\nbody { font-family: 'Nunito', system-ui, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "id": "tantanali-taklif",
+      "raqam": 24,
+      "nom": "Tantanali taklifnoma",
+      "sarlavha": "great-vibes",
+      "matn": "cormorant-garamond",
+      "kayfiyat": "Kalligrafik va tantanali",
+      "qayerda": "To'y taklifnomasi, sertifikat va tabriklar",
+      "link": "https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;700&display=swap",
+      "css": "h1, h2, h3 { font-family: 'Great Vibes', 'Segoe Script', cursive; }\nbody { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; }"
+    }
+  ]
+}
