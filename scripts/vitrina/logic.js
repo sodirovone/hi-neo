@@ -37,10 +37,11 @@
       }
     }
 
-    // --- Skrollsiz va SIMMETRIK ro'yxat ---
-    // Har sahifa doim to'liq to'r bo'ladi: elementlar sahifalarga teng bo'linadi, oxirgi sahifa
-    // orqaga surilib to'ldiriladi. Hammasi bitta sahifaga sig'sa, to'r markazda turadi va
-    // ustunlar soni elementlar teng taqsimlanadigan qilib tanlanadi.
+    // --- Skrollsiz, KETMA-KET va simmetrik ro'yxat ---
+    // Elementlar sahifalarga tartib bilan, takrorsiz bo'linadi: 1-sahifa 1..k, 2-sahifa k+1..2k va h.k.
+    // Har sahifa to'liq to'rtburchak bo'lib turadi: ustunlar soni elementlar soniga moslanadi,
+    // oxirgi qatorda joy qolsa, oxirgi element uni egallaydi. Bitta sahifaga sig'sa, to'r markazda.
+    const pagers = [];
     function makePager({ list, prev, next, info, minW, rowH, gap, pad, render, anchor, onDraw }) {
       let items = [], page = 0, cols = 0, rows = 0;
       function fit() {
@@ -52,33 +53,43 @@
         cols = c; rows = r;
         return true;
       }
+      // m ta element uchun eng tekis to'r: oxirgi qatordagi bo'sh joy eng kam bo'ladigan ustunlar soni
+      function grid(m, maxC, maxR) {
+        let best = Math.min(maxC, Math.max(1, m)), bestGap = Infinity;
+        for (let c = Math.min(maxC, m); c >= Math.max(1, Math.ceil(m / maxR)); c--) {
+          const g = (c - (m % c)) % c;
+          if (g < bestGap) { best = c; bestGap = g; }
+        }
+        return { cols: best, rows: Math.max(1, Math.ceil(m / best)), gap: bestGap === Infinity ? 0 : bestGap };
+      }
       function plan() {
         const n = items.length, c = cols || 1, r = rows || 1, cap = c * r;
-        if (n <= cap) {
-          // Bitta sahifa: qoldiqsiz bo'linadigan eng keng ustunlar soni
-          let useCols = Math.min(c, Math.max(1, n));
-          for (let k = useCols; k >= Math.max(2, Math.ceil(n / r)); k--) if (n % k === 0) { useCols = k; break; }
-          return { single: true, per: Math.max(1, n), pages: 1, useCols, useRows: Math.max(1, Math.ceil(n / useCols)) };
+        if (n <= cap) return { per: Math.max(1, n), pages: 1 };
+        const pages = Math.ceil(n / cap);
+        // Sahifadagi elementlar soni shunday tanlanadiki, hamma sahifa iloji boricha to'liq
+        // to'rtburchak bo'lsin va oxirgi sahifada bir-ikkita element yolg'iz qolmasin
+        let per = cap, bestScore = Infinity;
+        for (let k = Math.ceil(n / pages); k <= cap; k++) {
+          if (Math.ceil(n / k) !== pages) continue;
+          const last = n - (pages - 1) * k;
+          const score = grid(k, c, r).gap * (pages - 1) + grid(last, c, r).gap + (last < k * 0.4 ? 100 : 0);
+          if (score < bestScore) { bestScore = score; per = k; }
         }
-        const pages0 = Math.ceil(n / cap);
-        const useRows = Math.min(r, Math.ceil(Math.ceil(n / pages0) / c));
-        const per = useRows * c;
-        return { single: false, per, pages: Math.ceil(n / per), useCols: c, useRows };
+        return { per, pages };
       }
       function draw() {
-        const p = plan(), n = items.length;
+        const p = plan();
         page = Math.max(0, Math.min(page, p.pages - 1));
-        const start = p.single ? 0 : Math.max(0, Math.min(page * p.per, n - p.per));
-        const slice = items.slice(start, start + p.per);
+        const slice = items.slice(page * p.per, (page + 1) * p.per);
+        const g = grid(slice.length, cols || 1, rows || 1);
         const rowPx = Math.round(rowH * 1.45);
-        const fixed = p.single && p.useRows * (rowPx + gap) <= list.clientHeight - pad * 2;
-        list.style.gridTemplateColumns = `repeat(${p.useCols}, minmax(0, 1fr))`;
-        list.style.gridTemplateRows = fixed ? `repeat(${p.useRows}, ${rowPx}px)` : `repeat(${p.useRows}, minmax(0, 1fr))`;
+        const fixed = p.pages === 1 && g.rows * (rowPx + gap) <= list.clientHeight - pad * 2;
+        list.style.gridTemplateColumns = `repeat(${g.cols}, minmax(0, 1fr))`;
+        list.style.gridTemplateRows = fixed ? `repeat(${g.rows}, ${rowPx}px)` : `repeat(${g.rows}, minmax(0, 1fr))`;
         list.style.alignContent = fixed ? 'center' : 'stretch';
         list.innerHTML = slice.map(render).join('');
-        // To'liq bo'lmagan oxirgi qator qolsa, oxirgi element qolgan joyni egallaydi
-        const rest = slice.length % p.useCols;
-        if (rest && list.lastElementChild) list.lastElementChild.style.gridColumn = 'span ' + (p.useCols - rest + 1);
+        const rest = slice.length % g.cols;
+        if (rest && list.lastElementChild) list.lastElementChild.style.gridColumn = 'span ' + (g.cols - rest + 1);
         info.textContent = (page + 1) + ' / ' + p.pages;
         prev.disabled = page === 0;
         next.disabled = page >= p.pages - 1;
@@ -88,16 +99,20 @@
         const i = anchor ? anchor(items) : -1;
         if (i >= 0) page = Math.floor(i / plan().per);
       }
+      function refit() { if (fit()) { toAnchor(); draw(); } }
       prev.onclick = () => { page--; draw(); };
       next.onclick = () => { page++; draw(); };
-      new ResizeObserver(() => { if (fit()) { toAnchor(); draw(); } }).observe(list);
+      new ResizeObserver(refit).observe(list);
       fit();
-      return {
+      const api = {
         set(arr) { items = arr; page = 0; toAnchor(); draw(); },
         // Faqat tanlov belgisini yangilaydi (ro'yxat qayta chizilmaydi, animatsiya takrorlanmaydi)
         mark(id) { list.querySelectorAll('[data-id]').forEach((el) => el.classList.toggle('is-selected', el.dataset.id === id)); },
-        redraw: draw
+        redraw: draw,
+        refit
       };
+      pagers.push(api);
+      return api;
     }
 
     // Kod oynasi: matn sig'masa pastki qismi so'nadi (to'liq matn nusxalash tugmasida)
@@ -133,6 +148,7 @@
       $('stepCounter').textContent = two(curSec + 1) + ' / ' + two(SEC_N);
       document.title = curSec === 0 ? BASE_TITLE : sections[curSec].dataset.title + ' · Hi Neo';
       window.scrollTo(0, 0);
+      pagers.forEach((p) => p.refit());
       if (curSec === 0) countUp();
     }
 
@@ -268,7 +284,7 @@
 
     // --- 02-bet: 31 WOW effekt ---
     let selEf = EFFECTS[7]; // #08 Golografik karta
-    const chip = (id, num, nom, on, i, style) => `<button class="item-chip${on ? ' is-selected' : ''}" data-id="${id}" title="${esc(nom)}" style="--i:${i}"><span class="item-chip__num">${num}</span><span class="item-chip__name"${style || ''}>${esc(nom)}</span></button>`;
+    const chip = (id, num, nom, on, i, style) => `<button class="item-chip${on ? ' is-selected' : ''}" data-id="${id}" title="${esc(nom)}" style="--i:${Math.min(i, 18)}"><span class="item-chip__num">${num}</span><span class="item-chip__name"${style || ''}>${esc(nom)}</span></button>`;
     const CHIP = { minW: 150, rowH: 44, gap: 7, pad: 10 };
 
     const efPager = makePager({
@@ -881,7 +897,7 @@
     const icPager = makePager({
       list: icGridEl, prev: $('icPrev'), next: $('icNext'), info: $('icPageInfo'),
       minW: 78, rowH: 72, gap: 8, pad: 12,
-      render: (ic, i) => `<button class="icon-cell${ic.id === selIcon.id ? ' is-selected' : ''}" data-id="${ic.id}" title="${esc(ic.nom)} (${ic.id})" style="--i:${Math.min(i, 40) * 0.6}">${buildRawSvg(ic, icStrokeEl.value, 28)}<span>${ic.id}</span></button>`
+      render: (ic, i) => `<button class="icon-cell${ic.id === selIcon.id ? ' is-selected' : ''}" data-id="${ic.id}" title="${esc(ic.nom)} (${ic.id})" style="--i:${Math.min(i, 18)}">${buildRawSvg(ic, icStrokeEl.value, 28)}<span>${ic.id}</span></button>`
     });
 
     function selectIcon(ic, soft) {

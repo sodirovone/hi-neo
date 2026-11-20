@@ -861,8 +861,9 @@
 
     /* YUMSHOQ HARAKATLAR: bet ochilishi, ro'yxat almashishi, tanlov o'zgarishi */
     @keyframes neo-soft-in { from { opacity: 0; transform: translateY(16px); filter: blur(8px); } }
-    @keyframes neo-soft-pop { from { opacity: 0; transform: translateY(6px) scale(0.97); } }
-    @keyframes neo-soft-swap { from { opacity: 0; transform: translateY(8px); filter: blur(4px); } }
+    /* Ro'yxat va tanlov almashganda element hech qachon butunlay yo'qolmaydi: bo'sh ko'rinish bo'lmaydi */
+    @keyframes neo-soft-pop { from { opacity: 0.35; transform: translateY(5px); } }
+    @keyframes neo-soft-swap { from { opacity: 0.4; transform: translateY(5px); } }
     @keyframes neo-float { 0%, 100% { transform: translateY(-4px); } 50% { transform: translateY(5px); } }
     /* Vitrina animatsiyalar ko'rgazmasi: tizimda «harakatni kamaytirish» yoqilgan bo'lsa ham
        harakatlar ko'rsatiladi (aks holda ko'rgazmaning o'zi ishlamaydi). */
@@ -874,11 +875,11 @@
     .neo-section.is-active .neo-copy > :nth-child(4) { animation-delay: 0.34s; }
     .neo-section.is-active .neo-copy > :nth-child(5) { animation-delay: 0.42s; }
     .item-chip, .icon-cell {
-      animation: neo-soft-pop 0.5s var(--soft) backwards;
-      animation-delay: calc(var(--i, 0) * 16ms);
+      animation: neo-soft-pop 0.32s var(--soft) backwards;
+      animation-delay: calc(var(--i, 0) * 6ms);
     }
-    .neo-section.is-active .neo-copy .soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; animation-delay: 0s; }
-    .stage-canvas-wrap.soft-swap, .term-stage.soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; }
+    .neo-section.is-active .neo-copy .soft-swap { animation: neo-soft-swap 0.35s var(--soft) backwards; animation-delay: 0s; }
+    .stage-canvas-wrap.soft-swap, .term-stage.soft-swap { animation: neo-soft-swap 0.35s var(--soft) backwards; }
     .neo-logo--big { animation: neo-float 6s ease-in-out infinite; }
 
     /* Inject all 64 CSS Animations */
