@@ -1,6 +1,6 @@
 ---
 name: sayt
-description: Sayt, lending yoki veb-sahifa qurilayotganda Hi Neo arsenalidan kerakli qismlarni o'zi tanlab ishlatadi — 31 WOW effekt, 64 CSS animatsiya, 3,054 SVG ikonka, 60 shrift (24 juftlik) va «bitta bet — bitta bo'lim» maketi ichidan loyihaga mosini oladi, ortiqchasini qo'shmaydi va tayyor saytni yozadi. Foydalanuvchi «sayt yasa», «sayt qilib ber», «lending qur», «veb-sayt», «portfolio», «do'kon sayti», /sayt yoki /hi-neo:sayt deganda, shuningdek har qanday yangi sayt yoki sahifa qurish topshirig'ida avtomatik ishlatiladi.
+description: Sayt, lending yoki veb-sahifa qurilayotganda Hi Neo arsenalidan kerakli qismlarni o'zi tanlab ishlatadi — 31 WOW effekt, 64 CSS animatsiya, 3,054 SVG ikonka, 60 shrift (24 juftlik), 36 rang palitrasi va «bitta bet — bitta bo'lim» maketi ichidan loyihaga mosini oladi, ortiqchasini qo'shmaydi va tayyor saytni yozadi. Foydalanuvchi «sayt yasa», «sayt qilib ber», «lending qur», «veb-sayt», «portfolio», «do'kon sayti», /sayt yoki /hi-neo:sayt deganda, shuningdek har qanday yangi sayt yoki sahifa qurish topshirig'ida avtomatik ishlatiladi.
 ---
 
 # Hi Neo — Sayt Quruvchi (hammasidan keraklisini o'zi tanlaydi)
@@ -36,11 +36,13 @@ Javobda bitta **shrift juftligi**, **1–2 ta WOW effekt**, **3–4 ta CSS anima
 
 | Qism | Qancha olinadi | Qayerdan aniqlashtiriladi |
 |---|---|---|
-| Maket | Har doim `sahifa` standarti: bitta bet — bitta bo'lim, `4–6 ta` bet | `../sahifa/references/maket-shablonlar.md` |
+| Maket va Hero | 50 ta Hero maketdan 1 ta birinchi bet + `sahifa` standarti (`4–6 ta` bet) | `hero-royxat`, `hero-ol`, `maket-shablonlar.md` |
+| Rang va Gradient | `1 ta palitra` (yoki 100 ta gradientdan / `rang-mosla` dan) | `rang-royxat`, `rang-mosla`, `gradient-royxat` |
 | Shrift | `1 ta juftlik` (sarlavha + matn), kod bo'lsa qo'shimcha mono | `juftlik-royxat`, `shrift-royxat --uslub ...` |
 | Ikonka | Har betga `1–3 ta`, hammasi bitta uslubda | `ikonka-qidir <so'z>` |
 | CSS animatsiya | Butun saytga `3–4 xil` (kirish, tugma, fon) | `anim-royxat --uslub ...` |
 | WOW effekt | `1 ta`, ko'pi bilan `2 ta` (odatda bosh betda) | `royxat --kategoriya ...` |
+| Avto-Audit | **Har bir betda avtomatik:** Audit -> Uslub -> Kodda tuzatish | `audit <yol>` va `../audit/SKILL.md` |
 
 ---
 
@@ -66,7 +68,8 @@ Javobda bitta **shrift juftligi**, **1–2 ta WOW effekt**, **3–4 ta CSS anima
 3. Har betning `.neo-visual` qismiga shu betga atab yaratilgan rasm va bitta yumshoq harakatni qo'y. Betlar bir-birini takrorlamasin.
 4. Ikonkalarni `ikonka-ol <id> --format svg|jsx|vue` bilan ol.
 5. Tanlangan animatsiyalarning faqat kerakli `@keyframes` bloklarini ko'chir, WOW effektni `effekt` skillidagi prompt va qoidalar bo'yicha yoz.
-6. Lokal tekshiruv kerak bo'lsa faqat `http://localhost:3000` da och. Kompyuter (`>= 1024px`) va telefon (`< 1024px`) ko'rinishini tekshir.
+6. **Har bir betda avtomatik Audit (`audit` skilli):** kod yozilgach, har bir betni 3 bosqichdan o'tkaz — (a) muammolarni top (ortiqcha effekt, yomon o'qiluvchanlik, chalg'ituvchi yorliqlar), (b) mahsulotga mos uslubga tekisla, (c) kodda masofa, rang, shrift va asosiy CTA ni qadamma-qadam tuzat (`node katalog.js audit .`).
+7. Lokal tekshiruv kerak bo'lsa faqat `http://localhost:3000` da och. Kompyuter (`>= 1024px`) va telefon (`< 1024px`) ko'rinishini tekshir.
 
 ---
 

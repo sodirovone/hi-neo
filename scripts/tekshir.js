@@ -4,8 +4,8 @@
  *
  * 1. Kirill belgilar yo'qligini tekshiradi (U+0400..U+04FF).
  * 2. Antigravity plugin.json hamda Claude plugin.json / marketplace.json manifestlarini tekshiradi.
- * 3. Barcha 7 ta skill (sayt, sahifa, effekt, animatsiya, ikonka, shrift, vitrina) va rules/AGENTS.md ni tekshiradi.
- * 4. 31 ta WOW effekt, 64 ta CSS animatsiya (>=50), 3,054 ta minimalist SVG ikonka (~3,000), 60 ta shrift + 24 ta juftlik va «bitta bet — bitta bo'lim» sahifa maketi butunligini tekshiradi.
+ * 3. Barcha 8 ta skill (sayt, sahifa, effekt, animatsiya, ikonka, shrift, rang, vitrina) va rules/AGENTS.md ni tekshiradi.
+ * 4. 31 ta WOW effekt, 64 ta CSS animatsiya (>=50), 3,054 ta minimalist SVG ikonka (~3,000), 60 ta shrift + 24 ta juftlik, 36 ta rang palitrasi va «bitta bet — bitta bo'lim» sahifa maketi butunligini tekshiradi.
  *
  * Ishlatish:  node scripts/tekshir.js
  */
@@ -122,7 +122,7 @@ function frontmatter(fayl) {
 }
 
 function komponentTekshir() {
-  for (const nom of ['sayt', 'sahifa', 'effekt', 'animatsiya', 'ikonka', 'shrift', 'vitrina']) {
+  for (const nom of ['hidesign', 'sayt', 'sahifa', 'effekt', 'animatsiya', 'ikonka', 'shrift', 'rang', 'audit', 'vitrina']) {
     const fayl = path.join(ROOT, 'skills', nom, 'SKILL.md');
     if (!fs.existsSync(fayl)) {
       xatolar.push(`skill topilmadi: skills/${nom}/SKILL.md`);
@@ -203,7 +203,62 @@ function komponentTekshir() {
     console.log(`OK  shriftlar.json — ${fnDb.shriftlar.length} ta shrift va ${fnDb.juftliklar.length} ta juftlik tasdiqlandi`);
   }
 
-  // 5. «Bitta bet — bitta bo'lim» maketi va Vitrina + JS sintaksis tekshiruvi
+  // 5. 36 ta rang palitrasi (6 uslub)
+  const rgDb = JSON.parse(fs.readFileSync(path.join(ROOT, 'skills', 'rang', 'references', 'palitralar.json'), 'utf8'));
+  const HEX_RE = /^#[0-9a-fA-F]{6}$/;
+  if (!Array.isArray(rgDb.palitralar) || rgDb.palitralar.length !== 36) {
+    xatolar.push(`palitralar.json: 36 ta palitra bo'lishi shart, hozir ${rgDb.palitralar ? rgDb.palitralar.length : 0} ta`);
+  } else {
+    const rgIds = new Set();
+    for (const p of rgDb.palitralar) {
+      if (rgIds.has(p.id)) xatolar.push(`palitralar.json: takrorlangan id "${p.id}"`);
+      rgIds.add(p.id);
+      if (!rgDb.meta.uslublar[p.uslub]) xatolar.push(`palitra "${p.id}": noma'lum uslub "${p.uslub}"`);
+      if (!HEX_RE.test(p.fon) || !HEX_RE.test(p.matn)) xatolar.push(`palitra "${p.id}": fon/matn HEX noto'g'ri`);
+      if (!Array.isArray(p.ranglar) || p.ranglar.length < 2 || !p.ranglar.every((c) => HEX_RE.test(c))) {
+        xatolar.push(`palitra "${p.id}": ranglar ro'yxati noto'g'ri`);
+      }
+    }
+    console.log(`OK  palitralar.json — ${rgDb.palitralar.length} ta rang palitrasi (${Object.keys(rgDb.meta.uslublar).length} uslub) tasdiqlandi`);
+  }
+
+  // 5b. 100 ta premium gradient (8 uslub, xameleon tovlanish bilan)
+  const grDb = JSON.parse(fs.readFileSync(path.join(ROOT, 'skills', 'rang', 'references', 'gradientlar.json'), 'utf8'));
+  const GR_TURLAR = new Set(['linear', 'radial', 'conic']);
+  if (!Array.isArray(grDb.gradientlar) || grDb.gradientlar.length !== 100) {
+    xatolar.push(`gradientlar.json: 100 ta gradient bo'lishi shart, hozir ${grDb.gradientlar ? grDb.gradientlar.length : 0} ta`);
+  } else {
+    const grIds = new Set();
+    for (const g of grDb.gradientlar) {
+      if (grIds.has(g.id)) xatolar.push(`gradientlar.json: takrorlangan id "${g.id}"`);
+      grIds.add(g.id);
+      if (!grDb.meta.uslublar[g.uslub]) xatolar.push(`gradient "${g.id}": noma'lum uslub "${g.uslub}"`);
+      if (!GR_TURLAR.has(g.tur)) xatolar.push(`gradient "${g.id}": noma'lum tur "${g.tur}"`);
+      if (!Array.isArray(g.toxtashlar) || g.toxtashlar.length < 2 || !g.toxtashlar.every((t) => HEX_RE.test(t.rang) && t.joy >= 0 && t.joy <= 100)) {
+        xatolar.push(`gradient "${g.id}": toxtashlar ro'yxati noto'g'ri`);
+      }
+    }
+    console.log(`OK  gradientlar.json — ${grDb.gradientlar.length} ta premium gradient (${Object.keys(grDb.meta.uslublar).length} uslub) tasdiqlandi`);
+  }
+
+  // 5c. 50 ta birinchi bet (Hero) maketi (Supahero ilhomli, 7 uslub)
+  const hmDb = JSON.parse(fs.readFileSync(path.join(ROOT, 'skills', 'sahifa', 'references', 'hero-maketlar.json'), 'utf8'));
+  if (!Array.isArray(hmDb.maketlar) || hmDb.maketlar.length !== 50) {
+    xatolar.push(`hero-maketlar.json: 50 ta Hero maket bo'lishi shart, hozir ${hmDb.maketlar ? hmDb.maketlar.length : 0} ta`);
+  } else {
+    const hmIds = new Set();
+    for (const h of hmDb.maketlar) {
+      if (hmIds.has(h.id)) xatolar.push(`hero-maketlar.json: takrorlangan id "${h.id}"`);
+      hmIds.add(h.id);
+      if (!hmDb.meta.uslublar[h.uslub]) xatolar.push(`hero "${h.id}": noma'lum uslub "${h.uslub}"`);
+      if (!h.sxema || !h.sarlavha || !h.html || !h.html.includes('<section')) {
+        xatolar.push(`hero "${h.id}": sxema, sarlavha yoki HTML shabloni noto'g'ri`);
+      }
+    }
+    console.log(`OK  hero-maketlar.json — ${hmDb.maketlar.length} ta Hero maket (${Object.keys(hmDb.meta.uslublar).length} uslub) tasdiqlandi`);
+  }
+
+  // 6. «Bitta bet — bitta bo'lim» maketi va Vitrina + JS sintaksis tekshiruvi
   const vitrina = fs.readFileSync(path.join(ROOT, 'skills', 'vitrina', 'assets', 'vitrina.html'), 'utf8');
   const skriptlar = [...vitrina.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
   if (skriptlar.length !== 2) {
@@ -218,10 +273,10 @@ function komponentTekshir() {
     }
   }
   const betlar = (vitrina.match(/<section class="neo-section" id="[a-z-]+"/g) || []).length;
-  if (betlar !== 7 || !vitrina.includes('.neo-section.is-active') || !vitrina.includes('100svh')) {
-    xatolar.push(`vitrina.html: «bitta bet — bitta bo'lim» standarti buzilgan (betlar: ${betlar}, kutilgan: 7)`);
+  if (betlar !== 9 || !vitrina.includes('.neo-section.is-active') || !vitrina.includes('100svh')) {
+    xatolar.push(`vitrina.html: «bitta bet — bitta bo'lim» standarti buzilgan (betlar: ${betlar}, kutilgan: 9)`);
   } else {
-    console.log('OK  vitrina.html — 7 ta alohida bet (bitta bet — bitta bo\'lim)');
+    console.log('OK  vitrina.html — 9 ta alohida bet (bitta bet — bitta bo\'lim)');
   }
 
   // Bo'lim ichida skroll bo'lmasligi kerak: ro'yxatlar sahifalanadi, uzun kod kesiladi
@@ -237,13 +292,16 @@ function komponentTekshir() {
     const boshi = vitrina.indexOf('const ' + nom + ' = ');
     if (boshi === -1) return null;
     const qator = vitrina.slice(boshi + nom.length + 9, vitrina.indexOf(';\n', boshi));
-    return JSON.parse(qator.split('<\\/').join('</'));
+    return JSON.parse(qator.split('<\\/').join('</').split('<\\!--').join('<!--'));
   };
   const teng = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   const vFonts = olish('FONTS') || [];
   if (!teng(olish('EFFECTS'), efDb.effektlar)) xatolar.push('vitrina.html: EFFECTS effektlar.json bilan mos emas');
   else if (!teng(olish('ANIMS'), anDb.animatsiyalar)) xatolar.push('vitrina.html: ANIMS animatsiyalar.json bilan mos emas');
   else if (!teng(vFonts.map((f) => f.link), fnDb.shriftlar.map((f) => f.link))) xatolar.push('vitrina.html: FONTS shriftlar.json bilan mos emas');
+  else if (!teng(olish('PALETTES'), rgDb.palitralar)) xatolar.push('vitrina.html: PALETTES palitralar.json bilan mos emas');
+  else if (!teng(olish('GRADIENTS'), grDb.gradientlar)) xatolar.push('vitrina.html: GRADIENTS gradientlar.json bilan mos emas');
+  else if (!teng(olish('HERO_LAYOUTS'), hmDb.maketlar)) xatolar.push('vitrina.html: HERO_LAYOUTS hero-maketlar.json bilan mos emas');
   else if (!teng((olish('ICONS_RAW') || []).map((x) => x[0]), icDb.ikonkalar.map((x) => x.id))) xatolar.push('vitrina.html: ICONS_RAW ikonkalar.json bilan mos emas');
   else console.log('OK  vitrina.html — ichki ma\'lumotlar JSON bazalar bilan bir xil');
 }

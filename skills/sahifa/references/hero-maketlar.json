@@ -1,0 +1,1502 @@
+{
+  "meta": {
+    "manba": "hiworld.club — Hi Neo (Supahero ilhomli 50 ta birinchi bet maketi)",
+    "soni": 50,
+    "uslublar": {
+      "saas": "SaaS va AI",
+      "studiya": "Studiya va Portfolio",
+      "fintech": "Fintech va Biznes",
+      "dokon": "Do'kon va Mahsulot",
+      "mobil": "Mobil va Ilova",
+      "minimal": "Minimal va Tahririy",
+      "kreativ": "Kreativ va 3D"
+    }
+  },
+  "maketlar": [
+    {
+      "raqam": 1,
+      "id": "saas-brauzer",
+      "nom": "Mahsulot Brauzerda",
+      "uslub": "saas",
+      "sxema": "center-browser",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 0%, #1e40af 0%, #070d1f 58%, #040814 100%)",
+        "ink": "#f8fafc",
+        "muted": "rgba(226,232,240,.74)",
+        "accent": "#38e1ff",
+        "accent2": "#6366f1",
+        "card": "rgba(12,20,38,.86)",
+        "light": false,
+        "btn": "solid"
+      },
+      "sarlavha": "Jamoangiz ishini bitta oynada boshqaring",
+      "matn": "Vazifalar, tahlil va real vaqt hisobotlari soniyalar ichida tayyor bo'ladi.",
+      "tugma1": "Bepul boshlash",
+      "tugma2": "Jonli demo",
+      "tarkib": [
+        "Markaziy sarlavha",
+        "2 ta tugma",
+        "Brauzer oynasi",
+        "Mijoz logolari"
+      ],
+      "qayerda": "SaaS platformalar, CRM, loyiha boshqaruvi va B2B dasturlar",
+      "html": "<section class=\"hero-saas-brauzer\">\n  <div class=\"hero-saas-brauzer__in\">\n    <h1>Jamoangiz ishini bitta oynada boshqaring</h1>\n    <p>Vazifalar, tahlil va real vaqt hisobotlari soniyalar ichida tayyor bo'ladi.</p>\n    <div class=\"hero-saas-brauzer__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Bepul boshlash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Jonli demo</a>\n    </div>\n    <div class=\"hero-saas-brauzer__stage\" aria-label=\"Mahsulot Brauzerda vitrinasi\">\n      <!-- Markaziy sarlavha · 2 ta tugma · Brauzer oynasi · Mijoz logolari -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-saas-brauzer{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 0%, #1e40af 0%, #070d1f 58%, #040814 100%);color:#f8fafc;text-align:center}\n.hero-saas-brauzer__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-saas-brauzer h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-saas-brauzer p{max-width:58ch;color:rgba(226,232,240,.74);font-size:17px;line-height:1.6}\n.hero-saas-brauzer__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-saas-brauzer__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(12,20,38,.86);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-saas-brauzer__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-saas-brauzer__bar button,.hero-saas-brauzer .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#38e1ff;color:#04122e;}\n.hero-saas-brauzer .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-saas-brauzer__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(12,20,38,.86);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 2,
+      "id": "ai-prompt-markaz",
+      "nom": "AI Prompt Markazi",
+      "uslub": "saas",
+      "sxema": "ai-prompt",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 20%, #3b0764 0%, #09071a 60%, #050510 100%)",
+        "ink": "#faf5ff",
+        "muted": "rgba(233,213,255,.74)",
+        "accent": "#c084fc",
+        "accent2": "#38bdf8",
+        "card": "rgba(24,18,48,.78)",
+        "light": false,
+        "btn": "cham"
+      },
+      "sarlavha": "Bitta jumla yozing — sayt tayyor",
+      "matn": "Sun'iy intellekt g'oyangizni bir necha soniyada ishlaydigan mahsulotga aylantiradi.",
+      "tugma1": "Yaratish",
+      "tugma2": "",
+      "tarkib": [
+        "Aurora fon",
+        "AI prompt qutisi",
+        "Tayyor takliflar",
+        "Tovlanuvchi tugma"
+      ],
+      "qayerda": "AI generatorlar, chat-yordamchilar, kod va dizayn vositalari",
+      "html": "<section class=\"hero-ai-prompt-markaz\">\n  <div class=\"hero-ai-prompt-markaz__in\">\n    <h1>Bitta jumla yozing — sayt tayyor</h1>\n    <p>Sun'iy intellekt g'oyangizni bir necha soniyada ishlaydigan mahsulotga aylantiradi.</p>\n    <form class=\"hero-ai-prompt-markaz__bar\"><input placeholder=\"G'oyangizni yoki savolingizni yozing...\" /><button type=\"submit\">Yaratish</button></form>\n    <div class=\"hero-ai-prompt-markaz__stage\" aria-label=\"AI Prompt Markazi vitrinasi\">\n      <!-- Aurora fon · AI prompt qutisi · Tayyor takliflar · Tovlanuvchi tugma -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-ai-prompt-markaz{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 20%, #3b0764 0%, #09071a 60%, #050510 100%);color:#faf5ff;text-align:center}\n.hero-ai-prompt-markaz__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-ai-prompt-markaz h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-ai-prompt-markaz p{max-width:58ch;color:rgba(233,213,255,.74);font-size:17px;line-height:1.6}\n.hero-ai-prompt-markaz__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-ai-prompt-markaz__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(24,18,48,.78);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-ai-prompt-markaz__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-ai-prompt-markaz__bar button,.hero-ai-prompt-markaz .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:linear-gradient(125deg,#c084fc,#38bdf8,#c084fc);background-size:220% 220%;color:#fff;animation:heroFlow 6s ease infinite;}\n.hero-ai-prompt-markaz .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#faf5ff;}\n.hero-ai-prompt-markaz__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(24,18,48,.78);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 3,
+      "id": "saas-ikki-ustun",
+      "nom": "Klassik 50/50 SaaS",
+      "uslub": "saas",
+      "sxema": "split-dashboard",
+      "tema": {
+        "bg": "linear-gradient(155deg, #f8fafc 0%, #eef2ff 100%)",
+        "ink": "#0f172a",
+        "muted": "#475569",
+        "accent": "#2563eb",
+        "accent2": "#06b6d4",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Sotuvlarni aniq raqamlar bilan oshiring",
+      "matn": "Har bir mijoz yo'lini kuzating va konversiyani avtomatik kuchaytiring.",
+      "tugma1": "Sinab ko'rish",
+      "tugma2": "Narxlar",
+      "tarkib": [
+        "50/50 bo'linish",
+        "Avatar ishonchi",
+        "Jonli grafik karta",
+        "Yorug' SaaS uslubi"
+      ],
+      "qayerda": "Analitika, marketing SaaS, B2B sotuv platformalari",
+      "html": "<section class=\"hero-saas-ikki-ustun\">\n  <div class=\"hero-saas-ikki-ustun__grid\">\n    <div class=\"hero-saas-ikki-ustun__copy\">\n      <h1>Sotuvlarni aniq raqamlar bilan oshiring</h1>\n      <p>Har bir mijoz yo'lini kuzating va konversiyani avtomatik kuchaytiring.</p>\n      <div class=\"hero-saas-ikki-ustun__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Sinab ko'rish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Narxlar</a>\n      </div>\n    </div>\n    <div class=\"hero-saas-ikki-ustun__visual\" aria-label=\"Klassik 50/50 SaaS maketi\">\n      <!-- 50/50 bo'linish · Avatar ishonchi · Jonli grafik karta · Yorug' SaaS uslubi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-saas-ikki-ustun{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(155deg, #f8fafc 0%, #eef2ff 100%);color:#0f172a}\n.hero-saas-ikki-ustun__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-saas-ikki-ustun__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-saas-ikki-ustun__copy p{margin-top:16px;color:#475569;font-size:17px;line-height:1.6}\n.hero-saas-ikki-ustun__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-saas-ikki-ustun .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#2563eb;color:#ffffff;}\n.hero-saas-ikki-ustun .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-saas-ikki-ustun__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-saas-ikki-ustun__grid{grid-template-columns:1fr;text-align:center}.hero-saas-ikki-ustun__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 4,
+      "id": "bento-hero",
+      "nom": "Bento Kartali Hero",
+      "uslub": "saas",
+      "sxema": "bento-grid",
+      "tema": {
+        "bg": "linear-gradient(180deg, #090d16 0%, #0e1628 100%)",
+        "ink": "#f1f5f9",
+        "muted": "#94a3b8",
+        "accent": "#22d3ee",
+        "accent2": "#818cf8",
+        "card": "rgba(18,28,50,.85)",
+        "light": false,
+        "btn": "solid"
+      },
+      "sarlavha": "Barcha vositalar bitta Bento tizimda",
+      "matn": "Tezlik, xavfsizlik va aqlli tahlil bir qarashda ko'rinadigan modullarda.",
+      "tugma1": "Hoziroq ulash",
+      "tugma2": "Hujjatlar",
+      "tarkib": [
+        "Ixcham sarlavha",
+        "3 ustunli Bento",
+        "KPI ko'rsatkichi",
+        "Mini grafik"
+      ],
+      "qayerda": "Zamonaviy startaplar, produktivlik ilovalari, ekosistema vitrinalari",
+      "html": "<section class=\"hero-bento-hero\">\n  <div class=\"hero-bento-hero__in\">\n    <h1>Barcha vositalar bitta Bento tizimda</h1>\n    <p>Tezlik, xavfsizlik va aqlli tahlil bir qarashda ko'rinadigan modullarda.</p>\n    <div class=\"hero-bento-hero__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Hoziroq ulash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Hujjatlar</a>\n    </div>\n    <div class=\"hero-bento-hero__stage\" aria-label=\"Bento Kartali Hero vitrinasi\">\n      <!-- Ixcham sarlavha · 3 ustunli Bento · KPI ko'rsatkichi · Mini grafik -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-bento-hero{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #090d16 0%, #0e1628 100%);color:#f1f5f9;text-align:center}\n.hero-bento-hero__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-bento-hero h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-bento-hero p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-bento-hero__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-bento-hero__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(18,28,50,.85);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-bento-hero__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-bento-hero__bar button,.hero-bento-hero .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#22d3ee;color:#04122e;}\n.hero-bento-hero .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f1f5f9;}\n.hero-bento-hero__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(18,28,50,.85);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 5,
+      "id": "buyruq-palitra",
+      "nom": "Buyruqlar Palitrasi (Cmd+K)",
+      "uslub": "saas",
+      "sxema": "cmd-palette",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 30%, #1e1b4b 0%, #070914 68%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#f43f5e",
+        "accent2": "#fb923c",
+        "card": "rgba(17,22,40,.9)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Sichqonchasiz 10 barobar tezroq ishlang",
+      "matn": "Bitta tugma bilan barcha loyiha, fayl va jamoa buyruqlarini boshqaring.",
+      "tugma1": "Yuklab olish",
+      "tugma2": "Klavishlar",
+      "tarkib": [
+        "Cmd+K qidiruv oynasi",
+        "Tezkor amallar",
+        "Klavish yorliqlari",
+        "Qorong'i nur"
+      ],
+      "qayerda": "Dasturchi vositalari, desktop ilovalar, tezkor ish maydonlari",
+      "html": "<section class=\"hero-buyruq-palitra\">\n  <div class=\"hero-buyruq-palitra__in\">\n    <h1>Sichqonchasiz 10 barobar tezroq ishlang</h1>\n    <p>Bitta tugma bilan barcha loyiha, fayl va jamoa buyruqlarini boshqaring.</p>\n    <div class=\"hero-buyruq-palitra__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Yuklab olish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Klavishlar</a>\n    </div>\n    <div class=\"hero-buyruq-palitra__stage\" aria-label=\"Buyruqlar Palitrasi (Cmd+K) vitrinasi\">\n      <!-- Cmd+K qidiruv oynasi · Tezkor amallar · Klavish yorliqlari · Qorong'i nur -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-buyruq-palitra{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 30%, #1e1b4b 0%, #070914 68%);color:#f8fafc;text-align:center}\n.hero-buyruq-palitra__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-buyruq-palitra h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-buyruq-palitra p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-buyruq-palitra__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-buyruq-palitra__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(17,22,40,.9);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-buyruq-palitra__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-buyruq-palitra__bar button,.hero-buyruq-palitra .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#f43f5e;color:#ffffff;}\n.hero-buyruq-palitra .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-buyruq-palitra__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(17,22,40,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 6,
+      "id": "kod-terminal",
+      "nom": "Dasturchi Terminali",
+      "uslub": "saas",
+      "sxema": "split-code",
+      "tema": {
+        "bg": "linear-gradient(145deg, #030712 0%, #071917 100%)",
+        "ink": "#ecfdf5",
+        "muted": "#94a3b8",
+        "accent": "#10b981",
+        "accent2": "#34d399",
+        "card": "#07111a",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#03150e"
+      },
+      "sarlavha": "Backend tizimini 2 daqiqada ishga tushiring",
+      "matn": "PostgreSQL baza, autentifikatsiya va tayyor API bitta buyruq bilan.",
+      "tugma1": "Loyiha ochish",
+      "tugma2": "API hujjat",
+      "tarkib": [
+        "50/50 kod sahnasi",
+        "CLI nusxalash satri",
+        "Jonli terminal",
+        "Zumrad urg'u"
+      ],
+      "qayerda": "API xizmatlar, cloud hosting, dasturchi SDK va infratuzilma",
+      "html": "<section class=\"hero-kod-terminal\">\n  <div class=\"hero-kod-terminal__grid\">\n    <div class=\"hero-kod-terminal__copy\">\n      <h1>Backend tizimini 2 daqiqada ishga tushiring</h1>\n      <p>PostgreSQL baza, autentifikatsiya va tayyor API bitta buyruq bilan.</p>\n      <div class=\"hero-kod-terminal__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Loyiha ochish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">API hujjat</a>\n      </div>\n    </div>\n    <div class=\"hero-kod-terminal__visual\" aria-label=\"Dasturchi Terminali maketi\">\n      <!-- 50/50 kod sahnasi · CLI nusxalash satri · Jonli terminal · Zumrad urg'u -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kod-terminal{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(145deg, #030712 0%, #071917 100%);color:#ecfdf5}\n.hero-kod-terminal__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-kod-terminal__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-kod-terminal__copy p{margin-top:16px;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-kod-terminal__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-kod-terminal .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#10b981;color:#03150e;}\n.hero-kod-terminal .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ecfdf5;}\n.hero-kod-terminal__visual{min-height:380px;border-radius:24px;background:#07111a;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-kod-terminal__grid{grid-template-columns:1fr;text-align:center}.hero-kod-terminal__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 7,
+      "id": "yangi-avlod-aurora",
+      "nom": "Aurora Shisha Sahna",
+      "uslub": "saas",
+      "sxema": "aurora-glass",
+      "tema": {
+        "bg": "linear-gradient(135deg, #0f172a 0%, #312e81 36%, #0284c7 72%, #06b6d4 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.82)",
+        "accent": "#38e1ff",
+        "accent2": "#a855f7",
+        "card": "rgba(255,255,255,.14)",
+        "light": false,
+        "shimmer": true,
+        "btn": "glass"
+      },
+      "sarlavha": "Kelajak interfeysi shaffof shishada",
+      "matn": "Yumshoq aurora nuri va shaffof tugmalar bilan premium birinchi taassurot.",
+      "tugma1": "Boshlash →",
+      "tugma2": "Ko'rib chiqish",
+      "tarkib": [
+        "Aurora gradient",
+        "Shaffof shisha menyu",
+        "Prazrachniy tugmalar",
+        "Shisha karta"
+      ],
+      "qayerda": "AI mahsulotlar, dizayn platformalari, premium texno brendlar",
+      "html": "<section class=\"hero-yangi-avlod-aurora\">\n  <div class=\"hero-yangi-avlod-aurora__in\">\n    <h1>Kelajak interfeysi shaffof shishada</h1>\n    <p>Yumshoq aurora nuri va shaffof tugmalar bilan premium birinchi taassurot.</p>\n    <div class=\"hero-yangi-avlod-aurora__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Boshlash →</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Ko'rib chiqish</a>\n    </div>\n    <div class=\"hero-yangi-avlod-aurora__stage\" aria-label=\"Aurora Shisha Sahna vitrinasi\">\n      <!-- Aurora gradient · Shaffof shisha menyu · Prazrachniy tugmalar · Shisha karta -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-yangi-avlod-aurora{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(135deg, #0f172a 0%, #312e81 36%, #0284c7 72%, #06b6d4 100%);color:#ffffff;text-align:center}\n.hero-yangi-avlod-aurora__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-yangi-avlod-aurora h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-yangi-avlod-aurora p{max-width:58ch;color:rgba(255,255,255,.82);font-size:17px;line-height:1.6}\n.hero-yangi-avlod-aurora__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-yangi-avlod-aurora__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-yangi-avlod-aurora__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-yangi-avlod-aurora__bar button,.hero-yangi-avlod-aurora .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-yangi-avlod-aurora .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-yangi-avlod-aurora__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 8,
+      "id": "video-demo-hero",
+      "nom": "Video Demo Quti",
+      "uslub": "saas",
+      "sxema": "video-card",
+      "tema": {
+        "bg": "linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%)",
+        "ink": "#0f172a",
+        "muted": "#475569",
+        "accent": "#4f46e5",
+        "accent2": "#ec4899",
+        "card": "#0f172a",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Mahsulot qanday ishlashini 60 soniyada ko'ring",
+      "matn": "Murakkab tushuntirish o'rniga jonli video taqdimot bilan ishonch uyg'oting.",
+      "tugma1": "Bepul sinash",
+      "tugma2": "Demo ko'rish",
+      "tarkib": [
+        "Markaziy taklif",
+        "16:9 video oyna",
+        "Shaffof Play tugma",
+        "Vaqt ko'rsatkichi"
+      ],
+      "qayerda": "Video vositalar, taqdimot platformalari, murakkab SaaS servislar",
+      "html": "<section class=\"hero-video-demo-hero\">\n  <div class=\"hero-video-demo-hero__in\">\n    <h1>Mahsulot qanday ishlashini 60 soniyada ko'ring</h1>\n    <p>Murakkab tushuntirish o'rniga jonli video taqdimot bilan ishonch uyg'oting.</p>\n    <div class=\"hero-video-demo-hero__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Bepul sinash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Demo ko'rish</a>\n    </div>\n    <div class=\"hero-video-demo-hero__stage\" aria-label=\"Video Demo Quti vitrinasi\">\n      <!-- Markaziy taklif · 16:9 video oyna · Shaffof Play tugma · Vaqt ko'rsatkichi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-video-demo-hero{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);color:#0f172a;text-align:center}\n.hero-video-demo-hero__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-video-demo-hero h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-video-demo-hero p{max-width:58ch;color:#475569;font-size:17px;line-height:1.6}\n.hero-video-demo-hero__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-video-demo-hero__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#0f172a;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-video-demo-hero__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-video-demo-hero__bar button,.hero-video-demo-hero .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#4f46e5;color:#ffffff;}\n.hero-video-demo-hero .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-video-demo-hero__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#0f172a;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 9,
+      "id": "ish-oqimi-sxema",
+      "nom": "Avtomatlashtirish Zanjiri",
+      "uslub": "saas",
+      "sxema": "workflow-nodes",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 80%, #1e1b4b 0%, #090c1a 70%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#f97316",
+        "accent2": "#8b5cf6",
+        "card": "rgba(18,22,40,.9)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Takroriy ishlarni aqlli zanjirga topshiring",
+      "matn": "Ilovalaringizni kodsiz bog'lang: hodisa -> AI tahlil -> tayyor natija.",
+      "tugma1": "Zanjir tuzish",
+      "tugma2": "Shablonlar",
+      "tarkib": [
+        "Ulangan tugunlar",
+        "Jonli ulanish chizig'i",
+        "AI qadam bloki",
+        "2 ta tugma"
+      ],
+      "qayerda": "No-code avtomatlashtirish, AI agentlar, CRM integratsiyalari",
+      "html": "<section class=\"hero-ish-oqimi-sxema\">\n  <div class=\"hero-ish-oqimi-sxema__in\">\n    <h1>Takroriy ishlarni aqlli zanjirga topshiring</h1>\n    <p>Ilovalaringizni kodsiz bog'lang: hodisa -> AI tahlil -> tayyor natija.</p>\n    <div class=\"hero-ish-oqimi-sxema__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Zanjir tuzish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Shablonlar</a>\n    </div>\n    <div class=\"hero-ish-oqimi-sxema__stage\" aria-label=\"Avtomatlashtirish Zanjiri vitrinasi\">\n      <!-- Ulangan tugunlar · Jonli ulanish chizig'i · AI qadam bloki · 2 ta tugma -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-ish-oqimi-sxema{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 80%, #1e1b4b 0%, #090c1a 70%);color:#f8fafc;text-align:center}\n.hero-ish-oqimi-sxema__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-ish-oqimi-sxema h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-ish-oqimi-sxema p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-ish-oqimi-sxema__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-ish-oqimi-sxema__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(18,22,40,.9);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-ish-oqimi-sxema__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-ish-oqimi-sxema__bar button,.hero-ish-oqimi-sxema .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#f97316;color:#ffffff;}\n.hero-ish-oqimi-sxema .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-ish-oqimi-sxema__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(18,22,40,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 10,
+      "id": "kutish-royxati",
+      "nom": "Yopiq Start (Waitlist)",
+      "uslub": "saas",
+      "sxema": "waitlist-glow",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 100%, #1d4ed8 0%, #050814 62%)",
+        "ink": "#f8fafc",
+        "muted": "rgba(226,232,240,.72)",
+        "accent": "#60a5fa",
+        "accent2": "#c084fc",
+        "card": "rgba(255,255,255,.08)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#050814"
+      },
+      "sarlavha": "Yangi avlod platformasiga birinchi kiring",
+      "matn": "Yopiq beta-sinovga yoziling va umrbod 50% chegirmaga ega bo'ling.",
+      "tugma1": "Navbatga yozilish",
+      "tugma2": "",
+      "tarkib": [
+        "Kosmik nur",
+        "Email kiritish qutisi",
+        "Navbat hisoblagichi",
+        "Minimal e'tibor"
+      ],
+      "qayerda": "Pre-launch startaplar, yopiq beta takliflari, yangi mahsulot eloni",
+      "html": "<section class=\"hero-kutish-royxati\">\n  <div class=\"hero-kutish-royxati__in\">\n    <h1>Yangi avlod platformasiga birinchi kiring</h1>\n    <p>Yopiq beta-sinovga yoziling va umrbod 50% chegirmaga ega bo'ling.</p>\n    <form class=\"hero-kutish-royxati__bar\"><input placeholder=\"G'oyangizni yoki savolingizni yozing...\" /><button type=\"submit\">Navbatga yozilish</button></form>\n    <div class=\"hero-kutish-royxati__stage\" aria-label=\"Yopiq Start (Waitlist) vitrinasi\">\n      <!-- Kosmik nur · Email kiritish qutisi · Navbat hisoblagichi · Minimal e'tibor -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kutish-royxati{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 100%, #1d4ed8 0%, #050814 62%);color:#f8fafc;text-align:center}\n.hero-kutish-royxati__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-kutish-royxati h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-kutish-royxati p{max-width:58ch;color:rgba(226,232,240,.72);font-size:17px;line-height:1.6}\n.hero-kutish-royxati__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-kutish-royxati__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-kutish-royxati__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-kutish-royxati__bar button,.hero-kutish-royxati .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#60a5fa;color:#050814;}\n.hero-kutish-royxati .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-kutish-royxati__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 11,
+      "id": "ulkan-tipografiya",
+      "nom": "Ulkan Tipografiya",
+      "uslub": "studiya",
+      "sxema": "giant-type",
+      "tema": {
+        "bg": "#09090b",
+        "ink": "#fafafa",
+        "muted": "#a1a1aa",
+        "accent": "#e4e4e7",
+        "accent2": "#38bdf8",
+        "card": "#18181b",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#09090b"
+      },
+      "sarlavha": "RAQAMLI BRENDLAR YARATAMIZ",
+      "matn": "Strategiya, veb-dizayn va unutilmas harakatlar — Toshkentdan dunyoga.",
+      "tugma1": "Loyiha boshlash",
+      "tugma2": "Ishlarimiz",
+      "tarkib": [
+        "To'liq kenglik harflar",
+        "Minimal metama'lumot",
+        "Doira strelka",
+        "Yuqori kontrast"
+      ],
+      "qayerda": "Kreativ agentliklar, dizayn studiyalar, brending jamoalari",
+      "html": "<section class=\"hero-ulkan-tipografiya\">\n  <div class=\"hero-ulkan-tipografiya__in\">\n    <h1>RAQAMLI BRENDLAR YARATAMIZ</h1>\n    <p>Strategiya, veb-dizayn va unutilmas harakatlar — Toshkentdan dunyoga.</p>\n    <div class=\"hero-ulkan-tipografiya__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Loyiha boshlash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Ishlarimiz</a>\n    </div>\n    <div class=\"hero-ulkan-tipografiya__stage\" aria-label=\"Ulkan Tipografiya vitrinasi\">\n      <!-- To'liq kenglik harflar · Minimal metama'lumot · Doira strelka · Yuqori kontrast -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-ulkan-tipografiya{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#09090b;color:#fafafa;text-align:center}\n.hero-ulkan-tipografiya__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-ulkan-tipografiya h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-ulkan-tipografiya p{max-width:58ch;color:#a1a1aa;font-size:17px;line-height:1.6}\n.hero-ulkan-tipografiya__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-ulkan-tipografiya__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#18181b;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-ulkan-tipografiya__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-ulkan-tipografiya__bar button,.hero-ulkan-tipografiya .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#e4e4e7;color:#09090b;}\n.hero-ulkan-tipografiya .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#fafafa;}\n.hero-ulkan-tipografiya__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#18181b;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 12,
+      "id": "showreel-kadr",
+      "nom": "Studiya Showreel",
+      "uslub": "studiya",
+      "sxema": "showreel-split",
+      "tema": {
+        "bg": "linear-gradient(180deg, #111318 0%, #07080b 100%)",
+        "ink": "#f4f4f5",
+        "muted": "#a1a1aa",
+        "accent": "#f59e0b",
+        "accent2": "#ef4444",
+        "card": "#1c1f26",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Har bir kadr sotuvga ishlaydi",
+      "matn": "Saytlar, 3D roliklar va brend kimligini bitta studiyada birlashtiramiz.",
+      "tugma1": "Showreel 2026",
+      "tugma2": "Bog'lanish",
+      "tarkib": [
+        "Asimmetrik yuqori qism",
+        "Kino nisbatli kadr",
+        "Shaffof Play tugma",
+        "Yil va shahar"
+      ],
+      "qayerda": "Video production, motion-dizayn va full-service agentliklar",
+      "html": "<section class=\"hero-showreel-kadr\">\n  <div class=\"hero-showreel-kadr__grid\">\n    <div class=\"hero-showreel-kadr__copy\">\n      <h1>Har bir kadr sotuvga ishlaydi</h1>\n      <p>Saytlar, 3D roliklar va brend kimligini bitta studiyada birlashtiramiz.</p>\n      <div class=\"hero-showreel-kadr__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Showreel 2026</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Bog'lanish</a>\n      </div>\n    </div>\n    <div class=\"hero-showreel-kadr__visual\" aria-label=\"Studiya Showreel maketi\">\n      <!-- Asimmetrik yuqori qism · Kino nisbatli kadr · Shaffof Play tugma · Yil va shahar -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-showreel-kadr{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(180deg, #111318 0%, #07080b 100%);color:#f4f4f5}\n.hero-showreel-kadr__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-showreel-kadr__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-showreel-kadr__copy p{margin-top:16px;color:#a1a1aa;font-size:17px;line-height:1.6}\n.hero-showreel-kadr__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-showreel-kadr .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#f4f4f5;}\n.hero-showreel-kadr .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f4f4f5;}\n.hero-showreel-kadr__visual{min-height:380px;border-radius:24px;background:#1c1f26;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-showreel-kadr__grid{grid-template-columns:1fr;text-align:center}.hero-showreel-kadr__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 13,
+      "id": "portfolio-galereya",
+      "nom": "3 Kartali Portfolio",
+      "uslub": "studiya",
+      "sxema": "fan-cards",
+      "tema": {
+        "bg": "linear-gradient(160deg, #fafaf9 0%, #f1f5f9 100%)",
+        "ink": "#0f172a",
+        "muted": "#64748b",
+        "accent": "#0f172a",
+        "accent2": "#3b82f6",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Tanlangan ishlarimiz bir qarashda",
+      "matn": "40 dan ortiq startap va brendlar uchun yaratilgan raqamli mahsulotlar.",
+      "tugma1": "Barcha ishlar",
+      "tugma2": "Narx so'rash",
+      "tarkib": [
+        "Markaziy da'vo",
+        "3 ta egilgan karta",
+        "Katalog hissi",
+        "Yumshoq soya"
+      ],
+      "qayerda": "Veb-dizaynerlar, UI/UX studiyalar, kreativ direktorlar",
+      "html": "<section class=\"hero-portfolio-galereya\">\n  <div class=\"hero-portfolio-galereya__in\">\n    <h1>Tanlangan ishlarimiz bir qarashda</h1>\n    <p>40 dan ortiq startap va brendlar uchun yaratilgan raqamli mahsulotlar.</p>\n    <div class=\"hero-portfolio-galereya__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Barcha ishlar</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Narx so'rash</a>\n    </div>\n    <div class=\"hero-portfolio-galereya__stage\" aria-label=\"3 Kartali Portfolio vitrinasi\">\n      <!-- Markaziy da'vo · 3 ta egilgan karta · Katalog hissi · Yumshoq soya -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-portfolio-galereya{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(160deg, #fafaf9 0%, #f1f5f9 100%);color:#0f172a;text-align:center}\n.hero-portfolio-galereya__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-portfolio-galereya h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-portfolio-galereya p{max-width:58ch;color:#64748b;font-size:17px;line-height:1.6}\n.hero-portfolio-galereya__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-portfolio-galereya__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#ffffff;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-portfolio-galereya__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-portfolio-galereya__bar button,.hero-portfolio-galereya .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#0f172a;color:#ffffff;}\n.hero-portfolio-galereya .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-portfolio-galereya__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 14,
+      "id": "shaxsiy-dizayner",
+      "nom": "Shaxsiy Dizayner",
+      "uslub": "studiya",
+      "sxema": "creator-bio",
+      "tema": {
+        "bg": "linear-gradient(180deg, #fffdf9 0%, #f5f0e8 100%)",
+        "ink": "#1c1917",
+        "muted": "#57534e",
+        "accent": "#1c1917",
+        "accent2": "#16a34a",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Salom, men produktsion dizaynerman",
+      "matn": "Startaplarga murakkab g'oyani sodda va chiroyli interfeysga aylantirishda yordam beraman.",
+      "tugma1": "Suhbat belgilash",
+      "tugma2": "Rezyume",
+      "tarkib": [
+        "Avatar va holat nuqtasi",
+        "Samimiy matn",
+        "2 ta harakat tugmasi",
+        "Hamkor logolari"
+      ],
+      "qayerda": "Frilanserlar, shaxsiy brend, dasturchi va dizayner portfoliolar",
+      "html": "<section class=\"hero-shaxsiy-dizayner\">\n  <div class=\"hero-shaxsiy-dizayner__in\">\n    <h1>Salom, men produktsion dizaynerman</h1>\n    <p>Startaplarga murakkab g'oyani sodda va chiroyli interfeysga aylantirishda yordam beraman.</p>\n    <div class=\"hero-shaxsiy-dizayner__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Suhbat belgilash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Rezyume</a>\n    </div>\n    <div class=\"hero-shaxsiy-dizayner__stage\" aria-label=\"Shaxsiy Dizayner vitrinasi\">\n      <!-- Avatar va holat nuqtasi · Samimiy matn · 2 ta harakat tugmasi · Hamkor logolari -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-shaxsiy-dizayner{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #fffdf9 0%, #f5f0e8 100%);color:#1c1917;text-align:center}\n.hero-shaxsiy-dizayner__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-shaxsiy-dizayner h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-shaxsiy-dizayner p{max-width:58ch;color:#57534e;font-size:17px;line-height:1.6}\n.hero-shaxsiy-dizayner__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-shaxsiy-dizayner__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#ffffff;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-shaxsiy-dizayner__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-shaxsiy-dizayner__bar button,.hero-shaxsiy-dizayner .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#1c1917;color:#ffffff;}\n.hero-shaxsiy-dizayner .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#1c1917;}\n.hero-shaxsiy-dizayner__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 15,
+      "id": "brutalist-setka",
+      "nom": "Neo-Brutalist Setka",
+      "uslub": "studiya",
+      "sxema": "brutalist-grid",
+      "tema": {
+        "bg": "#fef08a",
+        "ink": "#09090b",
+        "muted": "#27272a",
+        "accent": "#ff4d00",
+        "accent2": "#09090b",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "QOLIPLARNI BUZADIGAN DIZAYN",
+      "matn": "E'tiborni bir soniyada tortadigan dadil ranglar, qalin chiziqlar va aniq taklif.",
+      "tugma1": "Buyurtma berish",
+      "tugma2": "Keyslar",
+      "tarkib": [
+        "Qalin qora chegaralar",
+        "Dadil sariq fon",
+        "Qattiq soyali tugma",
+        "Plakat uslubi"
+      ],
+      "qayerda": "Kreativ agentliklar, indie mahsulotlar, yoshlar brendlari va podkastlar",
+      "html": "<section class=\"hero-brutalist-setka\">\n  <div class=\"hero-brutalist-setka__in\">\n    <h1>QOLIPLARNI BUZADIGAN DIZAYN</h1>\n    <p>E'tiborni bir soniyada tortadigan dadil ranglar, qalin chiziqlar va aniq taklif.</p>\n    <div class=\"hero-brutalist-setka__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Buyurtma berish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Keyslar</a>\n    </div>\n    <div class=\"hero-brutalist-setka__stage\" aria-label=\"Neo-Brutalist Setka vitrinasi\">\n      <!-- Qalin qora chegaralar · Dadil sariq fon · Qattiq soyali tugma · Plakat uslubi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-brutalist-setka{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#fef08a;color:#09090b;text-align:center}\n.hero-brutalist-setka__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-brutalist-setka h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-brutalist-setka p{max-width:58ch;color:#27272a;font-size:17px;line-height:1.6}\n.hero-brutalist-setka__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-brutalist-setka__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#ffffff;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-brutalist-setka__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-brutalist-setka__bar button,.hero-brutalist-setka .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#ff4d00;color:#ffffff;}\n.hero-brutalist-setka .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#09090b;}\n.hero-brutalist-setka__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 16,
+      "id": "kursor-kollaj",
+      "nom": "Erkin Kollaj Sahna",
+      "uslub": "studiya",
+      "sxema": "corner-collage",
+      "tema": {
+        "bg": "#0c0a09",
+        "ink": "#fafaf9",
+        "muted": "#a8a29e",
+        "accent": "#fb7185",
+        "accent2": "#38bdf8",
+        "card": "#1c1917",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Tasavvur va muhandislik kesishgan nuqta",
+      "matn": "Har bir loyiha — alohida hikoya, alohida atmosfera va o'ziga xos uslub.",
+      "tugma1": "Galereyaga kirish",
+      "tugma2": "Aloqa",
+      "tarkib": [
+        "4 burchakli kadrlar",
+        "Markaziy she'riy matn",
+        "Chuqur qatlamlar",
+        "Shaffof tugma"
+      ],
+      "qayerda": "Fotograflar, art-direktorlar, me'morchilik va moda studiyalari",
+      "html": "<section class=\"hero-kursor-kollaj\">\n  <div class=\"hero-kursor-kollaj__in\">\n    <h1>Tasavvur va muhandislik kesishgan nuqta</h1>\n    <p>Har bir loyiha — alohida hikoya, alohida atmosfera va o'ziga xos uslub.</p>\n    <div class=\"hero-kursor-kollaj__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Galereyaga kirish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Aloqa</a>\n    </div>\n    <div class=\"hero-kursor-kollaj__stage\" aria-label=\"Erkin Kollaj Sahna vitrinasi\">\n      <!-- 4 burchakli kadrlar · Markaziy she'riy matn · Chuqur qatlamlar · Shaffof tugma -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kursor-kollaj{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#0c0a09;color:#fafaf9;text-align:center}\n.hero-kursor-kollaj__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-kursor-kollaj h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-kursor-kollaj p{max-width:58ch;color:#a8a29e;font-size:17px;line-height:1.6}\n.hero-kursor-kollaj__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-kursor-kollaj__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#1c1917;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-kursor-kollaj__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-kursor-kollaj__bar button,.hero-kursor-kollaj .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#fafaf9;}\n.hero-kursor-kollaj .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#fafaf9;}\n.hero-kursor-kollaj__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#1c1917;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 17,
+      "id": "indeks-royxat",
+      "nom": "Arxiv Indeks Hero",
+      "uslub": "studiya",
+      "sxema": "index-list",
+      "tema": {
+        "bg": "#f4f4f0",
+        "ink": "#141413",
+        "muted": "#52524e",
+        "accent": "#dc2626",
+        "accent2": "#141413",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Aniqlik va tizimli fikrlash studiyasi",
+      "matn": "Tanlangan 2024–2026 yil loyihalari raqamlangan indeks ko'rinishida.",
+      "tugma1": "Aloqaga chiqish",
+      "tugma2": "",
+      "tarkib": [
+        "Chap manifest",
+        "Raqamlangan ro'yxat",
+        "Nozik ajratgichlar",
+        "Shveytsariya tartibi"
+      ],
+      "qayerda": "Arxitektura byurolari, minimalist studiyalar, konsalting agentliklar",
+      "html": "<section class=\"hero-indeks-royxat\">\n  <div class=\"hero-indeks-royxat__grid\">\n    <div class=\"hero-indeks-royxat__copy\">\n      <h1>Aniqlik va tizimli fikrlash studiyasi</h1>\n      <p>Tanlangan 2024–2026 yil loyihalari raqamlangan indeks ko'rinishida.</p>\n      <div class=\"hero-indeks-royxat__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Aloqaga chiqish</a>\n      </div>\n    </div>\n    <div class=\"hero-indeks-royxat__visual\" aria-label=\"Arxiv Indeks Hero maketi\">\n      <!-- Chap manifest · Raqamlangan ro'yxat · Nozik ajratgichlar · Shveytsariya tartibi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-indeks-royxat{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:#f4f4f0;color:#141413}\n.hero-indeks-royxat__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-indeks-royxat__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-indeks-royxat__copy p{margin-top:16px;color:#52524e;font-size:17px;line-height:1.6}\n.hero-indeks-royxat__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-indeks-royxat .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#dc2626;color:#ffffff;}\n.hero-indeks-royxat .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#141413;}\n.hero-indeks-royxat__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-indeks-royxat__grid{grid-template-columns:1fr;text-align:center}.hero-indeks-royxat__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 18,
+      "id": "shisha-studiya",
+      "nom": "Xameleon Studiya",
+      "uslub": "studiya",
+      "sxema": "aurora-glass",
+      "tema": {
+        "bg": "linear-gradient(125deg, #06b6d4 0%, #6366f1 48%, #ec4899 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.86)",
+        "accent": "#ffffff",
+        "accent2": "#38e1ff",
+        "card": "rgba(255,255,255,.16)",
+        "light": false,
+        "shimmer": true,
+        "btn": "glass"
+      },
+      "sarlavha": "Tovlanuvchi ranglarda tirik brendlar",
+      "matn": "Xameleon gradientlar, shaffof shisha interfeys va silliq mikromotion.",
+      "tugma1": "Loyiha boshlash",
+      "tugma2": "Portfolio",
+      "tarkib": [
+        "Xameleon tovlanuvchi fon",
+        "Shaffof shisha tugmalar",
+        "Katta oq tipografiya",
+        "Jonli nur"
+      ],
+      "qayerda": "Digital art studiyalar, yangi avlod agentliklar, musiqiy va ijodiy brendlar",
+      "html": "<section class=\"hero-shisha-studiya\">\n  <div class=\"hero-shisha-studiya__in\">\n    <h1>Tovlanuvchi ranglarda tirik brendlar</h1>\n    <p>Xameleon gradientlar, shaffof shisha interfeys va silliq mikromotion.</p>\n    <div class=\"hero-shisha-studiya__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Loyiha boshlash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Portfolio</a>\n    </div>\n    <div class=\"hero-shisha-studiya__stage\" aria-label=\"Xameleon Studiya vitrinasi\">\n      <!-- Xameleon tovlanuvchi fon · Shaffof shisha tugmalar · Katta oq tipografiya · Jonli nur -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-shisha-studiya{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(125deg, #06b6d4 0%, #6366f1 48%, #ec4899 100%);color:#ffffff;text-align:center}\n.hero-shisha-studiya__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-shisha-studiya h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-shisha-studiya p{max-width:58ch;color:rgba(255,255,255,.86);font-size:17px;line-height:1.6}\n.hero-shisha-studiya__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-shisha-studiya__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-shisha-studiya__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-shisha-studiya__bar button,.hero-shisha-studiya .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-shisha-studiya .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-shisha-studiya__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 19,
+      "id": "karta-3d-fintech",
+      "nom": "3D Bank Kartasi",
+      "uslub": "fintech",
+      "sxema": "fintech-card",
+      "tema": {
+        "bg": "radial-gradient(circle at 80% 30%, #065f46 0%, #051314 60%, #030a0c 100%)",
+        "ink": "#f0fdf4",
+        "muted": "rgba(209,250,229,.72)",
+        "accent": "#10b981",
+        "accent2": "#34d399",
+        "card": "rgba(16,185,129,.12)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#03150e"
+      },
+      "sarlavha": "Chegarasiz biznes uchun yagona karta",
+      "matn": "150 ta davlatda komissiyasiz to'lov, tezkor valyuta ayirboshlash va to'liq nazorat.",
+      "tugma1": "Karta ochish",
+      "tugma2": "Tariflar",
+      "tarkib": [
+        "3D metall karta",
+        "Balans chipi",
+        "Xavfsizlik ko'rsatkichi",
+        "Zumrad qorong'i fon"
+      ],
+      "qayerda": "Neobanklar, korporativ kartalar, to'lov tizimlari va fintech",
+      "html": "<section class=\"hero-karta-3d-fintech\">\n  <div class=\"hero-karta-3d-fintech__grid\">\n    <div class=\"hero-karta-3d-fintech__copy\">\n      <h1>Chegarasiz biznes uchun yagona karta</h1>\n      <p>150 ta davlatda komissiyasiz to'lov, tezkor valyuta ayirboshlash va to'liq nazorat.</p>\n      <div class=\"hero-karta-3d-fintech__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Karta ochish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Tariflar</a>\n      </div>\n    </div>\n    <div class=\"hero-karta-3d-fintech__visual\" aria-label=\"3D Bank Kartasi maketi\">\n      <!-- 3D metall karta · Balans chipi · Xavfsizlik ko'rsatkichi · Zumrad qorong'i fon -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-karta-3d-fintech{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:radial-gradient(circle at 80% 30%, #065f46 0%, #051314 60%, #030a0c 100%);color:#f0fdf4}\n.hero-karta-3d-fintech__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-karta-3d-fintech__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-karta-3d-fintech__copy p{margin-top:16px;color:rgba(209,250,229,.72);font-size:17px;line-height:1.6}\n.hero-karta-3d-fintech__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-karta-3d-fintech .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#10b981;color:#03150e;}\n.hero-karta-3d-fintech .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f0fdf4;}\n.hero-karta-3d-fintech__visual{min-height:380px;border-radius:24px;background:rgba(16,185,129,.12);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-karta-3d-fintech__grid{grid-template-columns:1fr;text-align:center}.hero-karta-3d-fintech__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 20,
+      "id": "analitika-markaz",
+      "nom": "Moliyaviy Analitika",
+      "uslub": "fintech",
+      "sxema": "split-bars",
+      "tema": {
+        "bg": "linear-gradient(160deg, #ffffff 0%, #ecfdf5 100%)",
+        "ink": "#064e3b",
+        "muted": "#475569",
+        "accent": "#059669",
+        "accent2": "#0ea5e9",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Xarajatlarni real vaqtda nazorat qiling",
+      "matn": "Kompaniya budjeti, hisob-fakturalar va pul oqimi bitta aniq jadvalda.",
+      "tugma1": "Demo olish",
+      "tugma2": "Imkoniyatlar",
+      "tarkib": [
+        "O'suvchi ustun grafik",
+        "+38% KPI nishoni",
+        "Hamkor logolari",
+        "Ishonchli yorug' fon"
+      ],
+      "qayerda": "Buxgalteriya SaaS, B2B moliya, korporativ boshqaruv",
+      "html": "<section class=\"hero-analitika-markaz\">\n  <div class=\"hero-analitika-markaz__grid\">\n    <div class=\"hero-analitika-markaz__copy\">\n      <h1>Xarajatlarni real vaqtda nazorat qiling</h1>\n      <p>Kompaniya budjeti, hisob-fakturalar va pul oqimi bitta aniq jadvalda.</p>\n      <div class=\"hero-analitika-markaz__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Demo olish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Imkoniyatlar</a>\n      </div>\n    </div>\n    <div class=\"hero-analitika-markaz__visual\" aria-label=\"Moliyaviy Analitika maketi\">\n      <!-- O'suvchi ustun grafik · +38% KPI nishoni · Hamkor logolari · Ishonchli yorug' fon -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-analitika-markaz{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(160deg, #ffffff 0%, #ecfdf5 100%);color:#064e3b}\n.hero-analitika-markaz__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-analitika-markaz__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-analitika-markaz__copy p{margin-top:16px;color:#475569;font-size:17px;line-height:1.6}\n.hero-analitika-markaz__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-analitika-markaz .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#059669;color:#ffffff;}\n.hero-analitika-markaz .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#064e3b;}\n.hero-analitika-markaz__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-analitika-markaz__grid{grid-template-columns:1fr;text-align:center}.hero-analitika-markaz__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 21,
+      "id": "valyuta-kalkulyator",
+      "nom": "Jonli Kalkulyator Hero",
+      "uslub": "fintech",
+      "sxema": "split-calc",
+      "tema": {
+        "bg": "linear-gradient(145deg, #0b192c 0%, #102a4c 100%)",
+        "ink": "#f8fafc",
+        "muted": "#cbd5e1",
+        "accent": "#38bdf8",
+        "accent2": "#22c55e",
+        "card": "#ffffff",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#081424"
+      },
+      "sarlavha": "Xalqaro o'tkazmalar yashirin foizlarsiz",
+      "matn": "Aniq kurs va komissiyani shu yerning o'zida hisoblab, 1 daqiqada yuboring.",
+      "tugma1": "O'tkazma boshlash",
+      "tugma2": "Kurslar",
+      "tarkib": [
+        "50/50 taklif + kalkulyator",
+        "Yuborasiz / Olasiz qutisi",
+        "Haqiqiy kurs satri",
+        "Tezkor konversiya"
+      ],
+      "qayerda": "Pul o'tkazmalari, kredit va lizing kalkulyatorlari, sug'urta",
+      "html": "<section class=\"hero-valyuta-kalkulyator\">\n  <div class=\"hero-valyuta-kalkulyator__grid\">\n    <div class=\"hero-valyuta-kalkulyator__copy\">\n      <h1>Xalqaro o'tkazmalar yashirin foizlarsiz</h1>\n      <p>Aniq kurs va komissiyani shu yerning o'zida hisoblab, 1 daqiqada yuboring.</p>\n      <div class=\"hero-valyuta-kalkulyator__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">O'tkazma boshlash</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Kurslar</a>\n      </div>\n    </div>\n    <div class=\"hero-valyuta-kalkulyator__visual\" aria-label=\"Jonli Kalkulyator Hero maketi\">\n      <!-- 50/50 taklif + kalkulyator · Yuborasiz / Olasiz qutisi · Haqiqiy kurs satri · Tezkor konversiya -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-valyuta-kalkulyator{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(145deg, #0b192c 0%, #102a4c 100%);color:#f8fafc}\n.hero-valyuta-kalkulyator__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-valyuta-kalkulyator__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-valyuta-kalkulyator__copy p{margin-top:16px;color:#cbd5e1;font-size:17px;line-height:1.6}\n.hero-valyuta-kalkulyator__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-valyuta-kalkulyator .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#38bdf8;color:#081424;}\n.hero-valyuta-kalkulyator .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-valyuta-kalkulyator__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-valyuta-kalkulyator__grid{grid-template-columns:1fr;text-align:center}.hero-valyuta-kalkulyator__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 22,
+      "id": "korporativ-ishonch",
+      "nom": "Korporativ Ishonch",
+      "uslub": "fintech",
+      "sxema": "metrics-band",
+      "tema": {
+        "bg": "linear-gradient(180deg, #070d1f 0%, #0f1b38 100%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#3b82f6",
+        "accent2": "#38e1ff",
+        "card": "rgba(30,41,59,.62)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Yirik kompaniyalar tanlagan to'lov infratuzilmasi",
+      "matn": "Bank darajasidagi himoya va uzluksiz ishlash kafolati bilan biznesingizni kengaytiring.",
+      "tugma1": "Savdo bo'limi",
+      "tugma2": "Xavfsizlik",
+      "tarkib": [
+        "3 ta yirik raqam",
+        "99.99% kafolat",
+        "Shaffof statistik blok",
+        "Korporativ ko'k"
+      ],
+      "qayerda": "Enterprise yechimlar, to'lov shlyuzlari, yuridik va konsalting firmalar",
+      "html": "<section class=\"hero-korporativ-ishonch\">\n  <div class=\"hero-korporativ-ishonch__in\">\n    <h1>Yirik kompaniyalar tanlagan to'lov infratuzilmasi</h1>\n    <p>Bank darajasidagi himoya va uzluksiz ishlash kafolati bilan biznesingizni kengaytiring.</p>\n    <div class=\"hero-korporativ-ishonch__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Savdo bo'limi</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Xavfsizlik</a>\n    </div>\n    <div class=\"hero-korporativ-ishonch__stage\" aria-label=\"Korporativ Ishonch vitrinasi\">\n      <!-- 3 ta yirik raqam · 99.99% kafolat · Shaffof statistik blok · Korporativ ko'k -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-korporativ-ishonch{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #070d1f 0%, #0f1b38 100%);color:#f8fafc;text-align:center}\n.hero-korporativ-ishonch__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-korporativ-ishonch h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-korporativ-ishonch p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-korporativ-ishonch__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-korporativ-ishonch__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(30,41,59,.62);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-korporativ-ishonch__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-korporativ-ishonch__bar button,.hero-korporativ-ishonch .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#3b82f6;color:#ffffff;}\n.hero-korporativ-ishonch .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-korporativ-ishonch__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(30,41,59,.62);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 23,
+      "id": "kripto-hamyon",
+      "nom": "Web3 va Kripto Sahna",
+      "uslub": "fintech",
+      "sxema": "crypto-wallet",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 10%, #4c1d95 0%, #090617 65%)",
+        "ink": "#f5f3ff",
+        "muted": "#c4b5fd",
+        "accent": "#a78bfa",
+        "accent2": "#34d399",
+        "card": "rgba(30,20,60,.78)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Raqamli aktivlaringiz xavfsiz hamyonda",
+      "matn": "Bir soniyada almashish, past komissiya va to'liq shaxsiy kalit nazorati.",
+      "tugma1": "Hamyon ochish",
+      "tugma2": "Tarmoqlar",
+      "tarkib": [
+        "Binafsha nur",
+        "Balans va token kartasi",
+        "Sparkline chiziq",
+        "Shaffof tugmalar"
+      ],
+      "qayerda": "Web3 ilovalar, kripto hamyonlar, investitsiya va treyding platformalar",
+      "html": "<section class=\"hero-kripto-hamyon\">\n  <div class=\"hero-kripto-hamyon__in\">\n    <h1>Raqamli aktivlaringiz xavfsiz hamyonda</h1>\n    <p>Bir soniyada almashish, past komissiya va to'liq shaxsiy kalit nazorati.</p>\n    <div class=\"hero-kripto-hamyon__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Hamyon ochish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Tarmoqlar</a>\n    </div>\n    <div class=\"hero-kripto-hamyon__stage\" aria-label=\"Web3 va Kripto Sahna vitrinasi\">\n      <!-- Binafsha nur · Balans va token kartasi · Sparkline chiziq · Shaffof tugmalar -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kripto-hamyon{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 10%, #4c1d95 0%, #090617 65%);color:#f5f3ff;text-align:center}\n.hero-kripto-hamyon__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-kripto-hamyon h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-kripto-hamyon p{max-width:58ch;color:#c4b5fd;font-size:17px;line-height:1.6}\n.hero-kripto-hamyon__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-kripto-hamyon__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(30,20,60,.78);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-kripto-hamyon__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-kripto-hamyon__bar button,.hero-kripto-hamyon .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#f5f3ff;}\n.hero-kripto-hamyon .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f5f3ff;}\n.hero-kripto-hamyon__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(30,20,60,.78);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 24,
+      "id": "b2b-uchrashuv",
+      "nom": "B2B Demo Bron",
+      "uslub": "fintech",
+      "sxema": "split-booking",
+      "tema": {
+        "bg": "linear-gradient(155deg, #f8fafc 0%, #f1f5f9 100%)",
+        "ink": "#0f172a",
+        "muted": "#475569",
+        "accent": "#0f172a",
+        "accent2": "#2563eb",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Jamoangiz bilan 15 daqiqalik jonli tanishuv",
+      "matn": "Qulay vaqtni tanlang — mutaxassisimiz tizimni sizning biznesingizda ko'rsatib beradi.",
+      "tugma1": "Vaqtni band qilish",
+      "tugma2": "Video ko'rish",
+      "tarkib": [
+        "50/50 uchrashuv sahnasi",
+        "Mini kalendar vidjeti",
+        "Bo'sh soatlar",
+        "Ishonch belgilari"
+      ],
+      "qayerda": "B2B konsalting, agentliklar, enterprise SaaS va shaxsiy ekspertlar",
+      "html": "<section class=\"hero-b2b-uchrashuv\">\n  <div class=\"hero-b2b-uchrashuv__grid\">\n    <div class=\"hero-b2b-uchrashuv__copy\">\n      <h1>Jamoangiz bilan 15 daqiqalik jonli tanishuv</h1>\n      <p>Qulay vaqtni tanlang — mutaxassisimiz tizimni sizning biznesingizda ko'rsatib beradi.</p>\n      <div class=\"hero-b2b-uchrashuv__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Vaqtni band qilish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Video ko'rish</a>\n      </div>\n    </div>\n    <div class=\"hero-b2b-uchrashuv__visual\" aria-label=\"B2B Demo Bron maketi\">\n      <!-- 50/50 uchrashuv sahnasi · Mini kalendar vidjeti · Bo'sh soatlar · Ishonch belgilari -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-b2b-uchrashuv{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(155deg, #f8fafc 0%, #f1f5f9 100%);color:#0f172a}\n.hero-b2b-uchrashuv__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-b2b-uchrashuv__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-b2b-uchrashuv__copy p{margin-top:16px;color:#475569;font-size:17px;line-height:1.6}\n.hero-b2b-uchrashuv__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-b2b-uchrashuv .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#0f172a;color:#ffffff;}\n.hero-b2b-uchrashuv .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-b2b-uchrashuv__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-b2b-uchrashuv__grid{grid-template-columns:1fr;text-align:center}.hero-b2b-uchrashuv__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 25,
+      "id": "hisobot-karta",
+      "nom": "Tranzaksiya Oqimi",
+      "uslub": "fintech",
+      "sxema": "feed-stack",
+      "tema": {
+        "bg": "linear-gradient(180deg, #0a1020 0%, #111c36 100%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#38bdf8",
+        "accent2": "#10b981",
+        "card": "rgba(18,29,56,.88)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#051022"
+      },
+      "sarlavha": "Har bir tushum va to'lov ko'z o'ngingizda",
+      "matn": "Avtomatik toifalash, tezkor bildirishnoma va bir bosishda soliq hisoboti.",
+      "tugma1": "Hisob ochish",
+      "tugma2": "Tizimni ko'rish",
+      "tarkib": [
+        "Markaziy taklif",
+        "Jonli tranzaksiya tasmasi",
+        "Kirim-chiqim belgisi",
+        "Chuqur soya"
+      ],
+      "qayerda": "Startup banking, kassa dasturlari, obuna billing tizimlari",
+      "html": "<section class=\"hero-hisobot-karta\">\n  <div class=\"hero-hisobot-karta__in\">\n    <h1>Har bir tushum va to'lov ko'z o'ngingizda</h1>\n    <p>Avtomatik toifalash, tezkor bildirishnoma va bir bosishda soliq hisoboti.</p>\n    <div class=\"hero-hisobot-karta__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Hisob ochish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Tizimni ko'rish</a>\n    </div>\n    <div class=\"hero-hisobot-karta__stage\" aria-label=\"Tranzaksiya Oqimi vitrinasi\">\n      <!-- Markaziy taklif · Jonli tranzaksiya tasmasi · Kirim-chiqim belgisi · Chuqur soya -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-hisobot-karta{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #0a1020 0%, #111c36 100%);color:#f8fafc;text-align:center}\n.hero-hisobot-karta__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-hisobot-karta h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-hisobot-karta p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-hisobot-karta__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-hisobot-karta__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(18,29,56,.88);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-hisobot-karta__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-hisobot-karta__bar button,.hero-hisobot-karta .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#38bdf8;color:#051022;}\n.hero-hisobot-karta .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-hisobot-karta__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(18,29,56,.88);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 26,
+      "id": "mahsulot-vitrinasi",
+      "nom": "Flagman Mahsulot",
+      "uslub": "dokon",
+      "sxema": "product-stage",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 65%, #1e293b 0%, #05070d 72%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#38e1ff",
+        "accent2": "#818cf8",
+        "card": "rgba(255,255,255,.07)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Neo Pro — engil, qudratli va jim",
+      "matn": "Titan korpus, 48 soatlik quvvat va kristal tiniq ovoz bir qurilmada.",
+      "tugma1": "Sotib olish",
+      "tugma2": "Batafsil",
+      "tarkib": [
+        "Podium yorug'ligi",
+        "Markaziy mahsulot",
+        "Shaffof tugmalar",
+        "Minimal matn"
+      ],
+      "qayerda": "Elektronika, gadjetlar, flagman bitta-mahsulot (single product) do'konlar",
+      "html": "<section class=\"hero-mahsulot-vitrinasi\">\n  <div class=\"hero-mahsulot-vitrinasi__in\">\n    <h1>Neo Pro — engil, qudratli va jim</h1>\n    <p>Titan korpus, 48 soatlik quvvat va kristal tiniq ovoz bir qurilmada.</p>\n    <div class=\"hero-mahsulot-vitrinasi__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Sotib olish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Batafsil</a>\n    </div>\n    <div class=\"hero-mahsulot-vitrinasi__stage\" aria-label=\"Flagman Mahsulot vitrinasi\">\n      <!-- Podium yorug'ligi · Markaziy mahsulot · Shaffof tugmalar · Minimal matn -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-mahsulot-vitrinasi{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 65%, #1e293b 0%, #05070d 72%);color:#f8fafc;text-align:center}\n.hero-mahsulot-vitrinasi__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-mahsulot-vitrinasi h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-mahsulot-vitrinasi p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-mahsulot-vitrinasi__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-mahsulot-vitrinasi__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-mahsulot-vitrinasi__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-mahsulot-vitrinasi__bar button,.hero-mahsulot-vitrinasi .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#f8fafc;}\n.hero-mahsulot-vitrinasi .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-mahsulot-vitrinasi__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 27,
+      "id": "moda-lookbook",
+      "nom": "Moda Lookbook 50/50",
+      "uslub": "dokon",
+      "sxema": "lookbook-split",
+      "tema": {
+        "bg": "#f7f3ed",
+        "ink": "#1c1917",
+        "muted": "#57534e",
+        "accent": "#1c1917",
+        "accent2": "#b45309",
+        "card": "#e7ddd0",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Kuz-Qish 2026 yangi kolleksiyasi",
+      "matn": "Tabiiy matolar, erkin bichim va har kungi nafis uslub.",
+      "tugma1": "Kolleksiyani ko'rish",
+      "tugma2": "Lookbook",
+      "tarkib": [
+        "To'liq balandlik split",
+        "Jurnal serif uslubi",
+        "Mahsulot narx yorlig'i",
+        "Iliq krem fon"
+      ],
+      "qayerda": "Kiyim brendlari, aksessuarlar, kosmetika va interyer do'konlari",
+      "html": "<section class=\"hero-moda-lookbook\">\n  <div class=\"hero-moda-lookbook__grid\">\n    <div class=\"hero-moda-lookbook__copy\">\n      <h1>Kuz-Qish 2026 yangi kolleksiyasi</h1>\n      <p>Tabiiy matolar, erkin bichim va har kungi nafis uslub.</p>\n      <div class=\"hero-moda-lookbook__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Kolleksiyani ko'rish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Lookbook</a>\n      </div>\n    </div>\n    <div class=\"hero-moda-lookbook__visual\" aria-label=\"Moda Lookbook 50/50 maketi\">\n      <!-- To'liq balandlik split · Jurnal serif uslubi · Mahsulot narx yorlig'i · Iliq krem fon -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-moda-lookbook{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:#f7f3ed;color:#1c1917}\n.hero-moda-lookbook__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-moda-lookbook__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-moda-lookbook__copy p{margin-top:16px;color:#57534e;font-size:17px;line-height:1.6}\n.hero-moda-lookbook__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-moda-lookbook .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#1c1917;color:#ffffff;}\n.hero-moda-lookbook .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#1c1917;}\n.hero-moda-lookbook__visual{min-height:380px;border-radius:24px;background:#e7ddd0;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-moda-lookbook__grid{grid-template-columns:1fr;text-align:center}.hero-moda-lookbook__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 28,
+      "id": "gadjet-xususiyat",
+      "nom": "Gadjet va Xususiyatlar",
+      "uslub": "dokon",
+      "sxema": "gadget-callouts",
+      "tema": {
+        "bg": "linear-gradient(160deg, #09090b 0%, #18181b 100%)",
+        "ink": "#fafafa",
+        "muted": "#a1a1aa",
+        "accent": "#ef4444",
+        "accent2": "#f97316",
+        "card": "rgba(255,255,255,.06)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Har bir millimetrda muhandislik",
+      "matn": "To'rt asosiy texnik ustunlik mahsulot atrofida aniq ko'rsatilgan.",
+      "tugma1": "Oldindan buyurtma",
+      "tugma2": "Texnik jadval",
+      "tarkib": [
+        "Markaziy gadjet",
+        "4 ta xususiyat kartasi",
+        "Yuqori kontrast",
+        "Qizil aksent"
+      ],
+      "qayerda": "Smart qurilmalar, audio texnika, elektromobil va sport anjomlari",
+      "html": "<section class=\"hero-gadjet-xususiyat\">\n  <div class=\"hero-gadjet-xususiyat__in\">\n    <h1>Har bir millimetrda muhandislik</h1>\n    <p>To'rt asosiy texnik ustunlik mahsulot atrofida aniq ko'rsatilgan.</p>\n    <div class=\"hero-gadjet-xususiyat__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Oldindan buyurtma</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Texnik jadval</a>\n    </div>\n    <div class=\"hero-gadjet-xususiyat__stage\" aria-label=\"Gadjet va Xususiyatlar vitrinasi\">\n      <!-- Markaziy gadjet · 4 ta xususiyat kartasi · Yuqori kontrast · Qizil aksent -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-gadjet-xususiyat{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(160deg, #09090b 0%, #18181b 100%);color:#fafafa;text-align:center}\n.hero-gadjet-xususiyat__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-gadjet-xususiyat h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-gadjet-xususiyat p{max-width:58ch;color:#a1a1aa;font-size:17px;line-height:1.6}\n.hero-gadjet-xususiyat__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-gadjet-xususiyat__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-gadjet-xususiyat__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-gadjet-xususiyat__bar button,.hero-gadjet-xususiyat .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#ef4444;color:#ffffff;}\n.hero-gadjet-xususiyat .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#fafafa;}\n.hero-gadjet-xususiyat__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 29,
+      "id": "minimal-katalog",
+      "nom": "Tezkor Do'kon Vitrina",
+      "uslub": "dokon",
+      "sxema": "shop-trio",
+      "tema": {
+        "bg": "#ffffff",
+        "ink": "#0f172a",
+        "muted": "#64748b",
+        "accent": "#0f172a",
+        "accent2": "#2563eb",
+        "card": "#f8fafc",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Eng ko'p sotilayotgan tanlovlar",
+      "matn": "Bepul yetkazib berish va 14 kunlik oson qaytarish kafolati bilan.",
+      "tugma1": "Katalogga o'tish",
+      "tugma2": "Chegirmalar",
+      "tarkib": [
+        "3 ta mahsulot kartasi",
+        "Rang tanlov nuqtalari",
+        "Narx va savat",
+        "Toza oq sahna"
+      ],
+      "qayerda": "Onlayn do'konlar, mebel, uy buyumlari va ko'p turli kataloglar",
+      "html": "<section class=\"hero-minimal-katalog\">\n  <div class=\"hero-minimal-katalog__in\">\n    <h1>Eng ko'p sotilayotgan tanlovlar</h1>\n    <p>Bepul yetkazib berish va 14 kunlik oson qaytarish kafolati bilan.</p>\n    <div class=\"hero-minimal-katalog__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Katalogga o'tish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Chegirmalar</a>\n    </div>\n    <div class=\"hero-minimal-katalog__stage\" aria-label=\"Tezkor Do'kon Vitrina vitrinasi\">\n      <!-- 3 ta mahsulot kartasi · Rang tanlov nuqtalari · Narx va savat · Toza oq sahna -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-minimal-katalog{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#ffffff;color:#0f172a;text-align:center}\n.hero-minimal-katalog__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-minimal-katalog h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-minimal-katalog p{max-width:58ch;color:#64748b;font-size:17px;line-height:1.6}\n.hero-minimal-katalog__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-minimal-katalog__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#f8fafc;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-minimal-katalog__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-minimal-katalog__bar button,.hero-minimal-katalog .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#0f172a;color:#ffffff;}\n.hero-minimal-katalog .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-minimal-katalog__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#f8fafc;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 30,
+      "id": "qahva-brend",
+      "nom": "Artizan Brend Sahna",
+      "uslub": "dokon",
+      "sxema": "artisan-review",
+      "tema": {
+        "bg": "linear-gradient(155deg, #fdf6ec 0%, #f5e6d3 100%)",
+        "ink": "#2d1b12",
+        "muted": "#6b4c3b",
+        "accent": "#9a3412",
+        "accent2": "#d97706",
+        "card": "#fffaf3",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Har tong yangi qovurilgan qahva",
+      "matn": "Efiopiya va Kolumbiyadan to'g'ridan-to'g'ri uyingizga yetkaziladi.",
+      "tugma1": "To'plam tanlash",
+      "tugma2": "Obuna",
+      "tarkib": [
+        "4.9 yulduz reyting",
+        "Iliq organik palitra",
+        "Qadoq vitrinasi",
+        "Sharhlar ishonchi"
+      ],
+      "qayerda": "Qahvaxona, restoran, shirinlik, organik oziq-ovqat va kosmetika",
+      "html": "<section class=\"hero-qahva-brend\">\n  <div class=\"hero-qahva-brend__in\">\n    <h1>Har tong yangi qovurilgan qahva</h1>\n    <p>Efiopiya va Kolumbiyadan to'g'ridan-to'g'ri uyingizga yetkaziladi.</p>\n    <div class=\"hero-qahva-brend__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">To'plam tanlash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Obuna</a>\n    </div>\n    <div class=\"hero-qahva-brend__stage\" aria-label=\"Artizan Brend Sahna vitrinasi\">\n      <!-- 4.9 yulduz reyting · Iliq organik palitra · Qadoq vitrinasi · Sharhlar ishonchi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-qahva-brend{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(155deg, #fdf6ec 0%, #f5e6d3 100%);color:#2d1b12;text-align:center}\n.hero-qahva-brend__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-qahva-brend h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-qahva-brend p{max-width:58ch;color:#6b4c3b;font-size:17px;line-height:1.6}\n.hero-qahva-brend__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-qahva-brend__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#fffaf3;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-qahva-brend__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-qahva-brend__bar button,.hero-qahva-brend .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#9a3412;color:#ffffff;}\n.hero-qahva-brend .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#2d1b12;}\n.hero-qahva-brend__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#fffaf3;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 31,
+      "id": "chegirma-banner",
+      "nom": "Mavsumiy Aksiya Hero",
+      "uslub": "dokon",
+      "sxema": "drop-countdown",
+      "tema": {
+        "bg": "linear-gradient(135deg, #111827 0%, #7c2d12 52%, #ea580c 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.82)",
+        "accent": "#facc15",
+        "accent2": "#fb923c",
+        "card": "rgba(0,0,0,.32)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#111827"
+      },
+      "sarlavha": "CHEKLANGAN DROP — 40% CHEGIRMA",
+      "matn": "Faqat 48 soat: eksklyuziv seriya tugaguncha ulgurib qoling.",
+      "tugma1": "Hoziroq olish",
+      "tugma2": "Kolleksiya",
+      "tarkib": [
+        "Jonli taymer bloki",
+        "Kuchli aksiya matni",
+        "Yuqori kontrast tugma",
+        "Cheklangan son"
+      ],
+      "qayerda": "Streetwear drop, mavsumiy chegirmalar, flash-sale aksiyalar",
+      "html": "<section class=\"hero-chegirma-banner\">\n  <div class=\"hero-chegirma-banner__grid\">\n    <div class=\"hero-chegirma-banner__copy\">\n      <h1>CHEKLANGAN DROP — 40% CHEGIRMA</h1>\n      <p>Faqat 48 soat: eksklyuziv seriya tugaguncha ulgurib qoling.</p>\n      <div class=\"hero-chegirma-banner__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Hoziroq olish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Kolleksiya</a>\n      </div>\n    </div>\n    <div class=\"hero-chegirma-banner__visual\" aria-label=\"Mavsumiy Aksiya Hero maketi\">\n      <!-- Jonli taymer bloki · Kuchli aksiya matni · Yuqori kontrast tugma · Cheklangan son -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-chegirma-banner{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(135deg, #111827 0%, #7c2d12 52%, #ea580c 100%);color:#ffffff}\n.hero-chegirma-banner__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-chegirma-banner__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-chegirma-banner__copy p{margin-top:16px;color:rgba(255,255,255,.82);font-size:17px;line-height:1.6}\n.hero-chegirma-banner__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-chegirma-banner .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#facc15;color:#111827;}\n.hero-chegirma-banner .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-chegirma-banner__visual{min-height:380px;border-radius:24px;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-chegirma-banner__grid{grid-template-columns:1fr;text-align:center}.hero-chegirma-banner__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 32,
+      "id": "hashamat-soat",
+      "nom": "Hashamatli Mahsulot",
+      "uslub": "dokon",
+      "sxema": "luxury-frame",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 50%, #272017 0%, #090807 72%)",
+        "ink": "#faf6ef",
+        "muted": "#c7b9a5",
+        "accent": "#d4af37",
+        "accent2": "#f3e5ab",
+        "card": "rgba(212,175,55,.07)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Vaqtga bo'ysunmaydigan nafislik",
+      "matn": "Qo'lda yig'ilgan cheklangan seriya — faqat 250 dona.",
+      "tugma1": "Shaxsiy ko'rik",
+      "tugma2": "Katalog",
+      "tarkib": [
+        "Nozik oltin ramka",
+        "Markaziy nur podiumi",
+        "Shaffof oltin tugma",
+        "Seriya raqami"
+      ],
+      "qayerda": "Zargarlik, soatlar, parfyumeriya, premium ko'chmas mulk va mehmonxona",
+      "html": "<section class=\"hero-hashamat-soat\">\n  <div class=\"hero-hashamat-soat__in\">\n    <h1>Vaqtga bo'ysunmaydigan nafislik</h1>\n    <p>Qo'lda yig'ilgan cheklangan seriya — faqat 250 dona.</p>\n    <div class=\"hero-hashamat-soat__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Shaxsiy ko'rik</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Katalog</a>\n    </div>\n    <div class=\"hero-hashamat-soat__stage\" aria-label=\"Hashamatli Mahsulot vitrinasi\">\n      <!-- Nozik oltin ramka · Markaziy nur podiumi · Shaffof oltin tugma · Seriya raqami -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-hashamat-soat{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 50%, #272017 0%, #090807 72%);color:#faf6ef;text-align:center}\n.hero-hashamat-soat__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-hashamat-soat h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-hashamat-soat p{max-width:58ch;color:#c7b9a5;font-size:17px;line-height:1.6}\n.hero-hashamat-soat__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-hashamat-soat__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(212,175,55,.07);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-hashamat-soat__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-hashamat-soat__bar button,.hero-hashamat-soat .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#faf6ef;}\n.hero-hashamat-soat .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#faf6ef;}\n.hero-hashamat-soat__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(212,175,55,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 33,
+      "id": "telefon-markaz",
+      "nom": "Markaziy Smartfon",
+      "uslub": "mobil",
+      "sxema": "phone-center",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 85%, #0284c7 0%, #071126 62%)",
+        "ink": "#f8fafc",
+        "muted": "#cbd5e1",
+        "accent": "#38e1ff",
+        "accent2": "#3b82f6",
+        "card": "#0c1730",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Kundalik odatlaringiz cho'ntagingizda",
+      "matn": "Bir qarashda tushunarli mobil ilova: iOS va Android uchun bepul.",
+      "tugma1": "App Store",
+      "tugma2": "Google Play",
+      "tarkib": [
+        "Store tugmalari",
+        "Markaziy smartfon",
+        "Jonli ilova ekrani",
+        "Pastdan ko'tarilish"
+      ],
+      "qayerda": "Mobil ilovalar, fitness, odat trekerlari, shaxsiy moliya ilovalari",
+      "html": "<section class=\"hero-telefon-markaz\">\n  <div class=\"hero-telefon-markaz__in\">\n    <h1>Kundalik odatlaringiz cho'ntagingizda</h1>\n    <p>Bir qarashda tushunarli mobil ilova: iOS va Android uchun bepul.</p>\n    <div class=\"hero-telefon-markaz__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">App Store</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Google Play</a>\n    </div>\n    <div class=\"hero-telefon-markaz__stage\" aria-label=\"Markaziy Smartfon vitrinasi\">\n      <!-- Store tugmalari · Markaziy smartfon · Jonli ilova ekrani · Pastdan ko'tarilish -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-telefon-markaz{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 85%, #0284c7 0%, #071126 62%);color:#f8fafc;text-align:center}\n.hero-telefon-markaz__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-telefon-markaz h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-telefon-markaz p{max-width:58ch;color:#cbd5e1;font-size:17px;line-height:1.6}\n.hero-telefon-markaz__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-telefon-markaz__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#0c1730;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-telefon-markaz__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-telefon-markaz__bar button,.hero-telefon-markaz .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#f8fafc;}\n.hero-telefon-markaz .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-telefon-markaz__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#0c1730;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 34,
+      "id": "uch-ekran-ilova",
+      "nom": "Uch Ekranli Ilova",
+      "uslub": "mobil",
+      "sxema": "phone-trio",
+      "tema": {
+        "bg": "linear-gradient(160deg, #eff6ff 0%, #f5f3ff 100%)",
+        "ink": "#0f172a",
+        "muted": "#475569",
+        "accent": "#6366f1",
+        "accent2": "#ec4899",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Til o'rganish endi o'yindek oson",
+      "matn": "Kuniga 10 daqiqa mashq, aqlli eslatmalar va jonli reyting jadvali.",
+      "tugma1": "Ilovani yuklash",
+      "tugma2": "Qanday ishlaydi",
+      "tarkib": [
+        "3 ta yelpig'ich ekran",
+        "Markaziy asosiy oyna",
+        "Yorqin pastel fon",
+        "Ikki tugma"
+      ],
+      "qayerda": "Ta'lim ilovalari, ijtimoiy tarmoqlar, o'yin va lifestyle ilovalar",
+      "html": "<section class=\"hero-uch-ekran-ilova\">\n  <div class=\"hero-uch-ekran-ilova__in\">\n    <h1>Til o'rganish endi o'yindek oson</h1>\n    <p>Kuniga 10 daqiqa mashq, aqlli eslatmalar va jonli reyting jadvali.</p>\n    <div class=\"hero-uch-ekran-ilova__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Ilovani yuklash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Qanday ishlaydi</a>\n    </div>\n    <div class=\"hero-uch-ekran-ilova__stage\" aria-label=\"Uch Ekranli Ilova vitrinasi\">\n      <!-- 3 ta yelpig'ich ekran · Markaziy asosiy oyna · Yorqin pastel fon · Ikki tugma -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-uch-ekran-ilova{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(160deg, #eff6ff 0%, #f5f3ff 100%);color:#0f172a;text-align:center}\n.hero-uch-ekran-ilova__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-uch-ekran-ilova h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-uch-ekran-ilova p{max-width:58ch;color:#475569;font-size:17px;line-height:1.6}\n.hero-uch-ekran-ilova__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-uch-ekran-ilova__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#ffffff;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-uch-ekran-ilova__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-uch-ekran-ilova__bar button,.hero-uch-ekran-ilova .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#6366f1;color:#ffffff;}\n.hero-uch-ekran-ilova .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-uch-ekran-ilova__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 35,
+      "id": "yonma-yon-ilova",
+      "nom": "50/50 Mobil Ilova",
+      "uslub": "mobil",
+      "sxema": "phone-split",
+      "tema": {
+        "bg": "linear-gradient(145deg, #0b1120 0%, #16203a 100%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#22d3ee",
+        "accent2": "#a855f7",
+        "card": "#111b33",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#04122e"
+      },
+      "sarlavha": "Buyurtma 15 daqiqada eshigingizda",
+      "matn": "Xaritada jonli kuzatuv, tezkor to'lov va har buyurtmadan keshbek.",
+      "tugma1": "Yuklab olish",
+      "tugma2": "Hamkorlar",
+      "tarkib": [
+        "50/50 ilova sahnasi",
+        "3 ta ustunlik satri",
+        "Suzuvchi bildirishnoma",
+        "Smartfon maketi"
+      ],
+      "qayerda": "Yetkazib berish, taksi, bron qilish va servis mobil ilovalari",
+      "html": "<section class=\"hero-yonma-yon-ilova\">\n  <div class=\"hero-yonma-yon-ilova__grid\">\n    <div class=\"hero-yonma-yon-ilova__copy\">\n      <h1>Buyurtma 15 daqiqada eshigingizda</h1>\n      <p>Xaritada jonli kuzatuv, tezkor to'lov va har buyurtmadan keshbek.</p>\n      <div class=\"hero-yonma-yon-ilova__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Yuklab olish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Hamkorlar</a>\n      </div>\n    </div>\n    <div class=\"hero-yonma-yon-ilova__visual\" aria-label=\"50/50 Mobil Ilova maketi\">\n      <!-- 50/50 ilova sahnasi · 3 ta ustunlik satri · Suzuvchi bildirishnoma · Smartfon maketi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-yonma-yon-ilova{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(145deg, #0b1120 0%, #16203a 100%);color:#f8fafc}\n.hero-yonma-yon-ilova__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-yonma-yon-ilova__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-yonma-yon-ilova__copy p{margin-top:16px;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-yonma-yon-ilova__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-yonma-yon-ilova .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#22d3ee;color:#04122e;}\n.hero-yonma-yon-ilova .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-yonma-yon-ilova__visual{min-height:380px;border-radius:24px;background:#111b33;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-yonma-yon-ilova__grid{grid-template-columns:1fr;text-align:center}.hero-yonma-yon-ilova__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 36,
+      "id": "telegram-bot-hero",
+      "nom": "Telegram Bot va Mini-App",
+      "uslub": "mobil",
+      "sxema": "telegram-bot",
+      "tema": {
+        "bg": "linear-gradient(145deg, #07192e 0%, #0d2b4e 55%, #0ea5e9 145%)",
+        "ink": "#f0f9ff",
+        "muted": "#bae6fd",
+        "accent": "#38bdf8",
+        "accent2": "#22c55e",
+        "card": "rgba(10,30,56,.86)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#04182b"
+      },
+      "sarlavha": "To'liq do'kon va xizmat Telegram ichida",
+      "matn": "Ilova o'rnatmasdan buyurtma bering, to'lang va holatini chatda kuzating.",
+      "tugma1": "Telegramda ochish",
+      "tugma2": "Imkoniyatlar",
+      "tarkib": [
+        "Telegram ko'k uslub",
+        "Jonli chat oynasi",
+        "Inline bot tugmalari",
+        "Tezkor kirish"
+      ],
+      "qayerda": "Telegram botlar, Mini-App do'konlar, TON loyihalari va kanal servislari",
+      "html": "<section class=\"hero-telegram-bot-hero\">\n  <div class=\"hero-telegram-bot-hero__grid\">\n    <div class=\"hero-telegram-bot-hero__copy\">\n      <h1>To'liq do'kon va xizmat Telegram ichida</h1>\n      <p>Ilova o'rnatmasdan buyurtma bering, to'lang va holatini chatda kuzating.</p>\n      <div class=\"hero-telegram-bot-hero__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Telegramda ochish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Imkoniyatlar</a>\n      </div>\n    </div>\n    <div class=\"hero-telegram-bot-hero__visual\" aria-label=\"Telegram Bot va Mini-App maketi\">\n      <!-- Telegram ko'k uslub · Jonli chat oynasi · Inline bot tugmalari · Tezkor kirish -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-telegram-bot-hero{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(145deg, #07192e 0%, #0d2b4e 55%, #0ea5e9 145%);color:#f0f9ff}\n.hero-telegram-bot-hero__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-telegram-bot-hero__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-telegram-bot-hero__copy p{margin-top:16px;color:#bae6fd;font-size:17px;line-height:1.6}\n.hero-telegram-bot-hero__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-telegram-bot-hero .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#38bdf8;color:#04182b;}\n.hero-telegram-bot-hero .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f0f9ff;}\n.hero-telegram-bot-hero__visual{min-height:380px;border-radius:24px;background:rgba(10,30,56,.86);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-telegram-bot-hero__grid{grid-template-columns:1fr;text-align:center}.hero-telegram-bot-hero__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 37,
+      "id": "qr-yuklash-hero",
+      "nom": "QR bilan Tezkor Yuklash",
+      "uslub": "mobil",
+      "sxema": "qr-split",
+      "tema": {
+        "bg": "linear-gradient(135deg, #00c853 0%, #00897b 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.86)",
+        "accent": "#052e16",
+        "accent2": "#bef264",
+        "card": "rgba(255,255,255,.18)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Skanerlang va soniyada boshlang",
+      "matn": "Telefon kamerasini QR kodga tuting — ilova bir zumda ochiladi.",
+      "tugma1": "Havolani olish",
+      "tugma2": "Biznes uchun",
+      "tarkib": [
+        "Yorqin brend fon",
+        "Shaffof QR karta",
+        "Smartfon preview",
+        "Qisqa kuchli shior"
+      ],
+      "qayerda": "To'lov ilovalari, yetkazib berish, sodiqlik kartalari va tezkor servislar",
+      "html": "<section class=\"hero-qr-yuklash-hero\">\n  <div class=\"hero-qr-yuklash-hero__grid\">\n    <div class=\"hero-qr-yuklash-hero__copy\">\n      <h1>Skanerlang va soniyada boshlang</h1>\n      <p>Telefon kamerasini QR kodga tuting — ilova bir zumda ochiladi.</p>\n      <div class=\"hero-qr-yuklash-hero__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Havolani olish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Biznes uchun</a>\n      </div>\n    </div>\n    <div class=\"hero-qr-yuklash-hero__visual\" aria-label=\"QR bilan Tezkor Yuklash maketi\">\n      <!-- Yorqin brend fon · Shaffof QR karta · Smartfon preview · Qisqa kuchli shior -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-qr-yuklash-hero{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(135deg, #00c853 0%, #00897b 100%);color:#ffffff}\n.hero-qr-yuklash-hero__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-qr-yuklash-hero__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-qr-yuklash-hero__copy p{margin-top:16px;color:rgba(255,255,255,.86);font-size:17px;line-height:1.6}\n.hero-qr-yuklash-hero__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-qr-yuklash-hero .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-qr-yuklash-hero .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-qr-yuklash-hero__visual{min-height:380px;border-radius:24px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-qr-yuklash-hero__grid{grid-template-columns:1fr;text-align:center}.hero-qr-yuklash-hero__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 38,
+      "id": "bildirishnoma-oqim",
+      "nom": "Jonli Bildirishnomalar",
+      "uslub": "mobil",
+      "sxema": "notif-cascade",
+      "tema": {
+        "bg": "linear-gradient(140deg, #1e1b4b 0%, #312e81 48%, #0f172a 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(226,232,240,.78)",
+        "accent": "#818cf8",
+        "accent2": "#38e1ff",
+        "card": "rgba(255,255,255,.13)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Muhim yangiliklarni hech qachon o'tkazmang",
+      "matn": "Aqlli filtr faqat kerakli xabarlarni ajratib, tinchligingizni saqlaydi.",
+      "tugma1": "Bepul o'rnatish",
+      "tugma2": "Ko'rish",
+      "tarkib": [
+        "Kaskad xabar kartalari",
+        "Shaffof glassmorphism",
+        "Markaziy taklif",
+        "Yumshoq chuqurlik"
+      ],
+      "qayerda": "Messenjerlar, kalendar, eslatma va jamoaviy aloqa ilovalari",
+      "html": "<section class=\"hero-bildirishnoma-oqim\">\n  <div class=\"hero-bildirishnoma-oqim__in\">\n    <h1>Muhim yangiliklarni hech qachon o'tkazmang</h1>\n    <p>Aqlli filtr faqat kerakli xabarlarni ajratib, tinchligingizni saqlaydi.</p>\n    <div class=\"hero-bildirishnoma-oqim__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Bepul o'rnatish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Ko'rish</a>\n    </div>\n    <div class=\"hero-bildirishnoma-oqim__stage\" aria-label=\"Jonli Bildirishnomalar vitrinasi\">\n      <!-- Kaskad xabar kartalari · Shaffof glassmorphism · Markaziy taklif · Yumshoq chuqurlik -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-bildirishnoma-oqim{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(140deg, #1e1b4b 0%, #312e81 48%, #0f172a 100%);color:#ffffff;text-align:center}\n.hero-bildirishnoma-oqim__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-bildirishnoma-oqim h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-bildirishnoma-oqim p{max-width:58ch;color:rgba(226,232,240,.78);font-size:17px;line-height:1.6}\n.hero-bildirishnoma-oqim__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-bildirishnoma-oqim__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-bildirishnoma-oqim__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-bildirishnoma-oqim__bar button,.hero-bildirishnoma-oqim .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-bildirishnoma-oqim .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-bildirishnoma-oqim__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 39,
+      "id": "shveytsariya-setka",
+      "nom": "Shveytsariya Setkasi",
+      "uslub": "minimal",
+      "sxema": "swiss-grid",
+      "tema": {
+        "bg": "#f8f8f6",
+        "ink": "#111111",
+        "muted": "#555555",
+        "accent": "#e11d48",
+        "accent2": "#111111",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Tartib, aniqlik va ortiqchasiz dizayn",
+      "matn": "Matematik panjara va aniq tipografiya bilan qurilgan xalqaro uslub.",
+      "tugma1": "Tanishish",
+      "tugma2": "Arxiv",
+      "tarkib": [
+        "Nozik setka chiziqlari",
+        "Qizil geometrik urg'u",
+        "Keng bo'shliq",
+        "Aniq ustunlar"
+      ],
+      "qayerda": "Dizayn tizimlari, nashriyotlar, me'morlar va zamonaviy konsalting",
+      "html": "<section class=\"hero-shveytsariya-setka\">\n  <div class=\"hero-shveytsariya-setka__in\">\n    <h1>Tartib, aniqlik va ortiqchasiz dizayn</h1>\n    <p>Matematik panjara va aniq tipografiya bilan qurilgan xalqaro uslub.</p>\n    <div class=\"hero-shveytsariya-setka__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Tanishish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Arxiv</a>\n    </div>\n    <div class=\"hero-shveytsariya-setka__stage\" aria-label=\"Shveytsariya Setkasi vitrinasi\">\n      <!-- Nozik setka chiziqlari · Qizil geometrik urg'u · Keng bo'shliq · Aniq ustunlar -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-shveytsariya-setka{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#f8f8f6;color:#111111;text-align:center}\n.hero-shveytsariya-setka__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-shveytsariya-setka h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-shveytsariya-setka p{max-width:58ch;color:#555555;font-size:17px;line-height:1.6}\n.hero-shveytsariya-setka__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-shveytsariya-setka__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#ffffff;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-shveytsariya-setka__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-shveytsariya-setka__bar button,.hero-shveytsariya-setka .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#e11d48;color:#ffffff;}\n.hero-shveytsariya-setka .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#111111;}\n.hero-shveytsariya-setka__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 40,
+      "id": "jurnal-muqova",
+      "nom": "Raqamli Jurnal Muqovasi",
+      "uslub": "minimal",
+      "sxema": "magazine-cover",
+      "tema": {
+        "bg": "#fbf9f5",
+        "ink": "#18181b",
+        "muted": "#52525b",
+        "accent": "#18181b",
+        "accent2": "#b91c1c",
+        "card": "#f1ede4",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Texnologiya va madaniyat haqida chuqur maqolalar",
+      "matn": "Har hafta saralangan tahlillar, suhbatlar va mualliflik esselari.",
+      "tugma1": "Obuna bo'lish",
+      "tugma2": "Oxirgi son",
+      "tarkib": [
+        "Jurnal sarlavha chizig'i",
+        "Asosiy maqola kadri",
+        "Yon maqolalar ro'yxati",
+        "Serif muqova"
+      ],
+      "qayerda": "Onlayn media, bloglar, newsletter va tahliliy nashrlar",
+      "html": "<section class=\"hero-jurnal-muqova\">\n  <div class=\"hero-jurnal-muqova__in\">\n    <h1>Texnologiya va madaniyat haqida chuqur maqolalar</h1>\n    <p>Har hafta saralangan tahlillar, suhbatlar va mualliflik esselari.</p>\n    <div class=\"hero-jurnal-muqova__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Obuna bo'lish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Oxirgi son</a>\n    </div>\n    <div class=\"hero-jurnal-muqova__stage\" aria-label=\"Raqamli Jurnal Muqovasi vitrinasi\">\n      <!-- Jurnal sarlavha chizig'i · Asosiy maqola kadri · Yon maqolalar ro'yxati · Serif muqova -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-jurnal-muqova{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#fbf9f5;color:#18181b;text-align:center}\n.hero-jurnal-muqova__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-jurnal-muqova h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-jurnal-muqova p{max-width:58ch;color:#52525b;font-size:17px;line-height:1.6}\n.hero-jurnal-muqova__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-jurnal-muqova__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#f1ede4;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-jurnal-muqova__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-jurnal-muqova__bar button,.hero-jurnal-muqova .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#18181b;color:#ffffff;}\n.hero-jurnal-muqova .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#18181b;}\n.hero-jurnal-muqova__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#f1ede4;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 41,
+      "id": "oq-qora-manifest",
+      "nom": "Monoxrom Manifest",
+      "uslub": "minimal",
+      "sxema": "mono-manifesto",
+      "tema": {
+        "bg": "#ffffff",
+        "ink": "#09090b",
+        "muted": "#71717a",
+        "accent": "#09090b",
+        "accent2": "#52525b",
+        "card": "#f4f4f5",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "Kamroq shovqin. Ko'proq mazmun.",
+      "matn": "Faqat bitta aniq g'oya, mukammal muvozanat va chalg'ituvchi bezaklarsiz sahifa.",
+      "tugma1": "Manifestni o'qish →",
+      "tugma2": "",
+      "tarkib": [
+        "Sof oq-qora kontrast",
+        "Ulkan nafas maydoni",
+        "Bitta aniq harakat",
+        "Sokinlik"
+      ],
+      "qayerda": "Mualliflik loyihalari, venchur fondlar, minimalist mahsulotlar",
+      "html": "<section class=\"hero-oq-qora-manifest\">\n  <div class=\"hero-oq-qora-manifest__in\">\n    <h1>Kamroq shovqin. Ko'proq mazmun.</h1>\n    <p>Faqat bitta aniq g'oya, mukammal muvozanat va chalg'ituvchi bezaklarsiz sahifa.</p>\n    <div class=\"hero-oq-qora-manifest__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Manifestni o'qish →</a>\n    </div>\n    <div class=\"hero-oq-qora-manifest__stage\" aria-label=\"Monoxrom Manifest vitrinasi\">\n      <!-- Sof oq-qora kontrast · Ulkan nafas maydoni · Bitta aniq harakat · Sokinlik -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-oq-qora-manifest{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:#ffffff;color:#09090b;text-align:center}\n.hero-oq-qora-manifest__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-oq-qora-manifest h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-oq-qora-manifest p{max-width:58ch;color:#71717a;font-size:17px;line-height:1.6}\n.hero-oq-qora-manifest__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-oq-qora-manifest__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:#f4f4f5;border:1px solid rgba(15,23,42,.14);backdrop-filter:blur(16px)}\n.hero-oq-qora-manifest__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-oq-qora-manifest__bar button,.hero-oq-qora-manifest .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#09090b;color:#ffffff;}\n.hero-oq-qora-manifest .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#09090b;}\n.hero-oq-qora-manifest__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:#f4f4f5;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 42,
+      "id": "kurs-talim-hero",
+      "nom": "Onlayn Kurs va Ta'lim",
+      "uslub": "minimal",
+      "sxema": "course-split",
+      "tema": {
+        "bg": "linear-gradient(160deg, #f8fafc 0%, #eff6ff 100%)",
+        "ink": "#0f172a",
+        "muted": "#475569",
+        "accent": "#2563eb",
+        "accent2": "#10b981",
+        "card": "#ffffff",
+        "light": true,
+        "btn": "solid",
+        "btnInk": "#ffffff"
+      },
+      "sarlavha": "8 haftada noldan real mahsulotgacha",
+      "matn": "Amaliy darslar, mentor tekshiruvi va bitiruvchilar hamjamiyati bilan.",
+      "tugma1": "Ro'yxatdan o'tish",
+      "tugma2": "Dasturni ko'rish",
+      "tarkib": [
+        "50/50 kurs sahnasi",
+        "Dastur yorliqlari",
+        "Mentor video kartasi",
+        "O'quvchilar soni"
+      ],
+      "qayerda": "Onlayn maktablar, bootcamp, vebinar va ekspert kurslari",
+      "html": "<section class=\"hero-kurs-talim-hero\">\n  <div class=\"hero-kurs-talim-hero__grid\">\n    <div class=\"hero-kurs-talim-hero__copy\">\n      <h1>8 haftada noldan real mahsulotgacha</h1>\n      <p>Amaliy darslar, mentor tekshiruvi va bitiruvchilar hamjamiyati bilan.</p>\n      <div class=\"hero-kurs-talim-hero__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Ro'yxatdan o'tish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Dasturni ko'rish</a>\n      </div>\n    </div>\n    <div class=\"hero-kurs-talim-hero__visual\" aria-label=\"Onlayn Kurs va Ta'lim maketi\">\n      <!-- 50/50 kurs sahnasi · Dastur yorliqlari · Mentor video kartasi · O'quvchilar soni -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kurs-talim-hero{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(160deg, #f8fafc 0%, #eff6ff 100%);color:#0f172a}\n.hero-kurs-talim-hero__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-kurs-talim-hero__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-kurs-talim-hero__copy p{margin-top:16px;color:#475569;font-size:17px;line-height:1.6}\n.hero-kurs-talim-hero__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-kurs-talim-hero .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#2563eb;color:#ffffff;}\n.hero-kurs-talim-hero .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(15,23,42,.06);border:1px solid rgba(15,23,42,.16);color:#0f172a;}\n.hero-kurs-talim-hero__visual{min-height:380px;border-radius:24px;background:#ffffff;border:1px solid rgba(15,23,42,.12);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-kurs-talim-hero__grid{grid-template-columns:1fr;text-align:center}.hero-kurs-talim-hero__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 43,
+      "id": "tadbir-konferensiya",
+      "nom": "Konferensiya va Sammit",
+      "uslub": "minimal",
+      "sxema": "event-summit",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 0%, #1e3a8a 0%, #050a18 65%)",
+        "ink": "#ffffff",
+        "muted": "#93c5fd",
+        "accent": "#38e1ff",
+        "accent2": "#f43f5e",
+        "card": "rgba(255,255,255,.08)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#04122e"
+      },
+      "sarlavha": "HIWORLD SUMMIT 2026",
+      "matn": "15-oktabr · Toshkent · 25 nafar spiker, jonli amaliyot va netvorking.",
+      "tugma1": "Chipta olish",
+      "tugma2": "Spikerlar",
+      "tarkib": [
+        "Sana va shahar satri",
+        "Spiker avatar qatori",
+        "Katta tadbir nomi",
+        "Tezkor chipta tugma"
+      ],
+      "qayerda": "IT konferensiyalar, forumlar, xakaton va jonli uchrashuvlar",
+      "html": "<section class=\"hero-tadbir-konferensiya\">\n  <div class=\"hero-tadbir-konferensiya__in\">\n    <h1>HIWORLD SUMMIT 2026</h1>\n    <p>15-oktabr · Toshkent · 25 nafar spiker, jonli amaliyot va netvorking.</p>\n    <div class=\"hero-tadbir-konferensiya__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Chipta olish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Spikerlar</a>\n    </div>\n    <div class=\"hero-tadbir-konferensiya__stage\" aria-label=\"Konferensiya va Sammit vitrinasi\">\n      <!-- Sana va shahar satri · Spiker avatar qatori · Katta tadbir nomi · Tezkor chipta tugma -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-tadbir-konferensiya{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 0%, #1e3a8a 0%, #050a18 65%);color:#ffffff;text-align:center}\n.hero-tadbir-konferensiya__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-tadbir-konferensiya h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-tadbir-konferensiya p{max-width:58ch;color:#93c5fd;font-size:17px;line-height:1.6}\n.hero-tadbir-konferensiya__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-tadbir-konferensiya__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-tadbir-konferensiya__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-tadbir-konferensiya__bar button,.hero-tadbir-konferensiya .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#38e1ff;color:#04122e;}\n.hero-tadbir-konferensiya .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-tadbir-konferensiya__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 44,
+      "id": "hujjat-markaz",
+      "nom": "Dokumentatsiya Markazi",
+      "uslub": "minimal",
+      "sxema": "docs-search",
+      "tema": {
+        "bg": "linear-gradient(180deg, #0b1120 0%, #0f172a 100%)",
+        "ink": "#f8fafc",
+        "muted": "#94a3b8",
+        "accent": "#38bdf8",
+        "accent2": "#34d399",
+        "card": "rgba(30,41,59,.75)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#051022"
+      },
+      "sarlavha": "Qanday yordam bera olamiz?",
+      "matn": "Tezkor qo'llanmalar, API misollar va barcha savollarga aniq javoblar.",
+      "tugma1": "Qidirish",
+      "tugma2": "",
+      "tarkib": [
+        "Katta qidiruv satri",
+        "3 ta tezkor karta",
+        "Tizimli tuzilma",
+        "Toza o'qilishi"
+      ],
+      "qayerda": "Bilim bazalari, API hujjatlari, yordam markazlari va akademiyalar",
+      "html": "<section class=\"hero-hujjat-markaz\">\n  <div class=\"hero-hujjat-markaz__in\">\n    <h1>Qanday yordam bera olamiz?</h1>\n    <p>Tezkor qo'llanmalar, API misollar va barcha savollarga aniq javoblar.</p>\n    <form class=\"hero-hujjat-markaz__bar\"><input placeholder=\"G'oyangizni yoki savolingizni yozing...\" /><button type=\"submit\">Qidirish</button></form>\n    <div class=\"hero-hujjat-markaz__stage\" aria-label=\"Dokumentatsiya Markazi vitrinasi\">\n      <!-- Katta qidiruv satri · 3 ta tezkor karta · Tizimli tuzilma · Toza o'qilishi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-hujjat-markaz{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #0b1120 0%, #0f172a 100%);color:#f8fafc;text-align:center}\n.hero-hujjat-markaz__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-hujjat-markaz h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-hujjat-markaz p{max-width:58ch;color:#94a3b8;font-size:17px;line-height:1.6}\n.hero-hujjat-markaz__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-hujjat-markaz__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(30,41,59,.75);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-hujjat-markaz__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-hujjat-markaz__bar button,.hero-hujjat-markaz .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:#38bdf8;color:#051022;}\n.hero-hujjat-markaz .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-hujjat-markaz__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(30,41,59,.75);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 45,
+      "id": "shisha-morfizm",
+      "nom": "Shisha Morfizm (Glass)",
+      "uslub": "kreativ",
+      "sxema": "vision-glass",
+      "tema": {
+        "bg": "radial-gradient(circle at 20% 20%, #06b6d4 0%, transparent 48%), radial-gradient(circle at 82% 78%, #a855f7 0%, transparent 50%), #060b19",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.82)",
+        "accent": "#38e1ff",
+        "accent2": "#c084fc",
+        "card": "rgba(255,255,255,.12)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Fazoviy shisha interfeys tajribasi",
+      "matn": "Xira shisha qatlamlari, yumshoq nur sharlari va prazrachniy tugmalar.",
+      "tugma1": "Kashf etish",
+      "tugma2": "Batafsil",
+      "tarkib": [
+        "Nurli sharlar foni",
+        "Katta shisha oyna",
+        "Prazrachniy tugmalar",
+        "VisionOS uslubi"
+      ],
+      "qayerda": "Spatial UI, AI ilovalar, futuristik mahsulotlar va kreativ saytlar",
+      "html": "<section class=\"hero-shisha-morfizm\">\n  <div class=\"hero-shisha-morfizm__in\">\n    <h1>Fazoviy shisha interfeys tajribasi</h1>\n    <p>Xira shisha qatlamlari, yumshoq nur sharlari va prazrachniy tugmalar.</p>\n    <div class=\"hero-shisha-morfizm__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Kashf etish</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Batafsil</a>\n    </div>\n    <div class=\"hero-shisha-morfizm__stage\" aria-label=\"Shisha Morfizm (Glass) vitrinasi\">\n      <!-- Nurli sharlar foni · Katta shisha oyna · Prazrachniy tugmalar · VisionOS uslubi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-shisha-morfizm{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 20% 20%, #06b6d4 0%, transparent 48%), radial-gradient(circle at 82% 78%, #a855f7 0%, transparent 50%), #060b19;color:#ffffff;text-align:center}\n.hero-shisha-morfizm__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-shisha-morfizm h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-shisha-morfizm p{max-width:58ch;color:rgba(255,255,255,.82);font-size:17px;line-height:1.6}\n.hero-shisha-morfizm__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-shisha-morfizm__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-shisha-morfizm__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-shisha-morfizm__bar button,.hero-shisha-morfizm .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-shisha-morfizm .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-shisha-morfizm__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 46,
+      "id": "kiber-neon-setka",
+      "nom": "Kiber Neon Perspektiva",
+      "uslub": "kreativ",
+      "sxema": "cyber-horizon",
+      "tema": {
+        "bg": "linear-gradient(180deg, #050214 0%, #170636 58%, #070b1e 100%)",
+        "ink": "#f8fafc",
+        "muted": "#c4b5fd",
+        "accent": "#00f5ff",
+        "accent2": "#ff2a85",
+        "card": "rgba(14,8,34,.82)",
+        "light": false,
+        "btn": "cham"
+      },
+      "sarlavha": "YANGI RAQAMLI OLAMGA KIRING",
+      "matn": "Neon ufq chizig'i, perspektiv panjara va yuqori energiyali birinchi ekran.",
+      "tugma1": "O'yinni boshlash",
+      "tugma2": "Treyler",
+      "tarkib": [
+        "3D perspektiv setka",
+        "Neon ufq nuri",
+        "Kiber tugmalar",
+        "Yuqori energiya"
+      ],
+      "qayerda": "O'yin loyihalari, kibersport, AI laboratoriyalar va musiqa festivallari",
+      "html": "<section class=\"hero-kiber-neon-setka\">\n  <div class=\"hero-kiber-neon-setka__in\">\n    <h1>YANGI RAQAMLI OLAMGA KIRING</h1>\n    <p>Neon ufq chizig'i, perspektiv panjara va yuqori energiyali birinchi ekran.</p>\n    <div class=\"hero-kiber-neon-setka__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">O'yinni boshlash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Treyler</a>\n    </div>\n    <div class=\"hero-kiber-neon-setka__stage\" aria-label=\"Kiber Neon Perspektiva vitrinasi\">\n      <!-- 3D perspektiv setka · Neon ufq nuri · Kiber tugmalar · Yuqori energiya -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-kiber-neon-setka{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(180deg, #050214 0%, #170636 58%, #070b1e 100%);color:#f8fafc;text-align:center}\n.hero-kiber-neon-setka__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-kiber-neon-setka h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-kiber-neon-setka p{max-width:58ch;color:#c4b5fd;font-size:17px;line-height:1.6}\n.hero-kiber-neon-setka__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-kiber-neon-setka__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(14,8,34,.82);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-kiber-neon-setka__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-kiber-neon-setka__bar button,.hero-kiber-neon-setka .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:linear-gradient(125deg,#00f5ff,#ff2a85,#00f5ff);background-size:220% 220%;color:#fff;animation:heroFlow 6s ease infinite;}\n.hero-kiber-neon-setka .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-kiber-neon-setka__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(14,8,34,.82);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 47,
+      "id": "sfera-3d-markaz",
+      "nom": "3D Sfera va Orbita",
+      "uslub": "kreativ",
+      "sxema": "orbit-3d",
+      "tema": {
+        "bg": "radial-gradient(circle at 50% 50%, #172554 0%, #030712 72%)",
+        "ink": "#f8fafc",
+        "muted": "#93c5fd",
+        "accent": "#38e1ff",
+        "accent2": "#6366f1",
+        "card": "rgba(15,23,42,.74)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Global tarmoq bitta markazda",
+      "matn": "Hajmli 3D sfera, aylanuvchi orbita halqasi va suzuvchi ma'lumot kartalari.",
+      "tugma1": "Tarmoqqa ulash",
+      "tugma2": "Xarita",
+      "tarkib": [
+        "3D hajmli sfera",
+        "Orbita halqasi",
+        "Suzuvchi shisha nishon",
+        "Kosmik atmosfera"
+      ],
+      "qayerda": "Cloud tarmoqlar, AI infratuzilma, WebGL studiyalar va kosmik texno",
+      "html": "<section class=\"hero-sfera-3d-markaz\">\n  <div class=\"hero-sfera-3d-markaz__in\">\n    <h1>Global tarmoq bitta markazda</h1>\n    <p>Hajmli 3D sfera, aylanuvchi orbita halqasi va suzuvchi ma'lumot kartalari.</p>\n    <div class=\"hero-sfera-3d-markaz__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Tarmoqqa ulash</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Xarita</a>\n    </div>\n    <div class=\"hero-sfera-3d-markaz__stage\" aria-label=\"3D Sfera va Orbita vitrinasi\">\n      <!-- 3D hajmli sfera · Orbita halqasi · Suzuvchi shisha nishon · Kosmik atmosfera -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-sfera-3d-markaz{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:radial-gradient(circle at 50% 50%, #172554 0%, #030712 72%);color:#f8fafc;text-align:center}\n.hero-sfera-3d-markaz__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-sfera-3d-markaz h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-sfera-3d-markaz p{max-width:58ch;color:#93c5fd;font-size:17px;line-height:1.6}\n.hero-sfera-3d-markaz__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-sfera-3d-markaz__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(15,23,42,.74);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-sfera-3d-markaz__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-sfera-3d-markaz__bar button,.hero-sfera-3d-markaz .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#f8fafc;}\n.hero-sfera-3d-markaz .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#f8fafc;}\n.hero-sfera-3d-markaz__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(15,23,42,.74);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    },
+    {
+      "raqam": 48,
+      "id": "diagonal-bolinish",
+      "nom": "Diagonal Kesim",
+      "uslub": "kreativ",
+      "sxema": "diagonal-cut",
+      "tema": {
+        "bg": "linear-gradient(118deg, #090d1a 0%, #090d1a 54%, #2563eb 54.4%, #06b6d4 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(226,232,240,.82)",
+        "accent": "#38e1ff",
+        "accent2": "#2563eb",
+        "card": "rgba(255,255,255,.14)",
+        "light": false,
+        "btn": "glass"
+      },
+      "sarlavha": "Tezlik va harakat uchun qurilgan",
+      "matn": "Qiya diagonal bo'linish sahifaga darhol dinamika va kuchli ritm beradi.",
+      "tugma1": "Harakatni boshlash",
+      "tugma2": "Natijalar",
+      "tarkib": [
+        "Diagonal fon kesimi",
+        "Dinamik kompozitsiya",
+        "Shaffof tugmalar",
+        "Sport energiyasi"
+      ],
+      "qayerda": "Sport brendlari, fitnes klublar, avto-moto va energetik mahsulotlar",
+      "html": "<section class=\"hero-diagonal-bolinish\">\n  <div class=\"hero-diagonal-bolinish__grid\">\n    <div class=\"hero-diagonal-bolinish__copy\">\n      <h1>Tezlik va harakat uchun qurilgan</h1>\n      <p>Qiya diagonal bo'linish sahifaga darhol dinamika va kuchli ritm beradi.</p>\n      <div class=\"hero-diagonal-bolinish__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Harakatni boshlash</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Natijalar</a>\n      </div>\n    </div>\n    <div class=\"hero-diagonal-bolinish__visual\" aria-label=\"Diagonal Kesim maketi\">\n      <!-- Diagonal fon kesimi · Dinamik kompozitsiya · Shaffof tugmalar · Sport energiyasi -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-diagonal-bolinish{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(118deg, #090d1a 0%, #090d1a 54%, #2563eb 54.4%, #06b6d4 100%);color:#ffffff}\n.hero-diagonal-bolinish__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-diagonal-bolinish__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-diagonal-bolinish__copy p{margin-top:16px;color:rgba(226,232,240,.82);font-size:17px;line-height:1.6}\n.hero-diagonal-bolinish__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-diagonal-bolinish .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.16);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.42);color:#ffffff;}\n.hero-diagonal-bolinish .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-diagonal-bolinish__visual{min-height:380px;border-radius:24px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-diagonal-bolinish__grid{grid-template-columns:1fr;text-align:center}.hero-diagonal-bolinish__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 49,
+      "id": "interaktiv-karta-stack",
+      "nom": "Ustma-ust Kartalar",
+      "uslub": "kreativ",
+      "sxema": "deck-stack",
+      "tema": {
+        "bg": "linear-gradient(155deg, #100c1e 0%, #1d1536 100%)",
+        "ink": "#faf5ff",
+        "muted": "#cbd5e1",
+        "accent": "#f472b6",
+        "accent2": "#38bdf8",
+        "card": "rgba(255,255,255,.1)",
+        "light": false,
+        "btn": "solid",
+        "btnInk": "#100c1e"
+      },
+      "sarlavha": "Har bir karta — yangi kashfiyot",
+      "matn": "Chapda qisqa hikoya, o'ngda qatlamlangan rangli kartalar dastasi.",
+      "tugma1": "Kartalarni ochish",
+      "tugma2": "Qanday ishlaydi",
+      "tarkib": [
+        "50/50 ijodiy maket",
+        "3 qatlamli kartalar",
+        "Burchakli chuqurlik",
+        "Yumshoq ranglar"
+      ],
+      "qayerda": "Sayohat, madaniyat, tanishuv ilovalari va interaktiv hikoyalar",
+      "html": "<section class=\"hero-interaktiv-karta-stack\">\n  <div class=\"hero-interaktiv-karta-stack__grid\">\n    <div class=\"hero-interaktiv-karta-stack__copy\">\n      <h1>Har bir karta — yangi kashfiyot</h1>\n      <p>Chapda qisqa hikoya, o'ngda qatlamlangan rangli kartalar dastasi.</p>\n      <div class=\"hero-interaktiv-karta-stack__acts\">\n        <a class=\"btn-main\" href=\"#boshlash\">Kartalarni ochish</a>\n        <a class=\"btn-ghost\" href=\"#batafsil\">Qanday ishlaydi</a>\n      </div>\n    </div>\n    <div class=\"hero-interaktiv-karta-stack__visual\" aria-label=\"Ustma-ust Kartalar maketi\">\n      <!-- 50/50 ijodiy maket · 3 qatlamli kartalar · Burchakli chuqurlik · Yumshoq ranglar -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-interaktiv-karta-stack{min-height:100svh;display:grid;place-items:center;padding:clamp(32px,5vw,72px);background:linear-gradient(155deg, #100c1e 0%, #1d1536 100%);color:#faf5ff}\n.hero-interaktiv-karta-stack__grid{width:min(1200px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}\n.hero-interaktiv-karta-stack__copy h1{font-size:clamp(34px,4.6vw,62px);line-height:1.06;letter-spacing:-.03em}\n.hero-interaktiv-karta-stack__copy p{margin-top:16px;color:#cbd5e1;font-size:17px;line-height:1.6}\n.hero-interaktiv-karta-stack__acts{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}\n.hero-interaktiv-karta-stack .btn-main{padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:#f472b6;color:#100c1e;}\n.hero-interaktiv-karta-stack .btn-ghost{padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#faf5ff;}\n.hero-interaktiv-karta-stack__visual{min-height:380px;border-radius:24px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n@media(max-width:900px){.hero-interaktiv-karta-stack__grid{grid-template-columns:1fr;text-align:center}.hero-interaktiv-karta-stack__acts{justify-content:center}}\n</style>"
+    },
+    {
+      "raqam": 50,
+      "id": "xameleon-prizma",
+      "nom": "Xameleon Prizma",
+      "uslub": "kreativ",
+      "sxema": "chameleon-prism",
+      "tema": {
+        "bg": "linear-gradient(125deg, #06b6d4 0%, #8b5cf6 35%, #ec4899 70%, #f59e0b 100%)",
+        "ink": "#ffffff",
+        "muted": "rgba(255,255,255,.88)",
+        "accent": "#0ea5e9",
+        "accent2": "#ec4899",
+        "card": "rgba(255,255,255,.18)",
+        "light": false,
+        "shimmer": true,
+        "btn": "glass"
+      },
+      "sarlavha": "Rangini o'zgartiruvchi jonli birinchi bet",
+      "matn": "Xameleon tovlanuvchi fon, prizma shisha qatlami va shaffof tugmalar uyg'unligi.",
+      "tugma1": "Tajriba qilish ✦",
+      "tugma2": "Kodini olish",
+      "tarkib": [
+        "Xameleon tovlanish",
+        "Prizma shisha blok",
+        "Shaffof tugmalar",
+        "WOW birinchi ekran"
+      ],
+      "qayerda": "AI startaplar, dizayn festivallari, kreativ mahsulot taqdimotlari",
+      "html": "<section class=\"hero-xameleon-prizma\">\n  <div class=\"hero-xameleon-prizma__in\">\n    <h1>Rangini o'zgartiruvchi jonli birinchi bet</h1>\n    <p>Xameleon tovlanuvchi fon, prizma shisha qatlami va shaffof tugmalar uyg'unligi.</p>\n    <div class=\"hero-xameleon-prizma__acts\">\n      <a class=\"btn-main\" href=\"#boshlash\">Tajriba qilish ✦</a>\n      <a class=\"btn-ghost\" href=\"#batafsil\">Kodini olish</a>\n    </div>\n    <div class=\"hero-xameleon-prizma__stage\" aria-label=\"Xameleon Prizma vitrinasi\">\n      <!-- Xameleon tovlanish · Prizma shisha blok · Shaffof tugmalar · WOW birinchi ekran -->\n    </div>\n  </div>\n</section>\n<style>\n.hero-xameleon-prizma{min-height:100svh;display:grid;place-items:center;padding:clamp(36px,5vw,72px) 20px;background:linear-gradient(125deg, #06b6d4 0%, #8b5cf6 35%, #ec4899 70%, #f59e0b 100%);color:#ffffff;text-align:center}\n.hero-xameleon-prizma__in{width:min(1080px,100%);display:flex;flex-direction:column;align-items:center;gap:18px}\n.hero-xameleon-prizma h1{max-width:16ch;font-size:clamp(36px,5.4vw,70px);line-height:1.05;letter-spacing:-.035em}\n.hero-xameleon-prizma p{max-width:58ch;color:rgba(255,255,255,.88);font-size:17px;line-height:1.6}\n.hero-xameleon-prizma__acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}\n.hero-xameleon-prizma__bar{width:min(580px,100%);display:flex;gap:8px;padding:6px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px)}\n.hero-xameleon-prizma__bar input{flex:1;background:none;border:0;color:inherit;padding:10px 16px;font-size:15px;outline:0}\n.hero-xameleon-prizma__bar button,.hero-xameleon-prizma .btn-main{padding:12px 24px;border-radius:999px;border:0;font-weight:700;text-decoration:none;cursor:pointer;background:linear-gradient(125deg,#ffffff,#38e1ff,#ffffff);background-size:220% 220%;color:#fff;animation:heroFlow 6s ease infinite;}\n.hero-xameleon-prizma .btn-ghost{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.26);color:#ffffff;}\n.hero-xameleon-prizma__stage{width:100%;min-height:290px;margin-top:12px;border-radius:24px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px)}\n</style>"
+    }
+  ]
+}

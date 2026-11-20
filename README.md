@@ -1,17 +1,20 @@
 # Hi Neo — sayt qurayotganda keraklisini o'zi tanlaydigan dizayn plagini
 
-**hiworld.club** tomonidan. Oddiy saytni zamonaviy veb-mahsulotga aylantiradigan plagin — **Claude Code**, **Claude Desktop / claude.ai**, **Gemini Antigravity** va **ChatGPT Codex** uchun. Ichida 31 ta WOW effekt, 64 ta CSS animatsiya, 3,054 ta SVG ikonka, 60 ta shrift va «bitta bet — bitta bo'lim» sahifa maketi bor. Siz «sayt yasa» deysiz — agent shulardan loyihaga mosini o'zi tanlab ishlatadi.
+**hiworld.club** tomonidan. Oddiy saytni zamonaviy veb-mahsulotga aylantiradigan plagin — **Claude Code**, **Claude Desktop / claude.ai**, **Gemini Antigravity** va **ChatGPT Codex** uchun. Ichida 31 ta WOW effekt, 64 ta CSS animatsiya, 3,054 ta SVG ikonka, 60 ta shrift, 36 ta palitra va 100 ta premium gradient (xameleon va shaffof tugmalar bilan), 50 ta birinchi bet (Hero) maketi hamda har bir betda avtomatik Audit -> Uslub -> Kod tuzatish tizimi bor.
 
 Butun muloqot va yo'riqnomalar — **lotin o'zbek tilida**.
 
 ```text
-/sayt        ->  Sayt quradi va hammasidan keraklisini o'zi tanlaydi (shrift, ikonka, animatsiya, effekt, maket)
-/sahifa      ->  «Bitta bet — bitta bo'lim» standart maketi: har bo'lim alohida bet, skroll yo'q
+/hidesign    ->  Bitta umumiy buyruq (hiworld plaginidan keyin): 8 bosqichda etapma-etap professional dizayn + rasmlar + Audit
+/sayt        ->  Sayt quradi va hammasidan keraklisini o'zi tanlaydi (Hero, rang, shrift, ikonka, animatsiya, effekt)
+/sahifa      ->  50 ta birinchi bet (Hero) maketi + «Bitta bet — bitta bo'lim» standart karkasi
 /effekt      ->  31 ta interaktiv WOW veb-effekt (Canvas, WebGL, GSAP, Three.js, CSS 3D)
 /animatsiya  ->  8 xil uslubdagi 64 ta toza CSS @keyframes animatsiya
 /ikonka      ->  40 ta yo'nalishdagi 3,054 ta alohida minimalist SVG ikonka (SVG / JSX / Vue)
 /shrift      ->  6 xil uslubdagi 60 ta shrift va 24 ta tayyor sarlavha + matn juftligi (Google Fonts)
-/vitrina     ->  Hammasini bitta interaktiv ko'rgazmada jonli ko'rish va nusxalash
+/rang        ->  Coolors 1 rangdan moslash, 36 ta palitra va 100 ta premium gradient (xameleon, shaffof tugmalar)
+/audit       ->  Har bir betda avtomatik 3 bosqich: Audit -> Uslub tanlash -> Kodda qadamma-qadam tuzatish
+/vitrina     ->  Hammasini 9 ta betli interaktiv ko'rgazmada jonli ko'rish va nusxalash
 ```
 
 ---
@@ -46,7 +49,7 @@ Vitrinaning oxirgi betida (`#ornatish`) har uch vosita uchun buyruq bitta tugma 
 
 ---
 
-## 7 ta Skill
+## 8 ta Skill
 
 ### 1. `sayt` — Sayt quruvchi, keraklisini o'zi tanlaydi (`/sayt`)
 Yangi sayt yoki lending so'ralganda o'zi ishga tushadi. Soha va kayfiyatga qarab bitta shrift juftligi, bet uchun 1–3 ta ikonka, butun saytga 3–4 xil CSS animatsiya va 1–2 ta WOW effekt tanlaydi, ortiqchasini qo'shmaydi. Oxirida nima tanlanganini va sababini jadvalda ko'rsatadi.
@@ -81,8 +84,13 @@ Har bir sahifa yagona kompozitsiya qonunida quriladi:
 - **24 ta tayyor juftlik** (sarlavha + matn): «Texno startap», «Premium brend», «Fintech ilova», «Bolalar olami» va boshqalar.
 - Hammasi Google Fonts'dagi ochiq litsenziyali shriftlar. Har birining havolasi, vaznlari va kirill qo'llashi tekshirilgan.
 
-### 7. `vitrina` — Interaktiv Ko'rgazma (`/vitrina`)
-7 ta alohida betda (Ekotizim, Effektlar, Animatsiyalar, Ikonkalar, Shriftlar, Sahifa standarti, O'rnatish) hammasini jonli ko'rsatadi va bir bosishda nusxalaydi. `http://localhost:3000` da yoki Claude Artifact oynasida ochiladi.
+### 7. `rang` — Rang Palitrasi va 1 Rangdan Moslash (`/rang`)
+- **Coolors uslubida moslash:** 1 ta HEX rang tanlaysiz — unga uyg'un **1 ta (`juft`)** yoki **2 ta (`yumshoq`, `yaqin`, `uchlik`)** rang, fon, matn va WCAG kontrast ko'rsatkichi avtomatik hisoblanadi.
+- **36 ta tayyor tavsiya palitra:** 6 xil uslub (`texno`, `premium`, `tabiiy`, `yorqin`, `minimal`, `issiq`), har biridan 6 tadan.
+- Vitrinada (`#rang`) ranglarni qulflash, `Space` tugmasi bilan yangi tavsiya olish va bir bosishda CSS `:root` kodini nusxalash mumkin.
+
+### 8. `vitrina` — Interaktiv Ko'rgazma (`/vitrina`)
+8 ta alohida betda (Ekotizim, Effektlar, Animatsiyalar, Ikonkalar, Shriftlar, Ranglar, Sahifa standarti, O'rnatish) hammasini jonli ko'rsatadi va bir bosishda nusxalaydi. `http://localhost:3000` da yoki Claude Artifact oynasida ochiladi.
 
 ---
 

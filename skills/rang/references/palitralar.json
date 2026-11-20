@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "nomi": "Hi Neo Rang Palitralari",
+    "soni": 36,
+    "uslublar": {
+      "texno": "Texno va AI",
+      "premium": "Premium va hashamat",
+      "tabiiy": "Tabiiy va ekologik",
+      "yorqin": "Yorqin va ijodiy",
+      "minimal": "Minimal va rasmiy",
+      "issiq": "Issiq va taom"
+    },
+    "garmoniyalar": {
+      "juft": "1 + 1 mos (Komplementar)",
+      "yumshoq": "1 + 2 mos (Yumshoq kontrast)",
+      "yaqin": "1 + 2 mos (Yaqin ohanglar)",
+      "uchlik": "1 + 2 mos (Uchlik muvozanat)"
+    }
+  },
+  "palitralar": [
+    { "raqam": 1, "id": "hi-neo-neon", "nom": "Hi Neo Neon", "uslub": "texno", "rejim": "qorongi", "fon": "#050a17", "matn": "#f1f5f9", "ranglar": ["#0052ff", "#38e1ff", "#818cf8"], "qayerda": "AI studiyalar, texnologik startaplar va zamonaviy dasturiy mahsulotlar" },
+    { "raqam": 2, "id": "kvant-yalpiz", "nom": "Kvant Yalpiz", "uslub": "texno", "rejim": "qorongi", "fon": "#061114", "matn": "#ecfeff", "ranglar": ["#06b6d4", "#10b981", "#38bdf8"], "qayerda": "Fintech ilovalar, analitika panellari va bulutli servislar" },
+    { "raqam": 3, "id": "tun-binafsha", "nom": "Tun Binafsha", "uslub": "texno", "rejim": "qorongi", "fon": "#0b0719", "matn": "#f5f3ff", "ranglar": ["#7c3aed", "#ec4899", "#38bdf8"], "qayerda": "Kreativ SaaS, Web3, o'yin va musiqiy platformalar" },
+    { "raqam": 4, "id": "kosmos-indigo", "nom": "Kosmos Indigo", "uslub": "texno", "rejim": "qorongi", "fon": "#090d1f", "matn": "#eef2ff", "ranglar": ["#4f46e5", "#22d3ee", "#f472b6"], "qayerda": "Dasturchilar vositalari, API hujjatlar va AI agentlar" },
+    { "raqam": 5, "id": "elektr-firoza", "nom": "Elektr Firoza", "uslub": "texno", "rejim": "yorug", "fon": "#f4f8ff", "matn": "#0f172a", "ranglar": ["#2563eb", "#06b6d4", "#6366f1"], "qayerda": "Yorug' texnologik saytlar, B2B platformalar va onlayn ta'lim" },
+    { "raqam": 6, "id": "lazer-zumrad", "nom": "Lazer Zumrad", "uslub": "texno", "rejim": "qorongi", "fon": "#050d0a", "matn": "#ecfdf5", "ranglar": ["#10b981", "#22d3ee", "#a3e635"], "qayerda": "Kiberxavfsizlik, kripto hamyon va tezlikka urg'u beruvchi xizmatlar" },
+
+    { "raqam": 7, "id": "oltin-tungi", "nom": "Oltin Tungi", "uslub": "premium", "rejim": "qorongi", "fon": "#0c0a09", "matn": "#fafaf9", "ranglar": ["#d4af37", "#f59e0b", "#a8a29e"], "qayerda": "Hashamatli restoranlar, soat, zargarlik va VIP xizmatlar" },
+    { "raqam": 8, "id": "zumrad-klassika", "nom": "Zumrad Klassika", "uslub": "premium", "rejim": "qorongi", "fon": "#071713", "matn": "#f0fdf4", "ranglar": ["#059669", "#d4af37", "#6ee7b7"], "qayerda": "Sarmoya fondlari, ko'chmas mulk va premium moliya" },
+    { "raqam": 9, "id": "bordo-velvet", "nom": "Bordo Velvet", "uslub": "premium", "rejim": "qorongi", "fon": "#16080d", "matn": "#fff1f2", "ranglar": ["#9f1239", "#f59e0b", "#fda4af"], "qayerda": "Kechki restoranlar, moda brendlari va maxsus tadbirlar" },
+    { "raqam": 10, "id": "shampan-oq", "nom": "Shampan Oq", "uslub": "premium", "rejim": "yorug", "fon": "#faf8f5", "matn": "#1c1917", "ranglar": ["#b45309", "#d97706", "#78716c"], "qayerda": "Go'zallik salonlari, interyer dizayn, to'y va marosim saytlari" },
+    { "raqam": 11, "id": "safir-qirol", "nom": "Safir Qirol", "uslub": "premium", "rejim": "qorongi", "fon": "#080e24", "matn": "#f8fafc", "ranglar": ["#1d4ed8", "#eab308", "#93c5fd"], "qayerda": "Huquq firmalari, konsalting va korporativ rahbarlik" },
+    { "raqam": 12, "id": "obsidiyan-mis", "nom": "Obsidiyan Mis", "uslub": "premium", "rejim": "qorongi", "fon": "#111010", "matn": "#f5f5f4", "ranglar": ["#c2410c", "#fb923c", "#d6d3d1"], "qayerda": "Arxitektura byurolari, avtomobil va muhandislik brendlari" },
+
+    { "raqam": 13, "id": "ormon-bargi", "nom": "O'rmon Bargi", "uslub": "tabiiy", "rejim": "yorug", "fon": "#f4f7f4", "matn": "#14261c", "ranglar": ["#15803d", "#65a30d", "#0d9488"], "qayerda": "Ekologik mahsulotlar, sog'lom ovqatlanish va qishloq xo'jaligi" },
+    { "raqam": 14, "id": "okean-tiniq", "nom": "Okean Tiniq", "uslub": "tabiiy", "rejim": "yorug", "fon": "#f0f9ff", "matn": "#0c2233", "ranglar": ["#0284c7", "#0d9488", "#38bdf8"], "qayerda": "Sayohat agentliklari, suv sporti, klinika va dam olish maskanlari" },
+    { "raqam": 15, "id": "zaytun-tosh", "nom": "Zaytun Tosh", "uslub": "tabiiy", "rejim": "yorug", "fon": "#f7f6f1", "matn": "#26291f", "ranglar": ["#4d7c0f", "#a16207", "#65a30d"], "qayerda": "Organik kosmetika, keramika, hunarmandchilik va mebel" },
+    { "raqam": 16, "id": "chol-qumi", "nom": "Cho'l Qumi", "uslub": "tabiiy", "rejim": "yorug", "fon": "#fbf7f0", "matn": "#292018", "ranglar": ["#c26d3a", "#0f766e", "#eab308"], "qayerda": "Turizm, milliy brendlar, mehmonxona va madaniy loyihalar" },
+    { "raqam": 17, "id": "yalpiz-tong", "nom": "Yalpiz Tong", "uslub": "tabiiy", "rejim": "yorug", "fon": "#f0fdf9", "matn": "#0f2a24", "ranglar": ["#059669", "#14b8a6", "#0284c7"], "qayerda": "Tibbiyot, stomatologiya, dorixona va psixologiya markazlari" },
+    { "raqam": 18, "id": "tog-havosi", "nom": "Tog' Havosi", "uslub": "tabiiy", "rejim": "qorongi", "fon": "#0a151c", "matn": "#f0f9ff", "ranglar": ["#0ea5e9", "#2dd4bf", "#94a3b8"], "qayerda": "Tog' turizmi, tashqi kiyim-kechak va sport anjomlari" },
+
+    { "raqam": 19, "id": "quyosh-botishi", "nom": "Quyosh Botishi", "uslub": "yorqin", "rejim": "qorongi", "fon": "#140b18", "matn": "#fff7ed", "ranglar": ["#f97316", "#ec4899", "#facc15"], "qayerda": "Konsertlar, festivallar, kreativ agentliklar va yoshlar brendi" },
+    { "raqam": 20, "id": "tropik-marjon", "nom": "Tropik Marjon", "uslub": "yorqin", "rejim": "yorug", "fon": "#fff7f5", "matn": "#1f1215", "ranglar": ["#f43f5e", "#14b8a6", "#f59e0b"], "qayerda": "Bolalar markazlari, sovg'a do'konlari va ijtimoiy ilovalar" },
+    { "raqam": 21, "id": "pop-magenta", "nom": "Pop Magenta", "uslub": "yorqin", "rejim": "qorongi", "fon": "#12071a", "matn": "#fdf4ff", "ranglar": ["#d946ef", "#38bdf8", "#fb7185"], "qayerda": "Dizayn studiyalar, podkast, strim va media loyihalar" },
+    { "raqam": 22, "id": "sport-energiya", "nom": "Sport Energiya", "uslub": "yorqin", "rejim": "qorongi", "fon": "#0b0f14", "matn": "#f8fafc", "ranglar": ["#ef4444", "#f97316", "#facc15"], "qayerda": "Fitnes zallar, sport klublari, musobaqalar va avtosport" },
+    { "raqam": 23, "id": "rangli-bolalar", "nom": "Rangli Bolalar", "uslub": "yorqin", "rejim": "yorug", "fon": "#fffdf5", "matn": "#1e1b4b", "ranglar": ["#6366f1", "#f59e0b", "#10b981"], "qayerda": "Bog'chalar, bolalar kurslari, o'yinchoq va ta'lim ilovalari" },
+    { "raqam": 24, "id": "kocha-uslubi", "nom": "Ko'cha Uslubi", "uslub": "yorqin", "rejim": "qorongi", "fon": "#0d0d10", "matn": "#fafafa", "ranglar": ["#f43f5e", "#facc15", "#38bdf8"], "qayerda": "Kiyim-kechak do'konlari, streetwear va zamonaviy marketpleys" },
+
+    { "raqam": 25, "id": "skandinaviya-oq", "nom": "Skandinaviya Oq", "uslub": "minimal", "rejim": "yorug", "fon": "#f8fafc", "matn": "#0f172a", "ranglar": ["#0f172a", "#3b82f6", "#64748b"], "qayerda": "Toza portfolio, mahsulot sahifalari va minimalistik biznes saytlar" },
+    { "raqam": 26, "id": "bank-koki", "nom": "Bank Ko'ki", "uslub": "minimal", "rejim": "yorug", "fon": "#f5f7fb", "matn": "#0f172a", "ranglar": ["#1e40af", "#0284c7", "#059669"], "qayerda": "Banklar, sug'urta, buxgalteriya va rasmiy tashkilotlar" },
+    { "raqam": 27, "id": "kumush-shisha", "nom": "Kumush Shisha", "uslub": "minimal", "rejim": "yorug", "fon": "#e8eaee", "matn": "#0f172a", "ranglar": ["#0052ff", "#38bdf8", "#1e3a8a"], "qayerda": "Shisha uslubidagi (glassmorphism) studiyalar va raqamli mahsulotlar" },
+    { "raqam": 28, "id": "qogoz-siyoh", "nom": "Qog'oz va Siyoh", "uslub": "minimal", "rejim": "yorug", "fon": "#faf9f6", "matn": "#18181b", "ranglar": ["#18181b", "#dc2626", "#52525b"], "qayerda": "Onlayn jurnallar, bloglar, nashriyot va yozuvchilar" },
+    { "raqam": 29, "id": "grafit-tiniq", "nom": "Grafit Tiniq", "uslub": "minimal", "rejim": "qorongi", "fon": "#0f1115", "matn": "#f4f4f5", "ranglar": ["#3b82f6", "#a1a1aa", "#22c55e"], "qayerda": "Boshqaruv panellari (CRM, ERP), jadvallar va biznes ilovalar" },
+    { "raqam": 30, "id": "talim-markazi", "nom": "Ta'lim Markazi", "uslub": "minimal", "rejim": "yorug", "fon": "#f8fafc", "matn": "#0f172a", "ranglar": ["#4f46e5", "#0ea5e9", "#f59e0b"], "qayerda": "O'quv markazlari, onlayn akademiyalar va universitetlar" },
+
+    { "raqam": 31, "id": "qahva-qaymoq", "nom": "Qahva va Qaymoq", "uslub": "issiq", "rejim": "yorug", "fon": "#faf6f0", "matn": "#2c1e16", "ranglar": ["#78350f", "#d97706", "#b45309"], "qayerda": "Qahvaxonalar, novvoyxonalar va shirinlik do'konlari" },
+    { "raqam": 32, "id": "sopol-terakota", "nom": "Sopol va Terakota", "uslub": "issiq", "rejim": "yorug", "fon": "#fcf5f0", "matn": "#2b1912", "ranglar": ["#c2410c", "#0f766e", "#eab308"], "qayerda": "Milliy taomlar, restoran, mebel va uy bezaklari" },
+    { "raqam": 33, "id": "ziravor-zafaron", "nom": "Ziravor Za'faron", "uslub": "issiq", "rejim": "qorongi", "fon": "#18100a", "matn": "#fef3c7", "ranglar": ["#ea580c", "#f59e0b", "#10b981"], "qayerda": "Sharq oshxonasi, yetkazib berish va tez ovqatlanish" },
+    { "raqam": 34, "id": "anor-sharbati", "nom": "Anor Sharbati", "uslub": "issiq", "rejim": "yorug", "fon": "#fff5f5", "matn": "#290d14", "ranglar": ["#be123c", "#ea580c", "#15803d"], "qayerda": "Meva-sabzavot, ichimlik brendlari va oziq-ovqat do'konlari" },
+    { "raqam": 35, "id": "asal-yongoq", "nom": "Asal va Yong'oq", "uslub": "issiq", "rejim": "yorug", "fon": "#fefce8", "matn": "#291d0a", "ranglar": ["#d97706", "#92400e", "#15803d"], "qayerda": "Tabiiy asal, quruq meva, fermer mahsulotlari va bozor" },
+    { "raqam": 36, "id": "yetkazish-tez", "nom": "Tez Yetkazish", "uslub": "issiq", "rejim": "yorug", "fon": "#fffaf5", "matn": "#18181b", "ranglar": ["#ea580c", "#2563eb", "#16a34a"], "qayerda": "Kuryerlik, taksi, logistika va tezkor buyurtma servislari" }
+  ]
+}

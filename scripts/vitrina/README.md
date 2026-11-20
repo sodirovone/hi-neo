@@ -5,8 +5,8 @@
 | Fayl | Nima |
 |---|---|
 | `shell.css` | Vitrinaning ko'rinishi (palitra, betlar, yumshoq harakatlar) |
-| `body.html` | 7 ta betning HTML qismi |
-| `logic.js` | Betlar orasida o'tish, sahifalash, 31 ta effekt demosi, mavzu |
+| `body.html` | 9 ta betning HTML qismi |
+| `logic.js` | Betlar orasida o'tish, sahifalash, 31 ta effekt demosi, rang/gradient muharriri, 50 ta Hero maket va Avto-Audit |
 | `logo.uri`, `fav.uri` | Plagin ikonkasi (sahifa ichiga joylanadi) |
 | `assemble.py` | Yig'uvchi: qismlar + JSON bazalar -> `vitrina.html` |
 

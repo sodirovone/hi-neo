@@ -229,16 +229,8 @@ Quyidagi tayyor karkas **«bitta bet — bitta bo'lim»** qonunini ta'minlaydi: 
     window.addEventListener('hashchange', show);
     show();
 
-    // Kompyuterda g'ildirak va strelkalar betni almashtiradi (bet ichida skroll yo'q)
-    let wheelLock = false;
-    window.addEventListener('wheel', (e) => {
-      if (window.innerWidth < 1024 || e.ctrlKey) return;
-      e.preventDefault();
-      if (wheelLock) return;
-      wheelLock = true;
-      go(current + (e.deltaY > 0 ? 1 : -1));
-      setTimeout(() => { wheelLock = false; }, 520);
-    }, { passive: false });
+    // Kompyuterda klaviatura strelkalari va yuqori menyu betni almashtiradi
+    // (trekpad/g'ildirak tasodifan keyingi betga o'tib ketmasligi uchun wheel o'chirilgan)
     window.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') go(current + 1);
       if (e.key === 'ArrowLeft') go(current - 1);

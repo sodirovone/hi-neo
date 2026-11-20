@@ -29,9 +29,16 @@ ef = json.loads(rd(ROOT + "skills/effekt/references/effektlar.json"))
 an = json.loads(rd(ROOT + "skills/animatsiya/references/animatsiyalar.json"))
 sh = json.loads(rd(ROOT + "skills/shrift/references/shriftlar.json"))
 ic = json.loads(rd(ROOT + "skills/ikonka/references/ikonkalar.json"))
+rg = json.loads(rd(ROOT + "skills/rang/references/palitralar.json"))
+gr = json.loads(rd(ROOT + "skills/rang/references/gradientlar.json"))
+hm = json.loads(rd(ROOT + "skills/sahifa/references/hero-maketlar.json"))
 IC_NUM = len(ic["ikonkalar"])
 IC_N = format(IC_NUM, ",")
 IC_CATS = len(ic["meta"]["kategoriyalar"])
+PAL_NUM = len(rg["palitralar"])
+GR_NUM = len(gr["gradientlar"])
+COLOR_NUM = PAL_NUM + GR_NUM
+HM_NUM = len(hm["maketlar"])
 md = rd(ROOT + "skills/sahifa/references/maket-shablonlar.md")
 maket = re.search(r"```html\n(.*?)\n```", md, re.S).group(1) + "\n"
 
@@ -46,8 +53,8 @@ def js(v):
 fonts = [{k: f[k] for k in ("id", "raqam", "nom", "uslub", "vaznlar", "kirill", "qayerda", "link", "css")} for f in sh["shriftlar"]]
 pairs = [{k: j[k] for k in ("id", "raqam", "nom", "sarlavha", "matn", "kayfiyat", "qayerda", "link", "css")} for j in sh["juftliklar"]]
 
-TITLE = "Hi Neo — sayt uchun effekt, animatsiya, ikonka va shriftlar plagini"
-DESC = "Hi Neo plagini: 31 ta WOW veb-effekt, 64 ta CSS animatsiya, " + IC_N + " ta alohida minimalist SVG ikonka, 60 ta shrift va «bitta bet — bitta bo'lim» sahifa maketi. Sayt qurayotganda keraklisini o'zi tanlaydi."
+TITLE = "Hi Neo — effekt, animatsiya, ikonka, shrift, gradient va 50 ta Hero maket plagini"
+DESC = "Hi Neo plagini: 31 ta WOW veb-effekt, 64 ta CSS animatsiya, " + IC_N + " ta alohida minimalist SVG ikonka, 60 ta shrift, " + str(PAL_NUM) + " ta rang palitrasi, " + str(GR_NUM) + " ta premium gradient (xameleon va shaffof tugmalar bilan) hamda " + str(HM_NUM) + " ta birinchi bet (Hero) maketi."
 
 data = "\n".join([
     "    const EFFECTS = " + js(ef["effektlar"]) + ";",
@@ -56,6 +63,12 @@ data = "\n".join([
     "    const FONTS = " + js(fonts) + ";",
     "    const FONT_PAIRS = " + js(pairs) + ";",
     "    const FONT_STYLES = " + js(sh["meta"]["uslublar"]) + ";",
+    "    const PALETTES = " + js(rg["palitralar"]) + ";",
+    "    const PALETTE_STYLES = " + js(rg["meta"]["uslublar"]) + ";",
+    "    const GRADIENTS = " + js(gr["gradientlar"]) + ";",
+    "    const GRADIENT_STYLES = " + js(gr["meta"]["uslublar"]) + ";",
+    "    const HERO_LAYOUTS = " + js(hm["maketlar"]) + ";",
+    "    const HERO_STYLES = " + js(hm["meta"]["uslublar"]) + ";",
     "    const ICON_CATS = " + js(ic["meta"]["kategoriyalar"]) + ";",
     "    const ICONS_RAW = " + js([[x["id"], x["nom"], x["en"], x["kat"], x["svg"]] for x in ic["ikonkalar"]]) + ";",
     "    const MAKET_CODE = " + js(maket) + ";",
@@ -87,7 +100,7 @@ def build(title, extra_head, home_url):
   </script>
   <style>
 """ % (title, DESC, extra_head, rd(S + "fav.uri").strip())
-    return (head + shell + anim_css + "\n\n  </style>\n</head>\n<body>\n" + body.replace("__HOME_URL__", home_url).replace("__IC_NUM__", str(IC_NUM)).replace("__IC_N__", IC_N).replace("__IC_CATS__", str(IC_CATS))
+    return (head + shell + anim_css + "\n\n  </style>\n</head>\n<body>\n" + body.replace("__HOME_URL__", home_url).replace("__IC_NUM__", str(IC_NUM)).replace("__IC_N__", IC_N).replace("__IC_CATS__", str(IC_CATS)).replace("__PAL_N__", str(PAL_NUM)).replace("__GR_N__", str(GR_NUM)).replace("__COLOR_N__", str(COLOR_NUM)).replace("__HM_N__", str(HM_NUM))
             + "\n  <script>\n" + data + "\n" + logic + "  </script>\n</body>\n</html>\n")
 
 

@@ -11,11 +11,13 @@
       <button class="nav-tab" data-idx="2" title="64 ta CSS animatsiya"><b>03</b><span>Animatsiyalar</span></button>
       <button class="nav-tab" data-idx="3" title="__IC_N__ ta SVG ikonka"><b>04</b><span>Ikonkalar</span></button>
       <button class="nav-tab" data-idx="4" title="60 ta shrift va 24 ta juftlik"><b>05</b><span>Shriftlar</span></button>
-      <button class="nav-tab" data-idx="5" title="Sahifa standarti"><b>06</b><span>Maket</span></button>
-      <button class="nav-tab" data-idx="6" title="Plaginni o'rnatish"><b>07</b><span>O'rnatish</span></button>
+      <button class="nav-tab" data-idx="5" title="__PAL_N__ ta palitra va __GR_N__ ta gradient"><b>06</b><span>Ranglar</span></button>
+      <button class="nav-tab" data-idx="6" title="__HM_N__ ta Hero maket va sahifa standarti"><b>07</b><span>Maket</span></button>
+      <button class="nav-tab" data-idx="7" title="Har bir betda avtomatik audit, uslub tanlash va kodda tuzatish"><b>08</b><span>Audit</span></button>
+      <button class="nav-tab" data-idx="8" title="Plaginni o'rnatish"><b>09</b><span>O'rnatish</span></button>
     </nav>
     <div class="top-right">
-      <span class="top-count" id="stepCounter">01 / 07</span>
+      <span class="top-count" id="stepCounter">01 / 09</span>
       <button type="button" class="theme-btn" id="themeBtn" data-theme-toggle aria-label="Yorug' yoki qorong'i rejim" title="Yorug' / qorong'i rejim">
         <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -51,7 +53,7 @@
           <div>
             <h1 class="sec-title">Zamonaviy saytlar uchun yagona dizayn va harakat arsenali</h1>
             <p class="sec-desc">
-              <strong>Hi Neo</strong> — Antigravity, Claude Code va Claude Desktop uchun plagin. «Sayt yasa» deysiz, u kerakli effekt, animatsiya, ikonka va shriftni <strong>o'zi tanlaydi</strong>. Bu yerda har bir bo'lim alohida betda.
+              <strong>Hi Neo</strong> — Antigravity, Claude Code va ChatGPT Codex uchun dizayn plagini. <strong>hiworld</strong> plagini bilan qurilgan saytingizda bitta <code>/hidesign</code> buyrug'ini yozasiz — u rang, shrift, ikonka, animatsiya, 1-bet Hero, rasmlar va yakuniy Auditgacha hammasini <strong>etapma-etap</strong> professional qiladi.
             </p>
           </div>
 
@@ -60,11 +62,14 @@
             <div class="stat-tile"><b data-count="64">64</b><span>CSS animatsiya</span></div>
             <div class="stat-tile"><b data-count="__IC_NUM__">__IC_N__</b><span>SVG ikonka</span></div>
             <div class="stat-tile"><b data-count="60">60</b><span>shrift</span></div>
+            <div class="stat-tile"><b data-count="__COLOR_N__">__COLOR_N__</b><span>palitra &amp; gradient</span></div>
+            <div class="stat-tile"><b data-count="__HM_N__">__HM_N__</b><span>Hero maket</span></div>
           </div>
 
           <div class="btn-row">
             <button class="btn btn--accent" onclick="goSec(1)">Ko'rishni boshlash</button>
-            <button class="btn btn--ghost" onclick="goSec(6)">Plaginni o'rnatish</button>
+            <button class="btn btn--ghost" id="copyHidesignBtn">/hidesign buyrug'i</button>
+            <button class="btn btn--ghost" onclick="goSec(8)">O'rnatish</button>
           </div>
         </div>
       </div>
@@ -261,19 +266,197 @@
       </div>
     </section>
 
-    <!-- ==================== 06-BET: SAHIFA STANDARTI ==================== -->
-    <section class="neo-section" id="sahifa" data-title="Sahifa standarti">
+    <!-- ==================== 06-BET: RANG PALITRASI VA 100 GRADIENT ==================== -->
+    <section class="neo-section" id="rang" data-title="Rang va gradientlar">
       <div class="neo-frame">
         <div class="neo-visual">
           <div class="win-bar">
             <div class="dots"><span></span><span></span><span></span></div>
-            <span class="win-label">sahifa maketi simulyatori</span>
-            <div class="pager">
-              <button class="mini-pill is-active" id="simPcBtn">PC</button>
-              <button class="mini-pill" id="simMobBtn">Telefon</button>
+            <div class="rang-switch" id="rangSwitch" role="tablist" aria-label="Rang bo'limi">
+              <button type="button" class="mini-pill is-active" data-tab="palitra" role="tab" aria-selected="true">Palitralar (__PAL_N__)</button>
+              <button type="button" class="mini-pill" data-tab="gradient" role="tab" aria-selected="false">Gradientlar (__GR_N__)</button>
+            </div>
+            <button type="button" class="mini-pill cl-rand-btn" id="clRandBtn" title="Yangi tavsiya (Space)">Tavsiya ↻</button>
+          </div>
+
+          <!-- 1-KO'RINISH: COOLORS PALITRA MOSLAGICH + 36 PALITRA -->
+          <div class="stage-split" id="clPane">
+            <div class="neo-stage stage-canvas-wrap cl-stage">
+              <div class="cl-toolbar">
+                <label class="cl-pick" title="1 ta asosiy rang tanlang">
+                  <input type="color" id="clPicker" value="#0052ff" aria-label="Asosiy rang tanlash">
+                  <span class="cl-swatch" id="clSwatch"></span>
+                  <input type="text" id="clHex" class="cl-hex" value="#0052FF" maxlength="7" spellcheck="false" aria-label="HEX kod">
+                </label>
+                <div class="mini-pills cl-modes" id="clModes" role="group" aria-label="Moslash turi">
+                  <button type="button" class="mini-pill" data-mode="juft">1 + 1</button>
+                  <button type="button" class="mini-pill is-active" data-mode="yumshoq">Yumshoq</button>
+                  <button type="button" class="mini-pill" data-mode="yaqin">Yaqin</button>
+                  <button type="button" class="mini-pill" data-mode="uchlik">Uchlik</button>
+                </div>
+              </div>
+              <div class="cl-cols" id="clCols" aria-live="polite"></div>
+            </div>
+            <div class="cl-rec-bar">
+              <div class="mini-pills" id="clFilter"></div>
+            </div>
+            <div class="stage-list" id="clList"></div>
+            <div class="stage-foot">
+              <span id="clCount">__PAL_N__ ta palitra</span>
+              <div class="pager">
+                <button type="button" class="mini-pill" id="clPrev">← Oldingi</button>
+                <span class="pager__info" id="clPage">1 / 1</span>
+                <button type="button" class="mini-pill" id="clNext">Keyingi →</button>
+              </div>
             </div>
           </div>
-          <div class="neo-stage stage-fill sim-stage">
+
+          <!-- 2-KO'RINISH: 100 PREMIUM GRADIENT + RANG/JOY MUHARRIRI + XAMELEON -->
+          <div class="stage-split" id="grPane" hidden>
+            <div class="neo-stage stage-canvas-wrap gr-stage">
+              <div class="gr-toolbar">
+                <div class="mini-pills gr-types" id="grTypes" role="group" aria-label="Gradient turi">
+                  <button type="button" class="mini-pill is-active" data-tur="linear">Chiziqli</button>
+                  <button type="button" class="mini-pill" data-tur="radial">Markaziy</button>
+                  <button type="button" class="mini-pill" data-tur="conic">Aylana</button>
+                </div>
+                <button type="button" class="mini-pill gr-shimmer-btn" id="grShimmerBtn" title="Xameleon tovlanish">Xameleon ✦</button>
+                <div class="gr-angle-wrap" id="grAngleWrap">
+                  <input type="range" id="grAngle" min="0" max="360" value="135" aria-label="Gradient burchagi">
+                  <span id="grAngleVal">135°</span>
+                </div>
+                <button type="button" class="mini-pill gr-icon-btn" id="grFlip" title="Ranglarni almashtirish" aria-label="Ranglarni almashtirish">↔</button>
+              </div>
+
+              <div class="gr-canvas" id="grCanvas" title="Ustida sudrab burchak yoki joyni o'zgartiring">
+                <span class="gr-hint" id="grHint">Surib joyini o'zgartiring</span>
+                <div class="gr-handle" id="grHandle" aria-hidden="true"></div>
+                <div class="gr-track-wrap">
+                  <div class="gr-track" id="grTrack" aria-label="Rang nuqtalari"></div>
+                </div>
+              </div>
+
+              <div class="gr-stops" id="grStops"></div>
+            </div>
+            <div class="cl-rec-bar">
+              <div class="mini-pills" id="grFilter"></div>
+            </div>
+            <div class="stage-list" id="grList"></div>
+            <div class="stage-foot">
+              <span id="grCount">__GR_N__ ta gradient</span>
+              <div class="pager">
+                <button type="button" class="mini-pill" id="grPrev">← Oldingi</button>
+                <span class="pager__info" id="grPage">1 / 1</span>
+                <button type="button" class="mini-pill" id="grNext">Keyingi →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy rang-copy">
+          <div>
+            <div class="sec-kicker" id="clMeta">#01 · Texno · Qorong'i</div>
+            <h2 class="sec-title" id="clTitle">Hi Neo Neon</h2>
+            <p class="sec-desc" id="clDesc"></p>
+          </div>
+
+          <!-- KATTA, TINIQ JONLI KO'RINISH: PALITRALAR -->
+          <div class="cl-demo" id="clDemo">
+            <div class="cl-demo__top">
+              <span class="cl-demo__brand"><i id="clDot"></i><span>Jonli ko'rinish</span></span>
+              <div class="cl-demo__top-right">
+                <span class="cl-demo__badge" id="clContrast">18.0:1 · AAA ✓</span>
+                <button type="button" class="cl-demo__mode" id="clBgToggle" title="Fon rejimini almashtirish">Qorong'i fon</button>
+              </div>
+            </div>
+            <div class="cl-demo__hero">
+              <div class="cl-demo__glow" id="clDemoGlow" aria-hidden="true"></div>
+              <div class="cl-demo__title" id="clDemoHead">Saytingiz jonli ko'rinishi</div>
+              <div class="cl-demo__sub" id="clDemoSub">Asosiy, shaffof shisha va tovlanuvchi tugmalar</div>
+              <div class="cl-demo__row">
+                <span class="cl-demo__btn" id="clDemoBtn">Asosiy</span>
+                <span class="cl-demo__glass" id="clDemoGlass">Shaffof shisha</span>
+                <span class="cl-demo__cham" id="clDemoCham">Xameleon ✦</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KATTA, TINIQ JONLI KO'RINISH: GRADIENTLAR + SHAFFOF SHISHA + XAMELEON -->
+          <div class="gr-demo" id="grDemo" hidden>
+            <div class="gr-demo__hero" id="grDemoHero">
+              <div class="gr-demo__top">
+                <span class="gr-demo__tag" id="grDemoTag">Chiziqli Gradient</span>
+                <div class="gr-btn-modes" id="grBtnModes" role="group" aria-label="Tugma stili">
+                  <button type="button" class="gr-btn-mode is-active" data-bstyle="shisha">Shaffof</button>
+                  <button type="button" class="gr-btn-mode" data-bstyle="toldirilgan">Asosiy</button>
+                  <button type="button" class="gr-btn-mode" data-bstyle="xameleon">Xameleon</button>
+                </div>
+              </div>
+              <div class="gr-demo__center">
+                <div class="gr-demo__headline" id="grDemoHead">Shaffof shisha va tovlanuvchi uslub</div>
+                <div class="gr-demo__glass-row">
+                  <span class="gr-preview-btn is-glass" id="grPrevGlass">Shaffof tugma →</span>
+                  <span class="gr-preview-btn is-cham" id="grPrevCham">Xameleon ✦</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-box rang-code" id="clCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="clCopyCss">CSS kodni nusxalash</button>
+            <button class="btn btn--ghost" id="clCopyCmd">/rang buyrug'i</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 07-BET: 50 TA HERO MAKET VA SAHIFA STANDARTI ==================== -->
+    <section class="neo-section" id="sahifa" data-title="50 ta Hero maket">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="rang-switch" id="maketSwitch" role="tablist" aria-label="Maket bo'limi">
+              <button type="button" class="mini-pill is-active" data-tab="hero" role="tab" aria-selected="true">50 ta Hero</button>
+              <button type="button" class="mini-pill" data-tab="karkas" role="tab" aria-selected="false">Karkas</button>
+            </div>
+            <div class="pager">
+              <button type="button" class="mini-pill is-active" id="simPcBtn">PC</button>
+              <button type="button" class="mini-pill" id="simMobBtn">Telefon</button>
+              <button type="button" class="mini-pill" id="hmExpandBtn" title="To'liq ekranda katta ko'rish">⤢</button>
+            </div>
+          </div>
+
+          <!-- 1-KO'RINISH: SUPAHERO ILHOMLI 50 TA BIRINCHI BET (HERO) MAKETI -->
+          <div class="stage-split" id="hmPane">
+            <div class="neo-stage stage-canvas-wrap hm-stage">
+              <div class="hm-vp" id="hmViewport">
+                <div class="hm-chrome">
+                  <div class="hm-chrome__dots"><i></i><i></i><i></i></div>
+                  <div class="hm-chrome__url" id="hmUrl">hi-neo.uz</div>
+                  <div class="hm-chrome__nav"><span></span><span></span><span></span></div>
+                </div>
+                <div class="hm-canvas" id="hmCanvas"></div>
+              </div>
+            </div>
+            <div class="cl-rec-bar">
+              <div class="mini-pills" id="hmFilter"></div>
+            </div>
+            <div class="stage-list" id="hmList"></div>
+            <div class="stage-foot">
+              <span id="hmCount">__HM_N__ ta Hero maket</span>
+              <div class="pager">
+                <button type="button" class="mini-pill" id="hmPrev">← Oldingi</button>
+                <span class="pager__info" id="hmPage">1 / 1</span>
+                <button type="button" class="mini-pill" id="hmNext">Keyingi →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2-KO'RINISH: BITTA BET — BITTA BO'LIM KARKAS SIMULYATORI -->
+          <div class="neo-stage stage-fill sim-stage" id="karkasPane" hidden>
             <div class="sim-viewport" id="simViewport">
               <div class="sim-card neo-anim-border-beam-spin">
                 <div class="sim-pic">Betning o'z rasmi</div>
@@ -283,25 +466,77 @@
           </div>
         </div>
 
-        <div class="neo-copy">
+        <div class="neo-copy maket-copy">
           <div>
-            <h2 class="sec-title">Yagona standart: bitta bet — bitta bo'lim</h2>
-            <p class="sec-desc">
-              Har bir bo'lim o'z manziliga ega <strong>alohida bet</strong> va hammasi <strong>bir xil o'lchamda</strong>. Har betga o'ziga mos rasm yaratiladi, matn markazda turadi, harakatlar yumshoq, skroll yo'q.
-            </p>
+            <div class="sec-kicker" id="hmMeta">#01 · SaaS va AI · Birinchi bet</div>
+            <h2 class="sec-title" id="hmTitle">Mahsulot Brauzerda</h2>
+            <p class="sec-desc" id="hmDesc"></p>
+            <div class="mini-pills" id="hmTags" style="margin-top:12px"></div>
           </div>
 
-          <div class="code-box" id="maketCodeBox"></div>
+          <div class="code-box maket-code" id="maketCodeBox"></div>
 
           <div class="btn-row">
-            <button class="btn btn--accent" id="copyMaketBtn">Sahifa karkasini nusxalash</button>
-            <button class="btn btn--ghost" id="copyMaketCmd">/sayt buyrug'i</button>
+            <button class="btn btn--accent" id="copyMaketBtn">Hero kodini nusxalash</button>
+            <button class="btn btn--ghost" id="copyMaketCmd">/sahifa buyrug'i</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 07-BET: O'RNATISH ==================== -->
+    <!-- ==================== 08-BET: AVTOMATIK AUDIT, USLUB VA KOD TUZATISH ==================== -->
+    <section class="neo-section" id="audit" data-title="Avtomatik Audit">
+      <div class="neo-frame">
+        <div class="neo-visual">
+          <div class="win-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="rang-switch" id="auSwitch" role="tablist" aria-label="Audit bosqichlari">
+              <button type="button" class="mini-pill is-active" data-step="0" role="tab" aria-selected="true">1. Audit</button>
+              <button type="button" class="mini-pill" data-step="1" role="tab" aria-selected="false">2. Uslub</button>
+              <button type="button" class="mini-pill" data-step="2" role="tab" aria-selected="false">3. Tuzatildi ✓</button>
+            </div>
+            <button type="button" class="mini-pill" id="auPlayBtn" title="3 bosqichni ketma-ket ko'rsatish">Avto ▶</button>
+          </div>
+
+          <div class="stage-split">
+            <div class="neo-stage stage-canvas-wrap au-stage">
+              <div class="au-board" id="auBoard"></div>
+            </div>
+            <div class="cl-rec-bar">
+              <div class="mini-pills" id="auProducts"></div>
+            </div>
+            <div class="au-checks-bar" id="auChecksBar"></div>
+            <div class="stage-foot">
+              <span id="auFoot">Har bir betda avtomatik ishlaydi</span>
+              <div class="pager">
+                <button type="button" class="mini-pill" id="auPrev">← Oldingi</button>
+                <span class="pager__info" id="auStepInfo">1 / 3</span>
+                <button type="button" class="mini-pill" id="auNext">Keyingi →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="neo-copy audit-copy">
+          <div>
+            <div class="sec-kicker" id="auMeta">1-bosqich · Muammolarni avtomatik topish</div>
+            <h2 class="sec-title" id="auTitle">Har bir betda avtomatik Audit</h2>
+            <p class="sec-desc" id="auDesc"></p>
+          </div>
+
+          <div class="au-findings" id="auFindings"></div>
+
+          <div class="code-box rang-code" id="auCode"></div>
+
+          <div class="btn-row">
+            <button class="btn btn--accent" id="auCopyCmd">/audit buyrug'ini nusxalash</button>
+            <button class="btn btn--ghost" id="auCopyCli">CLI skriptini nusxalash</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 09-BET: O'RNATISH ==================== -->
     <section class="neo-section" id="ornatish" data-title="O'rnatish">
       <div class="neo-frame">
         <div class="neo-visual">
@@ -335,5 +570,31 @@
     </section>
 
   </main>
+
+  <div class="hm-modal" id="hmModal" hidden role="dialog" aria-modal="true" aria-label="Katta Hero ko'rinish">
+    <div class="hm-modal__panel">
+      <div class="hm-modal__bar">
+        <div class="hm-modal__title" id="hmModalTitle">#01 · Mahsulot Brauzerda</div>
+        <div class="hm-modal__acts">
+          <button type="button" class="mini-pill is-active" id="hmModPc">PC</button>
+          <button type="button" class="mini-pill" id="hmModMob">Telefon</button>
+          <button type="button" class="mini-pill" id="hmModPrev">←</button>
+          <button type="button" class="mini-pill" id="hmModNext">→</button>
+          <button type="button" class="mini-pill" id="hmModCopy">Kodni nusxalash</button>
+          <button type="button" class="mini-pill" id="hmModClose" aria-label="Yopish">✕ Yopish</button>
+        </div>
+      </div>
+      <div class="hm-modal__body">
+        <div class="hm-vp hm-vp--big" id="hmModalVp">
+          <div class="hm-chrome">
+            <div class="hm-chrome__dots"><i></i><i></i><i></i></div>
+            <div class="hm-chrome__url" id="hmModalUrl">hi-neo.uz</div>
+            <div class="hm-chrome__nav"><span></span><span></span><span></span></div>
+          </div>
+          <div class="hm-canvas hm-canvas--big" id="hmModalCanvas"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="toast" id="toast" role="status">Nusxalandi ✓</div>

@@ -1,5 +1,13 @@
 # O'zgarishlar tarixi (Changelog)
 
+## [1.1.0] — 2026-11-20
+
+- **`hidesign` skilli (`/hidesign`, yangi):** bitta umumiy buyruq bilan `hiworld` plagini (`PRD.md`, `STACK.md`, `ROADMAP.md`) asosida qurilgan saytni **8 bosqichda etapma-etap** professional dizaynga olib chiqadi: rang va gradient -> `DESIGN.md` uslubi -> shrift -> ikonka -> animatsiya -> 1-bet Hero va WOW effekt -> har bir bet uchun rasm promptlari va rasm generatsiya -> yakuniy avtomatik Audit. CLI: `katalog.js hidesign .`.
+- **`rang` skilli (yangi):** Coolors uslubida 1 rangdan 1–2 mos rang hisoblash (`rang-mosla`), 36 ta tayyor palitra (`rang-royxat`), **100 ta premium gradient** (`gradient-royxat` / `gradient-ol`, rang va joyini sudrab o'zgartirish, tovlanuvchi **xameleon** va **prazrachniy shaffof shisha** tugmalar bilan) hamda kattalashtirilgan `Jonli ko'rinish`.
+- **`sahifa` skilli (kengaytirildi):** Supahero ilhomli **50 ta birinchi bet (Hero) maketi** (`hero-maketlar.json`, 7 ta soha), PC / Telefon hamda to'liq ekranli (`⤢`) jonli ko'rish, tayyor HTML+CSS kod nusxalash. CLI: `hero-royxat`, `hero-ol`.
+- **`audit` skilli (`/audit`, yangi):** har bir betda avtomatik bajariladigan 3 bosqichli sifat tizimi — Audit (ortiqcha effekt, past kontrast, chalg'ituvchi unsurlar) -> Mahsulotga mos uslub tanlash -> Kodda qadamma-qadam tuzatish. CLI: `katalog.js audit <yol>`.
+- **Vitrina (`9 ta bet`) va navigatsiya:** trekpad/g'ildirak orqali tasodifan keyingi betga o'tib ketish (`wheel`) olib tashlandi; 06 Ranglar va 07 Maket betlari tozalandi va katta jonli ko'rinish qo'shildi.
+
 ## [1.0.0] — 2026-11-20
 
 - **`sayt` skilli (yangi):** sayt yoki lending qurilayotganda butun arsenaldan keraklisini o'zi tanlaydi — bitta shrift juftligi, betga 1–3 ta ikonka, 3–4 xil CSS animatsiya, 1–2 ta WOW effekt — va oxirida tanlov sababini jadvalda ko'rsatadi. CLI: `katalog.js tanla <soha va kayfiyat>`.
