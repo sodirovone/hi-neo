@@ -310,14 +310,16 @@
             <span class="win-label" id="inLabel">Terminal</span>
             <span></span>
           </div>
-          <div class="neo-stage stage-fill term-stage" id="inTerm"></div>
+          <button type="button" class="neo-stage stage-fill term-stage" id="inTerm" title="Bosing — buyruq nusxalanadi"></button>
           <div class="stage-foot">
-            <span>Qayerga o'rnatasiz?</span>
-            <div class="pager" id="inTabs"></div>
+            <span>Buyruqni terminalga joylang va Enter bosing</span>
+            <span id="inHint">1 ta buyruq</span>
           </div>
         </div>
 
         <div class="neo-copy">
+          <div class="tool-row" id="inTabs" role="tablist" aria-label="Qaysi vositaga o'rnatasiz"></div>
+
           <div>
             <h2 class="sec-title" id="inTitle">Claude Code'ga o'rnatish</h2>
             <p class="sec-desc" id="inDesc"></p>
@@ -326,8 +328,7 @@
           <div class="code-box" id="inCode"></div>
 
           <div class="btn-row">
-            <button class="btn btn--accent" id="inCopy">Buyruqni nusxalash</button>
-            <a class="btn btn--ghost" href="https://github.com/sodirovone/hi-neo" target="_blank" rel="noopener">GitHub'da ochish</a>
+            <button class="btn btn--accent btn--big" id="inCopy">O'rnatish buyrug'ini nusxalash</button>
           </div>
         </div>
       </div>

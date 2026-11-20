@@ -19,7 +19,7 @@ Muloqot tili — **lotin o'zbek tili** (kirill belgi ishlatma), foydalanuvchiga 
 4. **3,054 ta Minimalist SVG Ikonka (`#ikonka`):** 40 ta yo'nalish bo'yicha qidiruv, chiziq qalinligi (`1.5px / 1.75px / 2.0px`) hamda `SVG` va `React JSX` nusxalash.
 5. **60 ta Shrift va 24 ta Juftlik (`#shrift`):** Har shrift o'z ko'rinishida, uslub bo'yicha saralash, ulash kodi (`<link>` + `font-family`) nusxalash.
 6. **Sahifa Standarti (`#sahifa`):** Kompyuter va telefon maket simulyatori hamda tayyor sahifa karkasini nusxalash.
-7. **O'rnatish (`#ornatish`):** Claude Code, claude.ai / Claude Desktop va Antigravity uchun tayyor o'rnatish buyruqlari.
+7. **O'rnatish (`#ornatish`):** Claude Code, Gemini Antigravity va ChatGPT Codex uchun (har biri o'z belgisi bilan) bitta qatorli o'rnatish buyrug'i va uni nusxalaydigan bitta tugma.
 
 Betlar yuqoridagi menyu, klaviatura strelkalari, (kompyuterda) g'ildirak yoki (telefonda) barmoq bilan surib almashadi. Effektlar betida 31 ta effektning har biri o'z jonli demosiga ega. Ro'yxatlar joyga sig'adigan miqdorda ko'rsatiladi va sahifalanadi, uzun kod kesiladi va to'liq holda nusxalanadi.
 

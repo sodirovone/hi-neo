@@ -1,6 +1,6 @@
 # Hi Neo — sayt qurayotganda keraklisini o'zi tanlaydigan dizayn plagini
 
-**hiworld.club** tomonidan. Oddiy saytni zamonaviy veb-mahsulotga aylantiradigan plagin — **Antigravity**, **Claude Code** va **Claude Desktop / claude.ai** uchun. Ichida 31 ta WOW effekt, 64 ta CSS animatsiya, 3,054 ta SVG ikonka, 60 ta shrift va «bitta bet — bitta bo'lim» sahifa maketi bor. Siz «sayt yasa» deysiz — agent shulardan loyihaga mosini o'zi tanlab ishlatadi.
+**hiworld.club** tomonidan. Oddiy saytni zamonaviy veb-mahsulotga aylantiradigan plagin — **Claude Code**, **Claude Desktop / claude.ai**, **Gemini Antigravity** va **ChatGPT Codex** uchun. Ichida 31 ta WOW effekt, 64 ta CSS animatsiya, 3,054 ta SVG ikonka, 60 ta shrift va «bitta bet — bitta bo'lim» sahifa maketi bor. Siz «sayt yasa» deysiz — agent shulardan loyihaga mosini o'zi tanlab ishlatadi.
 
 Butun muloqot va yo'riqnomalar — **lotin o'zbek tilida**.
 
@@ -35,6 +35,14 @@ Butun muloqot va yo'riqnomalar — **lotin o'zbek tilida**.
 ```bash
 agy plugin install https://github.com/sodirovone/hi-neo
 ```
+
+### 4. ChatGPT Codex:
+
+```bash
+codex plugin marketplace add sodirovone/hi-neo; codex plugin add hi-neo@hi-neo
+```
+
+Vitrinaning oxirgi betida (`#ornatish`) har uch vosita uchun buyruq bitta tugma bilan nusxalanadi.
 
 ---
 

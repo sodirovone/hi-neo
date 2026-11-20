@@ -807,6 +807,39 @@
     }
     @keyframes neo-caret { 50% { opacity: 0; } }
 
+    /* 07-bet: vosita tanlash (o'z belgilari bilan) va bitta katta nusxalash tugmasi */
+    .tool-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .tool-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-width: 0;
+      padding: 14px 8px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--tag);
+      color: var(--text);
+      transition: border-color 0.35s var(--soft), background-color 0.35s var(--soft), transform 0.35s var(--soft), box-shadow 0.35s var(--soft);
+    }
+    .tool-btn svg { display: block; }
+    .tool-btn b { font-size: 14px; font-weight: 800; white-space: nowrap; }
+    .tool-btn small { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+    .tool-btn:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+    .tool-btn.is-active {
+      border-color: var(--neo);
+      background: rgba(var(--neo-rgb), 0.1);
+      box-shadow: 0 10px 26px rgba(var(--neo-rgb), 0.16);
+    }
+    .btn--big { padding: 17px 20px; font-size: 16px; border-radius: 15px; }
+    button.term-stage { width: 100%; border: none; cursor: copy; color: var(--text); }
+    .term-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-family: system-ui, sans-serif; font-weight: 800; font-size: 15px; }
+
     .toast {
       position: fixed;
       bottom: 24px;
