@@ -124,7 +124,7 @@
     .neo-topbar {
       position: fixed;
       top: 0; left: 0; right: 0;
-      height: 62px;
+      height: 68px;
       z-index: 60;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
@@ -142,13 +142,13 @@
       gap: 10px;
       justify-self: start;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 18px;
       letter-spacing: -0.02em;
       color: inherit;
       text-decoration: none;
     }
     .brand .neo-logo {
-      width: 34px; height: 34px;
+      width: 38px; height: 38px;
       filter: drop-shadow(0 0 10px rgba(var(--neo-rgb), 0.35));
       transition: transform 0.6s var(--soft), filter 0.6s var(--soft);
     }
@@ -170,9 +170,9 @@
       isolation: isolate;
       display: inline-flex;
       align-items: center;
-      padding: 7px 13px;
+      padding: 10px 16px;
       border-radius: 999px;
-      font-size: 12.5px;
+      font-size: 14px;
       font-weight: 600;
       color: var(--muted);
       white-space: nowrap;
@@ -210,12 +210,12 @@
     }
     .top-count {
       font-family: ui-monospace, monospace;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: var(--muted);
     }
     .theme-btn {
-      width: 38px; height: 38px;
+      width: 44px; height: 44px;
       padding: 0;
       border-radius: 50%;
       border: 1px solid var(--border);
@@ -249,22 +249,22 @@
         height: 100vh;
         align-items: center;
         justify-content: center;
-        padding: 62px 3.5vw 0;
+        padding: 68px 2.5vw 0;
       }
 
       /* Har bir betda 100% BIR XIL STANDART O'LCHAMLI RAMKA */
       .neo-frame {
-        width: min(1320px, 93vw);
-        height: calc(100vh - 110px);
+        width: min(1500px, 95vw);
+        height: calc(100vh - 104px);
         min-height: 440px;
-        max-height: 800px;
+        max-height: 920px;
         background: var(--bg-card);
         border: 1px solid var(--border);
         border-radius: 26px;
-        padding: 24px;
+        padding: 26px;
         display: grid;
         grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-        gap: 28px;
+        gap: 30px;
         align-items: stretch;
         box-shadow: var(--shadow);
       }
@@ -288,46 +288,46 @@
       .stat-tile b { font-size: 19px; }
       .icon-preview { padding: 10px; }
       .icon-preview__box { width: 60px; height: 60px; }
-      .btn { padding: 9px 12px; }
+      .btn { padding: 11px 14px; font-size: 13.5px; }
       .neo-logo--big { width: 72px; height: 72px; }
       .hero-halo { width: 112px; height: 112px; }
     }
 
     @media (max-width: 1023px) {
       .neo-topbar { padding: 0 12px; gap: 8px; }
-      .nav-tab { padding: 7px 10px; }
+      .nav-tab { padding: 10px 12px; }
       .top-count { display: none; }
       .neo-section.is-active {
         width: 100%;
         min-height: 100svh;
         align-items: stretch;
         justify-content: center;
-        padding: 74px 14px 18px;
+        padding: 82px 14px 18px;
       }
       .neo-frame {
         width: 100%;
-        min-height: calc(100svh - 92px);
+        min-height: calc(100svh - 100px);
         background: var(--bg-card);
         border: 1px solid var(--border);
         border-radius: 22px;
-        padding: 16px;
+        padding: 18px;
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 20px;
       }
       .neo-visual { flex: none; }
       .neo-copy { flex: 1; }
-      .stage-fill { height: 300px; }
-      .stage-canvas-wrap { height: 250px; }
+      .stage-fill { height: 340px; }
+      .stage-canvas-wrap { height: 320px; }
       .stage-canvas-wrap--auto { height: auto; }
-      .stage-list { height: 212px; }
-      .icon-grid { height: 340px; }
-      .code-box { max-height: 196px; }
+      .stage-list { height: 268px; }
+      .icon-grid { height: 432px; }
+      .code-box { max-height: 236px; }
       .toast { right: 14px; left: 14px; bottom: 16px; text-align: center; }
     }
     @media (max-width: 560px) {
       .brand > span:last-child { display: none; }
-      .nav-tab { padding: 7px 8px; }
+      .nav-tab { padding: 10px 9px; }
       .nav-tab span { max-width: 0 !important; margin-left: 0 !important; opacity: 0; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -347,7 +347,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 14px;
+      gap: 16px;
       min-height: 0;
       min-width: 0;
       text-align: center;
@@ -355,13 +355,13 @@
     .neo-copy > * { flex-shrink: 0; }
     .sec-kicker {
       margin-bottom: 10px;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--neo);
       font-family: ui-monospace, monospace;
       letter-spacing: 0.02em;
     }
     .sec-title {
-      font-size: clamp(22px, 2.3vw, 34px);
+      font-size: clamp(24px, 2.6vw, 38px);
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -0.03em;
@@ -370,7 +370,7 @@
     .sec-desc {
       margin-top: 8px;
       color: var(--muted);
-      font-size: 14.5px;
+      font-size: 15.5px;
       line-height: 1.55;
       text-wrap: pretty;
     }
@@ -380,8 +380,8 @@
 
     /* Oyna sarlavhasi va ro'yxat osti paneli */
     .win-bar {
-      height: 34px;
-      padding: 0 12px;
+      height: 40px;
+      padding: 0 14px;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
@@ -395,7 +395,7 @@
     .dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(148, 163, 184, 0.35); }
     .dots span:first-child { background: var(--neo); }
     .win-label {
-      font-size: 11px;
+      font-size: 12px;
       font-family: ui-monospace, monospace;
       color: var(--muted);
       white-space: nowrap;
@@ -404,29 +404,29 @@
     }
     .stage-foot {
       flex: none;
-      padding: 7px 12px;
+      padding: 10px 14px;
       border-top: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      font-size: 11.5px;
+      font-size: 12.5px;
       color: var(--muted);
       background: var(--bg-elev);
     }
     .pager { display: flex; align-items: center; gap: 6px; }
-    .pager__info { min-width: 48px; text-align: center; font-family: ui-monospace, monospace; }
+    .pager__info { min-width: 58px; text-align: center; font-family: ui-monospace, monospace; }
 
     .mini-pills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 5px;
+      gap: 7px;
     }
     .mini-pill {
-      padding: 4px 10px;
+      padding: 8px 14px;
       border-radius: 999px;
-      font-size: 11.5px;
+      font-size: 13px;
       font-weight: 600;
       background: var(--tag);
       border: 1px solid var(--border);
@@ -446,13 +446,13 @@
     .code-box {
       position: relative;
       flex: 0 1 auto !important;
-      min-height: 72px;
+      min-height: 84px;
       background: var(--bg-sub);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 11px 13px;
+      padding: 14px 16px;
       font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-      font-size: 11.8px;
+      font-size: 12.6px;
       line-height: 1.5;
       color: var(--text);
       text-align: left;
@@ -482,7 +482,7 @@
       display: flex;
       flex-direction: column;
       gap: 4px;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.45;
       color: var(--muted);
     }
@@ -490,16 +490,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
     }
     .btn {
       flex: 1 1 140px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 14px;
-      border-radius: 11px;
-      font-size: 13px;
+      padding: 14px 18px;
+      border-radius: 13px;
+      font-size: 14.5px;
       font-weight: 700;
       text-align: center;
       text-decoration: none;
@@ -535,23 +535,23 @@
       background: rgba(4, 9, 22, 0.6);
     }
     .neo-logo--big { width: 88px; height: 88px; }
-    .hero-word { font-size: 28px; font-weight: 900; letter-spacing: -0.03em; }
-    .hero-sub { font-size: 12px; color: var(--muted); font-family: ui-monospace, monospace; }
+    .hero-word { font-size: 32px; font-weight: 900; letter-spacing: -0.03em; }
+    .hero-sub { font-size: 13px; color: var(--muted); font-family: ui-monospace, monospace; }
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
     }
     .stat-tile {
-      padding: 12px 6px;
+      padding: 16px 8px;
       border-radius: 14px;
       border: 1px solid var(--border);
       background: var(--tag);
       transition: border-color 0.4s var(--soft), transform 0.4s var(--soft);
     }
     .stat-tile:hover { border-color: var(--border-strong); transform: translateY(-2px); }
-    .stat-tile b { display: block; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-    .stat-tile span { display: block; margin-top: 2px; font-size: 11.5px; color: var(--muted); }
+    .stat-tile b { display: block; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+    .stat-tile span { display: block; margin-top: 2px; font-size: 12.5px; color: var(--muted); }
 
     /* Sahna: tepada jonli ko'rinish, pastda sahifalangan ro'yxat */
     .stage-split {
@@ -584,7 +584,7 @@
       background: linear-gradient(135deg, #0f1b3a, #16264d);
       border: 1px solid rgba(56, 225, 255, 0.45);
       font-weight: 800;
-      font-size: 20px;
+      font-size: 22px;
       letter-spacing: -0.02em;
       color: #fff;
       display: flex;
@@ -600,11 +600,11 @@
     .item-chip {
       min-width: 0;
       min-height: 0;
-      padding: 0 10px;
-      border-radius: 10px;
+      padding: 0 12px;
+      border-radius: 12px;
       border: 1px solid var(--border);
       background: var(--bg-card);
-      font-size: 12px;
+      font-size: 13.5px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -620,7 +620,7 @@
       font-family: ui-monospace, monospace;
       font-weight: 800;
       color: var(--neo);
-      font-size: 11px;
+      font-size: 12px;
     }
     .item-chip__name {
       min-width: 0;
@@ -643,21 +643,21 @@
     .icon-search {
       flex: 1 1 160px;
       min-width: 0;
-      padding: 7px 11px;
+      padding: 10px 14px;
       border-radius: 9px;
       border: 1px solid var(--border);
       background: var(--bg-card);
-      font-size: 12.5px;
+      font-size: 14px;
       text-align: center;
       transition: border-color 0.3s var(--soft);
     }
     .icon-search:focus { border-color: var(--border-strong); }
     .icon-select {
-      padding: 7px 9px;
+      padding: 10px 12px;
       border-radius: 9px;
       border: 1px solid var(--border);
       background: var(--bg-card);
-      font-size: 12px;
+      font-size: 13.5px;
       max-width: 100%;
     }
     .icon-select option { background: var(--bg-card); color: var(--text); }
@@ -693,7 +693,7 @@
       color: var(--neo);
     }
     .icon-cell span {
-      font-size: 9.5px;
+      font-size: 10.5px;
       color: var(--muted);
       max-width: 100%;
       overflow: hidden;
@@ -810,7 +810,7 @@
       gap: 10px;
       padding: 26px 28px;
       font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-      font-size: 13.5px;
+      font-size: 15px;
       line-height: 1.6;
       text-align: left;
       overflow: hidden;
@@ -854,36 +854,25 @@
     @keyframes neo-soft-pop { from { opacity: 0; transform: translateY(6px) scale(0.97); } }
     @keyframes neo-soft-swap { from { opacity: 0; transform: translateY(8px); filter: blur(4px); } }
     @keyframes neo-float { 0%, 100% { transform: translateY(-4px); } 50% { transform: translateY(5px); } }
-    @media (prefers-reduced-motion: no-preference) {
-      .neo-section.is-active .neo-visual { animation: neo-soft-in 0.8s var(--soft) backwards; }
-      .neo-section.is-active .neo-copy > * { animation: neo-soft-in 0.8s var(--soft) backwards; }
-      .neo-section.is-active .neo-copy > :nth-child(1) { animation-delay: 0.1s; }
-      .neo-section.is-active .neo-copy > :nth-child(2) { animation-delay: 0.18s; }
-      .neo-section.is-active .neo-copy > :nth-child(3) { animation-delay: 0.26s; }
-      .neo-section.is-active .neo-copy > :nth-child(4) { animation-delay: 0.34s; }
-      .neo-section.is-active .neo-copy > :nth-child(5) { animation-delay: 0.42s; }
-      .item-chip, .icon-cell {
-        animation: neo-soft-pop 0.5s var(--soft) backwards;
-        animation-delay: calc(var(--i, 0) * 16ms);
-      }
-      .neo-section.is-active .neo-copy .soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; animation-delay: 0s; }
-      .stage-canvas-wrap.soft-swap, .term-stage.soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; }
-      .neo-logo--big { animation: neo-float 6s ease-in-out infinite; }
+    /* Vitrina animatsiyalar ko'rgazmasi: tizimda «harakatni kamaytirish» yoqilgan bo'lsa ham
+       harakatlar ko'rsatiladi (aks holda ko'rgazmaning o'zi ishlamaydi). */
+    .neo-section.is-active .neo-visual { animation: neo-soft-in 0.8s var(--soft) backwards; }
+    .neo-section.is-active .neo-copy > * { animation: neo-soft-in 0.8s var(--soft) backwards; }
+    .neo-section.is-active .neo-copy > :nth-child(1) { animation-delay: 0.1s; }
+    .neo-section.is-active .neo-copy > :nth-child(2) { animation-delay: 0.18s; }
+    .neo-section.is-active .neo-copy > :nth-child(3) { animation-delay: 0.26s; }
+    .neo-section.is-active .neo-copy > :nth-child(4) { animation-delay: 0.34s; }
+    .neo-section.is-active .neo-copy > :nth-child(5) { animation-delay: 0.42s; }
+    .item-chip, .icon-cell {
+      animation: neo-soft-pop 0.5s var(--soft) backwards;
+      animation-delay: calc(var(--i, 0) * 16ms);
     }
-    @media (prefers-reduced-motion: reduce) {
-      .toast, .sim-viewport, .nav-tab span, .nav-tab::before { transition: none; }
-      .term-caret { animation: none; }
-    }
+    .neo-section.is-active .neo-copy .soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; animation-delay: 0s; }
+    .stage-canvas-wrap.soft-swap, .term-stage.soft-swap { animation: neo-soft-swap 0.55s var(--soft) backwards; }
+    .neo-logo--big { animation: neo-float 6s ease-in-out infinite; }
 
     /* Inject all 64 CSS Animations */
 /* Hi Neo — 64 ta zamonaviy CSS animatsiyalar paketi (hiworld.club) */
-@media (prefers-reduced-motion: reduce) {
-  [class*="neo-anim-"] {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
 
 @keyframes neo-blur-rise {
   0% { opacity: 0; filter: blur(12px); transform: translateY(24px) scale(0.96); }
@@ -1809,7 +1798,6 @@
     const NEO = '#38e1ff';
     const BLUE = '#0052ff';
     const STAGE = '#040916';
-    const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function showToast(msg) {
       const t = $('toast');
@@ -1993,7 +1981,6 @@
     function countUp() {
       const els = [...document.querySelectorAll('#heroStats [data-count]')];
       const fmt = (n) => Math.round(n).toLocaleString('en-US');
-      if (REDUCE) { els.forEach((el) => { el.textContent = fmt(+el.dataset.count); }); return; }
       const t0 = performance.now();
       (function step(now) {
         const p = Math.min(1, (now - t0) / 1400);
@@ -2074,7 +2061,7 @@
     // --- 02-bet: 31 WOW effekt ---
     let selEf = EFFECTS[7]; // #08 Golografik karta
     const chip = (id, num, nom, on, i, style) => `<button class="item-chip${on ? ' is-selected' : ''}" data-id="${id}" title="${esc(nom)}" style="--i:${i}"><span class="item-chip__num">${num}</span><span class="item-chip__name"${style || ''}>${esc(nom)}</span></button>`;
-    const CHIP = { minW: 132, rowH: 34, gap: 7, pad: 10 };
+    const CHIP = { minW: 150, rowH: 44, gap: 7, pad: 10 };
 
     const efPager = makePager({
       list: $('efList'), prev: $('efPrev'), next: $('efNext'), info: $('efPage'), ...CHIP,
@@ -2685,8 +2672,8 @@
 
     const icPager = makePager({
       list: icGridEl, prev: $('icPrev'), next: $('icNext'), info: $('icPageInfo'),
-      minW: 64, rowH: 58, gap: 8, pad: 12,
-      render: (ic, i) => `<button class="icon-cell${ic.id === selIcon.id ? ' is-selected' : ''}" data-id="${ic.id}" title="${esc(ic.nom)} (${ic.id})" style="--i:${Math.min(i, 40) * 0.6}">${buildRawSvg(ic, icStrokeEl.value, 24)}<span>${ic.id}</span></button>`
+      minW: 78, rowH: 72, gap: 8, pad: 12,
+      render: (ic, i) => `<button class="icon-cell${ic.id === selIcon.id ? ' is-selected' : ''}" data-id="${ic.id}" title="${esc(ic.nom)} (${ic.id})" style="--i:${Math.min(i, 40) * 0.6}">${buildRawSvg(ic, icStrokeEl.value, 28)}<span>${ic.id}</span></button>`
     });
 
     function selectIcon(ic, soft) {
